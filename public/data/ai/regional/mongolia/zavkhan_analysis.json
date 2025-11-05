@@ -1,0 +1,48 @@
+{
+  "regionName": "Zavkhan",
+  "country": "Mongolia",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 89000,
+    "density": 1.1,
+    "urbanization": 45,
+    "ageDistribution": {"youth": 35, "adult": 58, "elderly": 7},
+    "economicProfile": {"primarySector": 68, "secondarySector": 18, "tertiarySector": 14},
+    "insights": {
+      "populationGrowth": "Declining at -0.6% annually due to harsh climate and limited economic opportunities driving outmigration.",
+      "educationLevel": "Moderate education with 74% literacy. Remote location limits access to higher education.",
+      "employmentPattern": "Livestock herding 55%, mining 20%, agriculture 15%, government 6%, services 4%. Growing mining sector.",
+      "housingPattern": "Traditional gers 55%, permanent houses 30%, seasonal shelters 15%. Nomadic lifestyle dominates."
+    },
+    "confidence": "medium",
+    "sources": ["Zavkhan Province Administration", "National Statistical Office Mongolia"],
+    "lastUpdated": "2024-09-22"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Extreme continental climate, harsh winters (-35°C), hot summers (32°C). Mountain-steppe transition zone.",
+      "precipitation": "Low precipitation 180mm, concentrated in summer. Arid conditions with high evaporation rates.",
+      "seasonality": "Brutal winter (November-March), brief spring (April-May), hot summer (June-August), short autumn.",
+      "extremeEvents": "Severe dzud events, intense droughts, dust storms, flash flooding in mountainous areas."
+    },
+    "trends": {"temperatureTrend": "+2.9°C over 50 years", "precipitationTrend": "-20% decrease", "droughtFrequency": "Increased severity", "floodRisk": "Low but intense"},
+    "recentEvents": [
+      {"event": "Severe Dzud", "date": "2024-01", "impact": "180,000 livestock deaths, 400 families affected", "severity": "high"},
+      {"event": "Extreme Drought", "date": "2024-07", "impact": "Complete pasture failure, water crisis", "severity": "very_high"}
+    ],
+    "confidence": "medium",
+    "sources": ["National Meteorology Agency", "Zavkhan Climate Station"],
+    "lastUpdated": "2024-09-15"
+  },
+  "disasters": {
+    "riskProfile": {"drought": "extreme", "dzud": "extreme", "flood": "low", "mining_accidents": "medium"},
+    "recentDisasters": [
+      {"type": "Catastrophic Dzud", "date": "2024-01-20", "impact": "180,000 livestock deaths, economic devastation", "economicLoss": "$28M USD"}
+    ],
+    "preparedness": {"earlyWarning": true, "reliefCapacity": "Low - Remote location, limited resources"},
+    "confidence": "medium",
+    "sources": ["National Emergency Management Agency"],
+    "lastUpdated": "2024-09-10"
+  }
+}

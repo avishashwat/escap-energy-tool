@@ -1,0 +1,45 @@
+{
+  "regionName": "Ha",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 13000,
+    "density": 8.1,
+    "urbanization": 15,
+    "ageDistribution": {"youth": 33, "adult": 60, "elderly": 7},
+    "economicProfile": {"primarySector": 65, "secondarySector": 20, "tertiarySector": 15},
+    "insights": {
+      "populationGrowth": "Stable 0.4% with traditional lifestyle and border location providing some stability.",
+      "educationLevel": "Good 82% literacy despite rural nature due to border trade connections.",
+      "employmentPattern": "Agriculture 55%, border trade 20%, government 15%, services 7%, crafts 3%.",
+      "housingPattern": "Traditional houses 80%, modern houses 15%, border facilities 5%."
+    },
+    "confidence": "medium",
+    "sources": ["Ha Administration"],
+    "lastUpdated": "2024-09-24"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Temperate mountain climate, cold winters (0°C), mild summers (22°C). High altitude valley.",
+      "precipitation": "Good precipitation 1,100mm supporting agriculture and forests.",
+      "seasonality": "Cold winter with snow, pleasant spring/summer, clear autumn.",
+      "extremeEvents": "Late snowfall, hailstorms, occasional droughts, landslides."
+    },
+    "trends": {"temperatureTrend": "+1.9°C warming", "precipitationTrend": "Slight increase", "snowPattern": "Changing"},
+    "recentEvents": [
+      {"event": "Late Snow", "date": "2024-05", "impact": "Potato crop planting delayed, livestock stress", "severity": "medium"}
+    ],
+    "confidence": "medium",
+    "sources": ["Ha Weather Station"],
+    "lastUpdated": "2024-09-20"
+  },
+  "disasters": {
+    "riskProfile": {"landslide": "medium", "flood": "medium", "hail": "medium", "border_incidents": "low"},
+    "recentDisasters": [
+      {"type": "Hailstorm", "date": "2024-06-20", "impact": "Crop damage, greenhouse destruction", "economicLoss": "$800K USD"}
+    ],
+    "preparedness": {"reliefCapacity": "Medium - Border infrastructure provides some resources"},
+    "confidence": "medium"
+  }
+}

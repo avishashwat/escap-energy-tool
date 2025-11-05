@@ -1,0 +1,42 @@
+{
+  "layerName": "laos_climate_Maximum Temperature_Historical_classified_classified",
+  "classifications": [
+    {
+      "min": 17.549999237061,
+      "max": 24.31,
+      "color": "#bfd2ff",
+      "label": "17.549999 - 24.31"
+    },
+    {
+      "min": 24.32,
+      "max": 24.69,
+      "color": "#ffffbf",
+      "label": "24.32 - 24.69"
+    },
+    {
+      "min": 24.700000000000003,
+      "max": 26.55,
+      "color": "#ffd380",
+      "label": "24.700000000000003 - 26.55"
+    },
+    {
+      "min": 26.55,
+      "max": 29.55,
+      "color": "#ffaa00",
+      "label": "26.55 - 29.55"
+    },
+    {
+      "min": 29.55,
+      "max": 32.549999237061,
+      "color": "#e60000",
+      "label": "29.55 - 32.549999"
+    }
+  ],
+  "rasterStats": {
+    "min": 17.549999237061,
+    "max": 32.549999237061,
+    "noData": -3.4028235e+38
+  },
+  "projection": "EPSG:4326",
+  "timestamp": "2025-10-06T07:16:33.232Z"
+}

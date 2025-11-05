@@ -1,0 +1,10 @@
+{
+  "regionName": "Luang Prabang",
+  "country": "Laos",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 431000, "density": 21.2, "urbanization": 45, "ageDistribution": {"youth": 33, "adult": 62, "elderly": 5}, "economicProfile": {"primarySector": 35, "secondarySector": 25, "tertiarySector": 40}, "insights": {"populationGrowth": "Moderate 1.6% with UNESCO World Heritage tourism driving economy.", "educationLevel": "High 84% literacy due to tourism development and cultural importance.", "employmentPattern": "Tourism/services 45%, agriculture 25%, handicrafts 15%, government 10%, trade 5%.", "housingPattern": "UNESCO-protected traditional 40%, modern tourist facilities 35%, residential 25%."}},
+  "climate": {"insights": {"temperature": "Tropical mountain, pleasant (23°C-35°C), tourism-friendly climate.", "precipitation": "High 1,700mm with Mekong and Nam Khan river flooding.", "extremeEvents": "Heritage site flooding risks, tourist season weather, river level variations."}, "trends": {"heritageFloodRisk": "Increasing", "touristSeasonImpacts": "More variable weather"}},
+  "disasters": {"riskProfile": {"heritage_flood": "high", "tourism_disruption": "medium", "river_erosion": "medium"}, "recentDisasters": [{"type": "UNESCO Site Flooding", "date": "2024-09", "impact": "Historic temples flooded, tourism severely affected", "economicLoss": "$45M USD"}]},
+  "economicProfile": {"gdpContribution": "15.8% of national GDP - highest tourism contribution", "majorIndustries": ["UNESCO Heritage Tourism", "Hospitality", "Handicrafts", "Agriculture", "Cultural Services"], "averageIncome": "$2,100 USD", "businessEnvironment": "World Heritage tourism economy, cultural preservation, international visitor destination"}
+}

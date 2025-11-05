@@ -1,0 +1,10 @@
+{
+  "regionName": "Tsirang",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 19500, "density": 31.2, "urbanization": 18, "ageDistribution": {"youth": 40, "adult": 53, "elderly": 7}, "economicProfile": {"primarySector": 70, "secondarySector": 18, "tertiarySector": 12}, "insights": {"populationGrowth": "Slight decline -0.1% with agricultural focus.", "educationLevel": "Moderate 78% literacy.", "employmentPattern": "Agriculture 60%, small industry 18%, government 15%, services 7%.", "housingPattern": "Traditional 80%, modern 17%, temporary 3%."}},
+  "climate": {"insights": {"temperature": "Subtropical, warm winters (16°C), hot summers (31°C).", "precipitation": "Very high 2,600mm with extreme flooding.", "extremeEvents": "Severe monsoon flooding, landslides, agricultural damage."}, "trends": {"floodRisk": "Extreme"}},
+  "disasters": {"riskProfile": {"flood": "extreme", "agricultural_loss": "very_high"}, "preparedness": {"reliefCapacity": "Low - Rural area with extreme flood risk"}},
+  "economicProfile": {"majorIndustries": ["Agriculture", "Small Industry", "Government"], "averageIncome": "$2,600 USD"}
+}

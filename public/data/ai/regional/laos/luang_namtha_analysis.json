@@ -1,0 +1,10 @@
+{
+  "regionName": "Luang Namtha",
+  "country": "Laos",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 175000, "density": 18.7, "urbanization": 32, "ageDistribution": {"youth": 41, "adult": 54, "elderly": 5}, "economicProfile": {"primarySector": 58, "secondarySector": 25, "tertiarySector": 17}, "insights": {"populationGrowth": "Growing 2.2% with China border trade and eco-tourism.", "educationLevel": "Moderate 71% literacy with Chinese language programs.", "employmentPattern": "Agriculture 40%, border trade 30%, eco-tourism 15%, services 10%, government 5%.", "housingPattern": "Traditional 55%, modern border housing 35%, tourism facilities 10%."}},
+  "climate": {"insights": {"temperature": "Mountain tropical, cooler (22°C-34°C), monsoon patterns.", "precipitation": "Very high 2,000mm with mountain flooding risks.", "extremeEvents": "Mountain flash floods, landslides, border weather extremes."}, "trends": {"mountainFloods": "More intense", "borderAccessRisk": "Weather dependent"}},
+  "disasters": {"riskProfile": {"flash_flood": "high", "landslide": "high", "border_disruption": "medium"}, "recentDisasters": [{"type": "Border Flood", "date": "2024-08", "impact": "China-Laos trade route flooded, economic losses", "economicLoss": "$12M USD"}]},
+  "economicProfile": {"gdpContribution": "3.8% of national GDP", "majorIndustries": ["Cross-border Trade", "Eco-tourism", "Agriculture", "Forestry"], "averageIncome": "$1,400 USD", "businessEnvironment": "China-Laos economic corridor, mountain eco-tourism, ethnic diversity"}
+}

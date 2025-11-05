@@ -1,0 +1,148 @@
+{
+  "regionName": "Paro",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 46000,
+    "density": 37,
+    "urbanization": 45,
+    "ageDistribution": {
+      "youth": 34,
+      "adult": 60,
+      "elderly": 6
+    },
+    "economicProfile": {
+      "primarySector": 25,
+      "secondarySector": 30,
+      "tertiarySector": 45
+    },
+    "insights": {
+      "populationGrowth": "Paro experiences steady growth at 1.8% annually, driven by tourism development and proximity to international airport.",
+      "educationLevel": "High education levels with 82% literacy rate, benefits from educational institutions and tourism sector employment opportunities.",
+      "employmentPattern": "Tourism sector employs 40% of workforce, agriculture 25%, services 20%, government 15%. Seasonal employment variations due to tourism patterns.",
+      "housingPattern": "Traditional architecture preserved by law, mix of farmhouses and modern hospitality facilities. Tourism drives accommodation development."
+    },
+    "confidence": "high",
+    "sources": [
+      "Paro Dzongkhag Administration",
+      "National Statistics Bureau Bhutan 2024",
+      "Tourism Council of Bhutan"
+    ],
+    "lastUpdated": "2024-10-20"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Temperate climate with average annual temperature of 14.2°C. Located at 2,200m elevation in Paro Valley. Summers reach 22°C while winters drop to -2°C.",
+      "precipitation": "Annual precipitation averages 800mm, with 75% occurring during monsoon (June-September). River valleys receive more moisture than ridge areas.",
+      "seasonality": "Four distinct seasons: mild spring (March-May), monsoon summer (June-September), clear autumn (October-November), and cold winter (December-February) with occasional snowfall.",
+      "extremeEvents": "Increasing glacial lake outburst flood (GLOF) risk from upstream glacial lakes. Flash floods affect Paro Chhu during intense monsoons affecting airport and town areas."
+    },
+    "trends": {
+      "temperatureTrend": "+1.6°C increase over past 40 years",
+      "precipitationTrend": "8% decrease in winter precipitation, 12% increase in monsoon intensity",
+      "droughtFrequency": "Occasional spring droughts affecting agriculture",
+      "floodRisk": "High flood risk along Paro Chhu during monsoon season"
+    },
+    "recentEvents": [
+      {
+        "event": "Glacial Lake Flood Alert",
+        "date": "2023-08",
+        "impact": "Thorthormi glacial lake monitoring increased, evacuation plans activated",
+        "severity": "medium"
+      },
+      {
+        "event": "Severe Monsoon Flooding",
+        "date": "2024-07",
+        "impact": "Airport runway flooded, 200 tourists stranded, agricultural damage",
+        "severity": "high"
+      }
+    ],
+    "projections": {
+      "temperature": "Additional 2.5-3°C increase expected by 2050",
+      "precipitation": "More erratic patterns with intense monsoons and drier winters",
+      "extremes": "Increased GLOF risk and flash flood frequency"
+    },
+    "confidence": "medium",
+    "sources": [
+      "Paro Meteorological Station",
+      "Department of Hydro-Met Services",
+      "Glacial Lake Assessment Program 2023"
+    ],
+    "lastUpdated": "2024-09-15"
+  },
+  "disasters": {
+    "riskProfile": {
+      "drought": "medium",
+      "flood": "high",
+      "storm": "low",
+      "earthquake": "medium",
+      "landslide": "medium",
+      "glacialFlood": "high"
+    },
+    "recentDisasters": [
+      {
+        "type": "Flash Flood",
+        "date": "2024-07-22",
+        "impact": "Airport operations suspended, 200 tourists evacuated, agricultural losses",
+        "economicLoss": "$1.2M USD",
+        "response": "Emergency evacuation successful, temporary shelters provided, airport repairs completed in 48 hours"
+      },
+      {
+        "type": "Landslide",
+        "date": "2023-09-15",
+        "impact": "Highway blocked for 12 hours, 150 vehicles stranded, minor injuries",
+        "economicLoss": "$0.3M USD",
+        "response": "Road clearing operations, alternative routes provided"
+      }
+    ],
+    "preparedness": {
+      "earlyWarning": true,
+      "evacuationPlans": true,
+      "reliefCapacity": "High - International airport enables rapid response support, well-established tourism emergency protocols",
+      "infrastructure": {
+        "hospitals": 1,
+        "fireStations": 1,
+        "emergencyShelters": 8,
+        "evacuationRoutes": "Airport and highway provide multiple evacuation options"
+      },
+      "training": "Regular GLOF and flood drills for tourism sector, community preparedness programs"
+    },
+    "vulnerabilities": {
+      "geographical": "Valley location prone to flooding, upstream glacial lakes pose GLOF risk",
+      "infrastructure": "Airport vulnerability to flooding, single main highway susceptible to landslides",
+      "social": "Large tourist population requires special evacuation considerations",
+      "economic": "Tourism dependency creates economic vulnerability to disasters"
+    },
+    "adaptationMeasures": {
+      "structural": "Airport drainage improvements, early warning systems for GLOF, flood barriers along Paro Chhu",
+      "nonStructural": "Tourism emergency protocols, insurance schemes for hospitality sector, land use zoning",
+      "ecosystem": "Watershed protection, sustainable tourism practices, forest conservation"
+    },
+    "confidence": "high",
+    "sources": [
+      "Disaster Management Division Paro",
+      "Bhutan Airport Authority Risk Assessment",
+      "Tourism Emergency Response Guidelines"
+    ],
+    "lastUpdated": "2024-08-25"
+  },
+  "economicProfile": {
+    "gdpContribution": "8% of national GDP, highest per capita tourism revenue",
+    "majorIndustries": ["Tourism & Hospitality", "Agriculture", "Handicrafts", "Aviation Services", "Cultural Heritage"],
+    "employmentRate": 96.2,
+    "averageIncome": "$3,800 USD annually",
+    "businessEnvironment": "Tourism-focused economy with international airport advantage, cultural heritage sites drive economic activity"
+  },
+  "infrastructure": {
+    "transportation": "Paro International Airport (only international airport), well-maintained highway to Thimphu (1 hour), helicopter services available",
+    "utilities": "100% electricity coverage, 90% clean water access, 80% sewerage connection, mobile coverage 95%",
+    "healthcare": "Paro General Hospital, 2 health centers, medical evacuation capabilities via airport",
+    "education": "15 schools including boarding schools, traditional arts training centers, adult literacy programs"
+  },
+  "culturalSignificance": {
+    "heritage": "Tiger's Nest Monastery (Paro Taktsang), Paro Dzong, traditional architecture preservation",
+    "festivals": "Paro Tsechu (annual mask dance festival), traditional cultural events",
+    "tourism": "Primary gateway to Bhutan, 80% of international visitors arrive through Paro Airport"
+  }
+}

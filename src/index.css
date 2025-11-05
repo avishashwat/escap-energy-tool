@@ -1,0 +1,15 @@
+/* Clean index.css - no TailwindCSS dependencies */
+
+/* Basic app styles */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Basic styling for common elements */
+.app {
+  min-height: 100vh;
+}
+
+/* Remove any custom theme declarations */

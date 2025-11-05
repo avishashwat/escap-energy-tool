@@ -1,0 +1,155 @@
+{
+  "regionName": "Selenge",
+  "country": "Mongolia",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 115000,
+    "density": 2.8,
+    "urbanization": 65,
+    "ageDistribution": {
+      "youth": 30,
+      "adult": 63,
+      "elderly": 7
+    },
+    "economicProfile": {
+      "primarySector": 35,
+      "secondarySector": 35,
+      "tertiarySector": 30
+    },
+    "insights": {
+      "populationGrowth": "Stable growth at 0.9% annually. Strategic location near Russian border provides cross-border employment opportunities.",
+      "educationLevel": "High education with 89% literacy. Russian language skills common due to border proximity and historical ties.",
+      "employmentPattern": "Agriculture/livestock 35%, industry 25%, cross-border trade 15%, services 15%, government 10%. Balanced economic base.",
+      "housingPattern": "Mixed housing: apartments 40%, houses 35%, gers 25%. Urban centers well-developed, rural areas maintain traditional patterns."
+    },
+    "confidence": "high",
+    "sources": [
+      "Selenge Province Administration",
+      "National Statistical Office Mongolia",
+      "Mongolia-Russia Border Economic Zone"
+    ],
+    "lastUpdated": "2024-09-28"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Northern continental climate with cold winters (-28°C) and mild summers (24°C). Influenced by Siberian weather patterns from Russia.",
+      "precipitation": "Higher precipitation at 350-400mm annually, supporting better agriculture than southern regions. Summer rainfall supports crop production.",
+      "seasonality": "Long cold winter (October-April), short spring, mild summer with good growing conditions, pleasant autumn harvest season.",
+      "extremeEvents": "Moderate dzud risk, spring flooding from snowmelt and ice jams, occasional severe winter storms from Siberian systems."
+    },
+    "trends": {
+      "temperatureTrend": "+2.4°C increase over past 50 years, affecting agricultural seasons",
+      "precipitationTrend": "Slight increase in annual precipitation (+8%), more variable timing",
+      "droughtFrequency": "Lower drought frequency due to higher base precipitation",
+      "floodRisk": "Medium to high spring flood risk from snowmelt and river ice breakup"
+    },
+    "recentEvents": [
+      {
+        "event": "Spring Flooding (Selenge River)",
+        "date": "2024-05",
+        "impact": "River flooding affected agricultural areas, temporary bridge closures, livestock evacuation",
+        "severity": "medium"
+      },
+      {
+        "event": "Severe Winter Storm",
+        "date": "2024-02",
+        "impact": "Cross-border transportation disrupted, power outages, livestock stress in remote areas",
+        "severity": "medium"
+      },
+      {
+        "event": "Late Spring Frost",
+        "date": "2024-06",
+        "impact": "Agricultural crop damage, delayed planting, economic losses for farmers",
+        "severity": "medium"
+      }
+    ],
+    "projections": {
+      "temperature": "Additional 2-3°C increase by 2050, longer growing seasons but increased heat stress",
+      "precipitation": "Continued slight increase with more extreme events",
+      "extremes": "Increased spring flood risk, more variable weather patterns affecting agriculture"
+    },
+    "confidence": "medium",
+    "sources": [
+      "National Agency for Meteorology and Environment",
+      "Selenge River Basin Authority",
+      "Russia-Mongolia Climate Cooperation Program"
+    ],
+    "lastUpdated": "2024-09-20"
+  },
+  "disasters": {
+    "riskProfile": {
+      "drought": "low",
+      "flood": "high",
+      "storm": "medium",
+      "earthquake": "low",
+      "landslide": "low",
+      "dzud": "medium",
+      "border_incidents": "low"
+    },
+    "recentDisasters": [
+      {
+        "type": "Selenge River Flooding",
+        "date": "2024-05-20",
+        "impact": "Widespread agricultural flooding, 1,200 families evacuated, infrastructure damage, livestock losses",
+        "economicLoss": "$25M USD",
+        "response": "Cross-border coordination with Russia, emergency evacuations, agricultural relief programs, infrastructure repairs"
+      },
+      {
+        "type": "Severe Blizzard",
+        "date": "2024-01-15",
+        "impact": "Cross-border transportation shutdown, isolated communities, livestock mortality, power grid stress",
+        "economicLoss": "$8M USD",
+        "response": "Emergency fuel delivery, power grid repairs, livestock shelter assistance, road clearing operations"
+      }
+    ],
+    "preparedness": {
+      "earlyWarning": true,
+      "evacuationPlans": true,
+      "reliefCapacity": "High - Cross-border cooperation with Russia, good transportation infrastructure, agricultural support systems",
+      "infrastructure": {
+        "hospitals": 2,
+        "fireStations": 3,
+        "emergencyShelters": 18,
+        "evacuationRoutes": "Multiple routes to Russia, highway to Ulaanbaatar, river transport during non-flood periods"
+      },
+      "training": "Flood response training, agricultural disaster management, cross-border emergency cooperation, winter survival skills"
+    },
+    "vulnerabilities": {
+      "geographical": "River valley location prone to flooding, northern climate extremes, border dependencies",
+      "infrastructure": "Agricultural infrastructure vulnerable to flooding, cross-border supply chain dependencies",
+      "social": "Rural communities isolated during severe weather, aging agricultural population",
+      "economic": "Agriculture-dependent economy vulnerable to climate disasters and cross-border trade disruptions"
+    },
+    "adaptationMeasures": {
+      "structural": "Flood control infrastructure, improved drainage, weather-resistant agricultural buildings",
+      "nonStructural": "Flood early warning systems, agricultural insurance, cross-border emergency agreements",
+      "ecosystem": "Watershed management, sustainable agriculture practices, forest conservation, soil protection"
+    },
+    "confidence": "medium",
+    "sources": [
+      "National Emergency Management Agency",
+      "Selenge River Management Authority",
+      "Mongolia-Russia Emergency Cooperation Agreement 2024"
+    ],
+    "lastUpdated": "2024-09-10"
+  },
+  "economicProfile": {
+    "gdpContribution": "6.8% of national GDP, agricultural and cross-border trade hub",
+    "majorIndustries": ["Agriculture", "Livestock", "Cross-border Trade", "Food Processing", "Transportation"],
+    "employmentRate": 88.5,
+    "averageIncome": "$3,200 USD annually",
+    "businessEnvironment": "Strategic border location with Russia, agricultural production center, growing cross-border commerce"
+  },
+  "infrastructure": {
+    "transportation": "Major highway to Russia (Altanbulag crossing), rail connections, Selenge River transport, regional airports",
+    "utilities": "88% electricity coverage, 82% clean water access, expanding sewerage systems, good cross-border telecommunications",
+    "healthcare": "Regional hospital with Russian cooperation programs, specialized agricultural health services, cross-border medical agreements",
+    "education": "Agricultural university, Russian language programs, 52 schools, cross-border educational exchanges"
+  },
+  "culturalHeritage": {
+    "ethnic": "Khalkh Mongol majority with historical Russian influences, cross-border cultural exchange",
+    "traditions": "Agricultural traditions, Russian cultural influences, border region customs, seasonal festivals",
+    "festivals": "Agricultural harvest festivals, traditional Naadam, Russian-Mongolian friendship events, border cultural exchanges"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "regionName": "Wangdue Phodrang",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 31000, "density": 7.2, "urbanization": 22, "ageDistribution": {"youth": 33, "adult": 60, "elderly": 7}, "economicProfile": {"primarySector": 65, "secondarySector": 20, "tertiarySector": 15}, "insights": {"populationGrowth": "Stable 0.7% with diverse geography.", "educationLevel": "Good 82% literacy.", "employmentPattern": "Agriculture 55%, government 20%, services 15%, crafts 8%, tourism 2%.", "housingPattern": "Traditional 72%, modern 23%, temporary 5%."}},
+  "climate": {"insights": {"temperature": "Varied climate zones, cool winters (4°C), warm summers (26°C).", "precipitation": "Moderate 900mm with high variability.", "extremeEvents": "Droughts in rain shadow areas, flash floods, landslides."}, "trends": {"climateVariability": "High due to diverse geography"}},
+  "disasters": {"riskProfile": {"drought": "medium", "flash_flood": "medium", "landslide": "medium"}, "preparedness": {"reliefCapacity": "Medium - Diverse geography creates varied challenges"}},
+  "economicProfile": {"gdpContribution": "3.5% of national GDP", "majorIndustries": ["Agriculture", "Government", "Traditional Crafts"], "averageIncome": "$2,900 USD"}
+}

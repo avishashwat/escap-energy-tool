@@ -1,0 +1,10 @@
+{
+  "regionName": "Vientiane Province",
+  "country": "Laos",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 419000, "density": 26.8, "urbanization": 55, "ageDistribution": {"youth": 32, "adult": 63, "elderly": 5}, "economicProfile": {"primarySector": 35, "secondarySector": 40, "tertiarySector": 25}},
+  "climate": {"insights": {"precipitation": "1,600mm", "extremeEvents": "Mekong flooding around capital"}},
+  "disasters": {"riskProfile": {"flood": "high", "infrastructure_risk": "medium"}},
+  "economicProfile": {"gdpContribution": "12.8%", "majorIndustries": ["Manufacturing", "Agriculture", "Services"], "averageIncome": "$2,200 USD"}
+}

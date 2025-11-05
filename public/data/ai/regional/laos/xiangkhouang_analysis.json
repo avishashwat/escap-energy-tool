@@ -1,0 +1,10 @@
+{
+  "regionName": "Xiangkhouang",
+  "country": "Laos",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 244000, "density": 15.8, "urbanization": 32, "ageDistribution": {"youth": 40, "adult": 55, "elderly": 5}, "economicProfile": {"primarySector": 65, "secondarySector": 22, "tertiarySector": 13}},
+  "climate": {"insights": {"temperature": "Cool plateau (18°C-28°C)", "precipitation": "1,800mm"}},
+  "disasters": {"riskProfile": {"uxo_risk": "extreme", "landslide": "medium"}},
+  "economicProfile": {"majorIndustries": ["Agriculture", "Tourism (Plain of Jars)", "Mining"], "averageIncome": "$1,100 USD"}
+}

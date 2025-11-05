@@ -1,0 +1,45 @@
+{
+  "regionName": "Lhuentse",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 16500,
+    "density": 5.8,
+    "urbanization": 12,
+    "ageDistribution": {"youth": 36, "adult": 57, "elderly": 7},
+    "economicProfile": {"primarySector": 78, "secondarySector": 12, "tertiarySector": 10},
+    "insights": {
+      "populationGrowth": "Declining -0.8% due to remote location and limited economic opportunities.",
+      "educationLevel": "Moderate 76% literacy. Traditional knowledge preservation strong.",
+      "employmentPattern": "Agriculture 68%, traditional crafts 15%, government 12%, services 5%.",
+      "housingPattern": "Traditional houses 88%, modern houses 10%, temporary 2%."
+    },
+    "confidence": "medium",
+    "sources": ["Lhuentse Administration"],
+    "lastUpdated": "2024-09-22"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Temperate climate, cool winters (5°C), warm summers (25°C). Mountain valley conditions.",
+      "precipitation": "Adequate precipitation 1,400mm with monsoon concentration.",
+      "seasonality": "Cold winter, warm monsoon summer, pleasant autumn.",
+      "extremeEvents": "Flash floods, landslides, crop diseases, occasional droughts."
+    },
+    "trends": {"temperatureTrend": "+1.8°C warming", "precipitationTrend": "More variable", "floodRisk": "Increasing"},
+    "recentEvents": [
+      {"event": "Flash Flood", "date": "2024-07", "impact": "Agricultural terraces damaged, road access cut", "severity": "medium"}
+    ],
+    "confidence": "medium",
+    "sources": ["Agricultural Research Station"],
+    "lastUpdated": "2024-09-18"
+  },
+  "disasters": {
+    "riskProfile": {"flood": "medium", "landslide": "high", "crop_disease": "medium", "isolation": "high"},
+    "recentDisasters": [
+      {"type": "Landslide", "date": "2024-08-05", "impact": "Main road blocked, villages isolated", "economicLoss": "$2M USD"}
+    ],
+    "preparedness": {"reliefCapacity": "Low - Very remote location, limited infrastructure"},
+    "confidence": "low"
+  }
+}

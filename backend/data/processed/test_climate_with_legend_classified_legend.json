@@ -1,0 +1,36 @@
+{
+  "layerName": "test_climate_with_legend_classified",
+  "classifications": [
+    {
+      "min": -9.6916666030884,
+      "max": 25,
+      "color": "#0000FF",
+      "label": "Cool"
+    },
+    {
+      "min": 25,
+      "max": 30,
+      "color": "#00FF00",
+      "label": "Moderate"
+    },
+    {
+      "min": 30,
+      "max": 35,
+      "color": "#FFFF00",
+      "label": "Warm"
+    },
+    {
+      "min": 35,
+      "max": 30.008333206177,
+      "color": "#FF0000",
+      "label": "Hot"
+    }
+  ],
+  "rasterStats": {
+    "min": -9.6916666030884,
+    "max": 30.008333206177,
+    "noData": -3.4028235e+38
+  },
+  "created": "2025-11-03T12:08:00.424Z",
+  "type": "classified_raster"
+}

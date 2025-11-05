@@ -1,0 +1,10 @@
+{
+  "regionName": "Phongsali",
+  "country": "Laos",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 177000, "density": 11.1, "urbanization": 18, "ageDistribution": {"youth": 45, "adult": 50, "elderly": 5}, "economicProfile": {"primarySector": 82, "secondarySector": 12, "tertiarySector": 6}, "insights": {"populationGrowth": "Slow 0.9% with extreme remoteness and ethnic subsistence.", "educationLevel": "Lowest 58% literacy due to ethnic diversity and isolation.", "employmentPattern": "Subsistence agriculture 70%, forestry 15%, small trade 10%, government 5%.", "housingPattern": "Traditional ethnic 88%, basic concrete 10%, temporary 2%."}},
+  "climate": {"insights": {"temperature": "Cool mountain (18°C-30°C), highest elevation in northern Laos.", "precipitation": "Very high 2,500mm with extreme isolation during monsoon.", "extremeEvents": "Complete monsoon isolation, landslides, ethnic village flooding."}, "trends": {"isolationRisk": "Extreme during wet season"}},
+  "disasters": {"riskProfile": {"isolation": "extreme", "subsistence_vulnerability": "very_high", "landslide": "high"}, "preparedness": {"reliefCapacity": "Very Low - Most remote province, minimal infrastructure"}},
+  "economicProfile": {"majorIndustries": ["Subsistence Agriculture", "Forestry"], "averageIncome": "$600 USD - lowest in Laos"}
+}

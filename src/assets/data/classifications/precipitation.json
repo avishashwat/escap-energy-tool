@@ -1,0 +1,13 @@
+{
+  "variable": "precipitation",
+  "unit": "mm",
+  "description": "Precipitation",
+  "ranges": [
+    { "min": 0, "max": 50, "color": "#ffffcc", "label": "Very Low" },
+    { "min": 50, "max": 100, "color": "#c7e9b4", "label": "Low" },
+    { "min": 100, "max": 200, "color": "#7fcdbb", "label": "Moderate" },
+    { "min": 200, "max": 400, "color": "#41b6c4", "label": "High" },
+    { "min": 400, "max": 800, "color": "#2c7fb8", "label": "Very High" },
+    { "min": 800, "max": 1500, "color": "#253494", "label": "Extremely High" }
+  ]
+}

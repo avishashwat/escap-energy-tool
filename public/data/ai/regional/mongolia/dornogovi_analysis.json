@@ -1,0 +1,48 @@
+{
+  "regionName": "Dornogovi",
+  "country": "Mongolia",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 68000,
+    "density": 0.6,
+    "urbanization": 38,
+    "ageDistribution": {"youth": 36, "adult": 57, "elderly": 7},
+    "economicProfile": {"primarySector": 58, "secondarySector": 28, "tertiarySector": 14},
+    "insights": {
+      "populationGrowth": "Growing at 0.7% due to mining development attracting workers despite harsh climate conditions.",
+      "educationLevel": "Good education with 78% literacy. Mining companies provide technical training programs.",
+      "employmentPattern": "Mining 35%, livestock herding 35%, services 15%, government 10%, agriculture 5%. Balanced mining-pastoral economy.",
+      "housingPattern": "Mining company housing 40%, traditional gers 35%, permanent houses 25%."
+    },
+    "confidence": "medium",
+    "sources": ["Dornogovi Administration", "Oyu Tolgoi Mine"],
+    "lastUpdated": "2024-09-28"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Gobi Desert climate, extreme winters (-32°C), scorching summers (38°C). One of harshest climates globally.",
+      "precipitation": "Minimal precipitation 100mm annually. True desert conditions with severe water scarcity.",
+      "seasonality": "Frigid winter, blazing summer, minimal transition seasons. Year-round water stress.",
+      "extremeEvents": "Constant drought, severe dust storms, extreme temperature events, flash floods during rare storms."
+    },
+    "trends": {"temperatureTrend": "+3.3°C over 50 years", "precipitationTrend": "-30% decrease", "droughtFrequency": "Permanent", "floodRisk": "Flash floods"},
+    "recentEvents": [
+      {"event": "Mining Water Crisis", "date": "2024-08", "impact": "Water supply shortage for Oyu Tolgoi operations", "severity": "high"},
+      {"event": "Extreme Heat", "date": "2024-07", "impact": "Record 42°C temperatures, equipment failure", "severity": "very_high"}
+    ],
+    "confidence": "high",
+    "sources": ["Oyu Tolgoi Environmental Monitoring", "Gobi Climate Research"],
+    "lastUpdated": "2024-09-20"
+  },
+  "disasters": {
+    "riskProfile": {"drought": "extreme", "heat_waves": "extreme", "mining_accidents": "high", "dust_storms": "extreme"},
+    "recentDisasters": [
+      {"type": "Mine Tailings Failure Risk", "date": "2024-07-15", "impact": "Environmental threat, evacuation planning", "economicLoss": "$50M USD"}
+    ],
+    "preparedness": {"earlyWarning": true, "reliefCapacity": "Medium - Mining infrastructure provides resources but extreme environment"},
+    "confidence": "high", 
+    "sources": ["Oyu Tolgoi Safety Division"],
+    "lastUpdated": "2024-09-15"
+  }
+}

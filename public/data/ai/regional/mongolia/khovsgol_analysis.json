@@ -1,0 +1,51 @@
+{
+  "regionName": "Khovsgol",
+  "country": "Mongolia", 
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 119000,
+    "density": 1.2,
+    "urbanization": 48,
+    "ageDistribution": {"youth": 33, "adult": 60, "elderly": 7},
+    "economicProfile": {"primarySector": 55, "secondarySector": 25, "tertiarySector": 20},
+    "insights": {
+      "populationGrowth": "Stable at 0.4% due to tourism development around Lake Khovsgol balancing outmigration.",
+      "educationLevel": "Good education 81% literacy. Tourism sector provides diverse training opportunities.",
+      "employmentPattern": "Livestock 40%, tourism 25%, agriculture 15%, services 12%, government 8%.",
+      "housingPattern": "Houses 45%, gers 35%, tourism accommodations 20%."
+    },
+    "confidence": "high",
+    "sources": ["Khovsgol Administration", "Mongolia Tourism Board"],
+    "lastUpdated": "2024-09-27"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Northern mountain climate, winters (-32°C), summers (25°C). Lake Khovsgol moderates temperatures.",
+      "precipitation": "Higher precipitation 320mm with lake effects. Best water resources in Mongolia.",
+      "seasonality": "Long winter, brief summer tourism season, spectacular autumn colors.",
+      "extremeEvents": "Moderate dzud, forest fires, lake level changes, tourism weather impacts."
+    },
+    "trends": {"temperatureTrend": "+2.1°C warming affecting lake ice", "precipitationTrend": "Stable", "lakeLevel": "Slight decline"},
+    "recentEvents": [
+      {"event": "Lake Ice Changes", "date": "2024-03", "impact": "Tourism season affected, ecosystem changes", "severity": "medium"}
+    ],
+    "confidence": "high",
+    "sources": ["Lake Khovsgol Research Center"],
+    "lastUpdated": "2024-09-20"
+  },
+  "disasters": {
+    "riskProfile": {"drought": "low", "forest_fire": "high", "tourism_accidents": "medium", "dzud": "medium"},
+    "recentDisasters": [
+      {"type": "Forest Fire", "date": "2024-08", "impact": "Tourism areas threatened, 1,500 hectares burned", "economicLoss": "$12M USD"}
+    ],
+    "preparedness": {"reliefCapacity": "Medium - Tourism infrastructure provides resources"},
+    "confidence": "high"
+  },
+  "economicProfile": {
+    "gdpContribution": "3.8% of national GDP",
+    "majorIndustries": ["Tourism", "Livestock", "Agriculture", "Forestry", "Fishing"],
+    "averageIncome": "$2,900 USD annually",
+    "businessEnvironment": "Growing eco-tourism sector around pristine Lake Khovsgol, sustainable development focus"
+  }
+}

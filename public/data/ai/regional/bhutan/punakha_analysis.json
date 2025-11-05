@@ -1,0 +1,51 @@
+{
+  "regionName": "Punakha",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 28000,
+    "density": 23.1,
+    "urbanization": 32,
+    "ageDistribution": {"youth": 30, "adult": 63, "elderly": 7},
+    "economicProfile": {"primarySector": 48, "secondarySector": 28, "tertiarySector": 24},
+    "insights": {
+      "populationGrowth": "Growing 1.4% due to cultural tourism and former capital status attracting development.",
+      "educationLevel": "High 87% literacy due to historical importance and tourism development.",
+      "employmentPattern": "Tourism 28%, agriculture 28%, government 20%, services 16%, crafts 8%.",
+      "housingPattern": "Traditional houses 55%, modern houses 35%, hotels/guesthouses 10%."
+    },
+    "confidence": "high",
+    "sources": ["Punakha Administration", "Tourism Council"],
+    "lastUpdated": "2024-09-29"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Warm temperate climate, mild winters (12°C), hot summers (30°C). River valley location.",
+      "precipitation": "High 1,600mm with monsoon flooding risks along Mo Chhu and Pho Chhu rivers.",
+      "seasonality": "Pleasant winter (former winter capital), hot pre-monsoon, wet monsoon, ideal autumn.",
+      "extremeEvents": "River flooding, glacial lake risks upstream, landslides, tourism weather impacts."
+    },
+    "trends": {"temperatureTrend": "+1.8°C warming", "riverFlow": "More variable", "glofRisk": "Increasing upstream"},
+    "recentEvents": [
+      {"event": "River Flooding", "date": "2024-08", "impact": "Historic dzong threatened, tourism evacuations", "severity": "high"}
+    ],
+    "confidence": "high",
+    "sources": ["Department of Hydrology", "Cultural Heritage Office"],
+    "lastUpdated": "2024-09-22"
+  },
+  "disasters": {
+    "riskProfile": {"flood": "very_high", "glof": "high", "cultural_heritage_risk": "high", "tourism_disruption": "medium"},
+    "recentDisasters": [
+      {"type": "Heritage Site Flooding", "date": "2024-08-15", "impact": "Punakha Dzong flooded, cultural treasures at risk", "economicLoss": "$12M USD"}
+    ],
+    "preparedness": {"reliefCapacity": "High - Tourism infrastructure and cultural importance ensure good resources"},
+    "confidence": "high"
+  },
+  "economicProfile": {
+    "gdpContribution": "5.8% of national GDP",
+    "majorIndustries": ["Cultural Tourism", "Agriculture", "Government Services", "Handicrafts", "Hospitality"],
+    "averageIncome": "$4,100 USD annually",
+    "businessEnvironment": "Major cultural tourism destination, former winter capital, heritage site management"
+  }
+}

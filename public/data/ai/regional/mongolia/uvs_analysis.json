@@ -1,0 +1,45 @@
+{
+  "regionName": "Uvs",
+  "country": "Mongolia",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 84000,
+    "density": 1.2,
+    "urbanization": 41,
+    "ageDistribution": {"youth": 36, "adult": 57, "elderly": 7},
+    "economicProfile": {"primarySector": 70, "secondarySector": 18, "tertiarySector": 12},
+    "insights": {
+      "populationGrowth": "Declining at -1.2% due to extreme climate and limited opportunities.",
+      "educationLevel": "Moderate 73% literacy. Remote location limits educational access.",
+      "employmentPattern": "Livestock 58%, agriculture 20%, government 12%, services 6%, mining 4%.",
+      "housingPattern": "Gers 58%, houses 27%, seasonal shelters 15%."
+    },
+    "confidence": "medium",
+    "sources": ["Uvs Administration"],
+    "lastUpdated": "2024-09-22"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Extreme continental with lake effects, winters (-38°C), summers (30°C). Uvs Lake creates microclimates.",
+      "precipitation": "Low 160mm annually. Lake effect provides some moisture but overall arid.",
+      "seasonality": "Harsh 6-month winter, brief summer growing season.",
+      "extremeEvents": "Severe dzud, extreme cold, dust storms, lake level fluctuations."
+    },
+    "trends": {"temperatureTrend": "+3.2°C warming", "precipitationTrend": "-22% decrease", "lakeLevel": "Declining"},
+    "recentEvents": [
+      {"event": "Lake Recession", "date": "2024-08", "impact": "Ecosystem stress, fishing industry affected", "severity": "high"}
+    ],
+    "confidence": "medium",
+    "sources": ["Uvs Lake Research Station"],
+    "lastUpdated": "2024-09-15"
+  },
+  "disasters": {
+    "riskProfile": {"drought": "extreme", "dzud": "extreme", "ecosystem_collapse": "high"},
+    "recentDisasters": [
+      {"type": "Extreme Dzud", "date": "2024-01", "impact": "250,000 livestock deaths", "economicLoss": "$40M USD"}
+    ],
+    "preparedness": {"reliefCapacity": "Very Low"},
+    "confidence": "medium"
+  }
+}

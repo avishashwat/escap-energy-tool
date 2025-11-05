@@ -1,0 +1,43 @@
+{
+  "regionName": "Sarpang",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 47000,
+    "density": 29.2,
+    "urbanization": 22,
+    "ageDistribution": {"youth": 39, "adult": 54, "elderly": 7},
+    "economicProfile": {"primarySector": 68, "secondarySector": 20, "tertiarySector": 12},
+    "insights": {
+      "populationGrowth": "Stable 0.8% with agricultural focus and moderate development.",
+      "educationLevel": "Moderate 77% literacy in rural agricultural setting.",
+      "employmentPattern": "Agriculture 58%, forestry 15%, small industry 12%, government 10%, services 5%.",
+      "housingPattern": "Traditional houses 78%, modern houses 18%, temporary 4%."
+    },
+    "confidence": "medium",
+    "sources": ["Sarpang Administration"],
+    "lastUpdated": "2024-09-24"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Subtropical, mild winters (14°C), hot summers (33°C). Diverse elevation zones.",
+      "precipitation": "High 2,400mm with severe monsoon impacts and flooding risks.",
+      "seasonality": "Mild winter, hot pre-monsoon, destructive monsoon, humid recovery period.",
+      "extremeEvents": "Severe flooding, landslides, crop destruction, infrastructure damage."
+    },
+    "trends": {"floodRisk": "Very high", "cropLoss": "Increasing", "infrastructureDamage": "High"},
+    "recentEvents": [
+      {"event": "Agricultural Flood", "date": "2024-08", "impact": "Major crop losses, rural livelihoods affected", "severity": "high"}
+    ],
+    "confidence": "medium"
+  },
+  "disasters": {
+    "riskProfile": {"flood": "very_high", "agricultural_loss": "high", "rural_vulnerability": "high"},
+    "recentDisasters": [
+      {"type": "Rural Flooding", "date": "2024-08-05", "impact": "Agricultural devastation, food security concerns", "economicLoss": "$15M USD"}
+    ],
+    "preparedness": {"reliefCapacity": "Low - Rural area with limited infrastructure"},
+    "confidence": "medium"
+  }
+}

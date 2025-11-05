@@ -1,0 +1,10 @@
+{
+  "regionName": "Champasak",
+  "country": "Laos",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 695000, "density": 44.1, "urbanization": 38, "ageDistribution": {"youth": 36, "adult": 59, "elderly": 5}, "economicProfile": {"primarySector": 52, "secondarySector": 28, "tertiarySector": 20}, "insights": {"populationGrowth": "Moderate 1.4% with cultural tourism and Mekong agriculture.", "educationLevel": "Good 78% literacy with UNESCO World Heritage site development.", "employmentPattern": "Agriculture 40%, tourism 25%, services 20%, industry 10%, government 5%.", "housingPattern": "Traditional 50%, modern 35%, tourism facilities 15%."}},
+  "climate": {"insights": {"temperature": "Tropical, hot dry season (26°C-37°C), warm wet monsoon.", "precipitation": "High 1,600mm with Mekong flooding cycles.", "extremeEvents": "Annual Mekong floods, droughts, UNESCO site weather risks."}, "trends": {"mekongFloods": "More unpredictable timing", "heritageRisk": "Increasing from extreme weather"}},
+  "disasters": {"riskProfile": {"flood": "very_high", "heritage_damage": "high", "tourism_disruption": "medium"}, "recentDisasters": [{"type": "Mekong Heritage Flooding", "date": "2024-09", "impact": "Wat Phou temple complex threatened, tourism evacuated", "economicLoss": "$30M USD"}], "preparedness": {"reliefCapacity": "Medium - Tourism infrastructure but heritage protection challenges"}},
+  "economicProfile": {"gdpContribution": "12.5% of national GDP", "majorIndustries": ["Cultural Tourism", "Agriculture", "Mekong Fisheries", "Handicrafts", "Services"], "averageIncome": "$1,500 USD", "businessEnvironment": "UNESCO World Heritage tourism, Mekong agriculture, cultural preservation economy"}
+}

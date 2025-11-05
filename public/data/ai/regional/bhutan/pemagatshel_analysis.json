@@ -1,0 +1,45 @@
+{
+  "regionName": "Pemagatshel",
+  "country": "Bhutan", 
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 24000,
+    "density": 23.5,
+    "urbanization": 18,
+    "ageDistribution": {"youth": 37, "adult": 56, "elderly": 7},
+    "economicProfile": {"primarySector": 72, "secondarySector": 16, "tertiarySector": 12},
+    "insights": {
+      "populationGrowth": "Slight decline -0.2% due to youth outmigration to urban areas.",
+      "educationLevel": "Moderate 79% literacy with traditional farming knowledge strong.",
+      "employmentPattern": "Agriculture 65%, government 18%, crafts 10%, services 5%, trade 2%.",
+      "housingPattern": "Traditional houses 82%, modern houses 15%, temporary 3%."
+    },
+    "confidence": "medium",
+    "sources": ["Pemagatshel Administration"],
+    "lastUpdated": "2024-09-25"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Subtropical climate, mild winters (10°C), hot summers (30°C). Lower elevation agriculture zone.",
+      "precipitation": "High 2,100mm with intense monsoons supporting rice cultivation.",
+      "seasonality": "Mild winter, hot pre-monsoon, heavy monsoon, pleasant post-monsoon.",
+      "extremeEvents": "Severe monsoon flooding, landslides, crop diseases, pest outbreaks."
+    },
+    "trends": {"temperatureTrend": "+1.6°C warming", "precipitationTrend": "More extreme events", "floodRisk": "High"},
+    "recentEvents": [
+      {"event": "Rice Field Flooding", "date": "2024-07", "impact": "Major crop losses, food security concerns", "severity": "high"}
+    ],
+    "confidence": "medium",
+    "sources": ["Agricultural Extension Center"],
+    "lastUpdated": "2024-09-20"
+  },
+  "disasters": {
+    "riskProfile": {"flood": "very_high", "landslide": "high", "crop_loss": "high", "food_security": "medium"},
+    "recentDisasters": [
+      {"type": "Agricultural Disaster", "date": "2024-07-20", "impact": "60% crop loss, rural livelihoods threatened", "economicLoss": "$5M USD"}
+    ],
+    "preparedness": {"reliefCapacity": "Low - Rural agricultural area with limited resources"},
+    "confidence": "medium"
+  }
+}

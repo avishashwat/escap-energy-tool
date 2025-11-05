@@ -1,0 +1,164 @@
+{
+  "regionName": "Ulaanbaatar",
+  "country": "Mongolia",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 1520000,
+    "density": 289,
+    "urbanization": 98,
+    "ageDistribution": {
+      "youth": 28,
+      "adult": 65,
+      "elderly": 7
+    },
+    "economicProfile": {
+      "primarySector": 3,
+      "secondarySector": 42,
+      "tertiarySector": 55
+    },
+    "insights": {
+      "populationGrowth": "Rapid growth from 0.8M in 2000 to 1.5M in 2024, driven by rural-urban migration due to mining boom and climate pressures on traditional herding.",
+      "educationLevel": "High education levels with 97% literacy, home to National University of Mongolia and over 100 higher education institutions.",
+      "employmentPattern": "Services dominate (45%), followed by manufacturing and mining support (35%). Youth unemployment at 18% remains challenging despite economic growth.",
+      "housingPattern": "Mix of Soviet-era apartments (60%) and traditional ger districts (35%). Housing shortage drives informal settlements and overcrowding in ger areas."
+    },
+    "confidence": "high",
+    "sources": [
+      "National Statistical Office Mongolia 2024",
+      "Ulaanbaatar City Administration Census",
+      "World Bank Mongolia Urban Development Report"
+    ],
+    "lastUpdated": "2024-10-20"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Continental climate with extreme temperature variations from -30°C in winter to +35°C in summer. Located at 1,350m elevation. Temperature has increased 2.6°C over past 50 years, higher than national average.",
+      "precipitation": "Low annual precipitation of 280mm, concentrated in summer months (June-August). Increasing aridity with 15% decrease in precipitation over past decades.",
+      "seasonality": "Four extreme seasons: harsh winter (November-March) with temperatures below -20°C, short spring (April-May) with dust storms, warm summer (June-August) with most rainfall, and brief autumn (September-October) with clear weather.",
+      "extremeEvents": "Severe air pollution during winter heating season, intense dust storms in spring, flash floods during summer thunderstorms, and extreme cold waves below -40°C."
+    },
+    "trends": {
+      "temperatureTrend": "+2.6°C increase over past 50 years",
+      "precipitationTrend": "15% decrease with higher variability",
+      "droughtFrequency": "Increasing drought stress, especially summer months",
+      "floodRisk": "Low overall, but flash flood risk during intense summer storms"
+    },
+    "recentEvents": [
+      {
+        "event": "Severe Air Pollution Episode",
+        "date": "2024-01",
+        "impact": "PM2.5 levels reached 500+ μg/m³, health emergency declared",
+        "severity": "high"
+      },
+      {
+        "event": "Dust Storm",
+        "date": "2024-04",
+        "impact": "Visibility reduced to 100m, flights cancelled, respiratory issues increased",
+        "severity": "medium"
+      },
+      {
+        "event": "Extreme Cold Wave",
+        "date": "2024-02",
+        "impact": "-42°C temperatures, energy crisis, increased mortality",
+        "severity": "high"
+      }
+    ],
+    "projections": {
+      "temperature": "Additional 3-4°C increase expected by 2050",
+      "precipitation": "Further 10-20% decrease in annual precipitation",
+      "extremes": "More frequent extreme cold events and severe air pollution episodes"
+    },
+    "confidence": "high",
+    "sources": [
+      "National Agency for Meteorology and Environmental Monitoring",
+      "Ulaanbaatar Air Quality Monitoring Network",
+      "Mongolia Climate Change Assessment 2023"
+    ],
+    "lastUpdated": "2024-09-28"
+  },
+  "disasters": {
+    "riskProfile": {
+      "drought": "high",
+      "flood": "low",
+      "storm": "medium", 
+      "earthquake": "medium",
+      "landslide": "low",
+      "fire": "medium",
+      "airPollution": "high",
+      "extremeCold": "high"
+    },
+    "recentDisasters": [
+      {
+        "type": "Air Pollution Crisis",
+        "date": "2024-01-15",
+        "impact": "1.5M people exposed to hazardous air quality, 200+ hospitalizations, school closures",
+        "economicLoss": "$12M USD",
+        "response": "Emergency health measures, temporary coal burning restrictions, public transport made free"
+      },
+      {
+        "type": "Dzud (Severe Winter)",
+        "date": "2023-12-01",
+        "impact": "Energy crisis, 15 cold-related deaths, livestock losses in peri-urban areas",
+        "economicLoss": "$8M USD", 
+        "response": "Emergency heating fuel distribution, warming centers opened, vulnerable population support"
+      },
+      {
+        "type": "Flash Flood",
+        "date": "2023-07-20",
+        "impact": "Ger district flooding, 5,000 affected, temporary displacement",
+        "economicLoss": "$3M USD",
+        "response": "Emergency drainage, temporary shelters, infrastructure repairs"
+      }
+    ],
+    "preparedness": {
+      "earlyWarning": true,
+      "evacuationPlans": false,
+      "reliefCapacity": "Medium - Capital city resources but overwhelmed by population density and seasonal extremes",
+      "infrastructure": {
+        "hospitals": 15,
+        "fireStations": 8,
+        "emergencyShelters": 25,
+        "evacuationRoutes": "Limited due to urban density and ger districts accessibility"
+      },
+      "training": "Emergency preparedness focused on winter survival, air pollution response, minimal flood/earthquake preparedness"
+    },
+    "vulnerabilities": {
+      "geographical": "Basin location traps air pollution, continental climate creates temperature extremes",
+      "infrastructure": "Soviet-era infrastructure aging, inadequate for population growth, poor drainage systems",
+      "social": "Informal ger settlements lack basic services, high population density, elderly vulnerable to extremes",
+      "economic": "Concentration of national economic activity, energy-intensive heating systems, coal dependence"
+    },
+    "adaptationMeasures": {
+      "structural": "Air pollution monitoring expansion, district heating improvements, flood drainage systems",
+      "nonStructural": "Air quality early warning systems, winter heating subsidies, building insulation programs",
+      "ecosystem": "Green belt development, urban tree planting, waste management improvements"
+    },
+    "confidence": "high",
+    "sources": [
+      "National Emergency Management Agency",
+      "Ulaanbaatar Emergency Management Department",
+      "WHO Mongolia Air Quality Assessment 2024"
+    ],
+    "lastUpdated": "2024-10-10"
+  },
+  "economicProfile": {
+    "gdpContribution": "55% of national GDP generated in Ulaanbaatar",
+    "majorIndustries": ["Mining Support Services", "Financial Services", "Manufacturing", "Government", "Trade & Logistics"],
+    "employmentRate": 89.2,
+    "averageIncome": "$4,800 USD annually", 
+    "businessEnvironment": "Improving with digitalization initiatives, but challenged by regulatory complexity and infrastructure limitations"
+  },
+  "infrastructure": {
+    "transportation": "Connected by Trans-Mongolian Railway, Chinggis Khaan International Airport, extensive road network but traffic congestion issues",
+    "utilities": "95% electricity coverage, 85% clean water access, 70% sewerage connection (lower in ger districts), mobile coverage 98%",
+    "healthcare": "National Center for Maternal and Child Health, 15 major hospitals, but air pollution strains respiratory health services",
+    "education": "National University of Mongolia, 120+ schools, technical colleges, but overcrowding in popular districts"
+  },
+  "environmentalChallenges": {
+    "airPollution": "Worst in world during winter, PM2.5 regularly exceeds WHO guidelines by 10-15x",
+    "waterScarcity": "Groundwater depletion from population growth, quality issues from industrial contamination",
+    "wasteManagement": "Inadequate solid waste collection in ger districts, limited recycling facilities",
+    "soilContamination": "Industrial pollution, informal mining activities around city periphery"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "country": "Mongolia",
+  "lastUpdated": "2024-11-04",
+  "aiGenerated": true,
+  "questions": [
+    {
+      "question": "What is Mongolia's population distribution and demographic characteristics?",
+      "answer": "Mongolia has a population of 3.4 million people spread across 1.56 million km², making it the world's least densely populated country at 2 people per km². About 68% live in urban areas, with Ulaanbaatar housing 46% of the total population. The demographic is relatively young with 32% under 25 years. The traditional nomadic lifestyle continues for 25-30% of the population, who practice seasonal migration with livestock. Population growth is slow at 1.1% annually, with significant internal migration from rural to urban areas driven by mining opportunities and climate pressures.",
+      "category": "demographics",
+      "confidence": "high",
+      "sources": ["National Statistical Office Mongolia", "World Bank Mongolia Data", "Mongolia Population Census 2020"]
+    },
+    {
+      "question": "How is Mongolia's energy sector structured and what are the main challenges?",
+      "answer": "Mongolia's energy sector is dominated by coal-fired thermal power plants providing 85% of electricity generation. The country has significant renewable potential with 2,600+ hours of annual sunshine and strong wind resources in the Gobi region. Current renewable capacity is only 140 MW (7% of total), but targets aim for 30% by 2030. Major challenges include aging Soviet-era infrastructure, seasonal heating demands using coal and traditional fuels, and grid instability. The mining sector consumes 60% of electricity. International grid connections with Russia and China provide import/export opportunities. Off-grid rural areas rely on solar home systems and small wind turbines.",
+      "category": "energy",
+      "confidence": "high",
+      "sources": ["Ministry of Energy Mongolia", "National Renewable Energy Program", "Asian Development Bank Energy Assessment"]
+    },
+    {
+      "question": "What climate impacts is Mongolia experiencing and how severe are they?",
+      "answer": "Mongolia faces severe climate impacts with temperatures rising 2.1°C since 1940, double the global average. Dzud (severe winter conditions) frequency has increased, with extreme events in 2009-2010 and 2015-2016 killing millions of livestock. Precipitation patterns are shifting with 7% decrease overall but increased variability. Desertification affects 78% of territory, advancing northward annually. Permafrost thaw in northern regions disrupts ecosystems and infrastructure. Extreme weather includes harsh winters (-40°C), intense summer heat (45°C), and dust storms. Traditional nomadic practices are under pressure from unpredictable weather patterns affecting pasture quality and water availability.",
+      "category": "climate",
+      "confidence": "high",
+      "sources": ["Mongolia Climate Assessment 2023", "National Agency for Meteorology", "IPCC AR6 Asia Chapter"]
+    },
+    {
+      "question": "What are Mongolia's main geographical regions and their economic activities?",
+      "answer": "Mongolia consists of four main regions: Central (including Ulaanbaatar) with government, services, and light industry; Eastern with traditional herding and some agriculture; Western with Kazakh minority, livestock, and mining; and Southern Gobi with major mining operations including Oyu Tolgoi copper-gold mine. The Altai Mountains in the west support glacier-fed rivers, while the Gobi Desert covers southern regions. Economic activities vary: mining dominates in the south (copper, gold, coal), herding is prevalent in grasslands, agriculture is limited to northern valleys, and services concentrate in Ulaanbaatar. Transport corridors connect mining areas to Chinese and Russian borders.",
+      "category": "geography",
+      "confidence": "high",
+      "sources": ["Mongolia Geographic Survey", "Ministry of Mining", "Regional Development Strategy 2024"]
+    },
+    {
+      "question": "How does mining impact Mongolia's economy and environment?",
+      "answer": "Mining contributes 85% of export earnings and 25% of GDP, making Mongolia heavily dependent on commodity prices. Major minerals include copper (Oyu Tolgoi), coal (Tavan Tolgoi), and gold. The sector employs 60,000 directly and 200,000 indirectly. Environmental impacts include water consumption in arid regions, air pollution from coal mining, and habitat fragmentation affecting wildlife migration. Water resources face pressure with mining consuming 30% of available supplies. The government promotes responsible mining through the Sustainable Mining Program, requiring environmental bonds and community development contributions. Revenue volatility from commodity cycles creates economic instability, prompting diversification efforts.",
+      "category": "demographics",
+      "confidence": "medium",
+      "sources": ["Ministry of Mining and Heavy Industry", "World Bank Mongolia Mining Study", "Environmental Impact Assessment Reports"]
+    },
+    {
+      "question": "What renewable energy projects are being developed in Mongolia?",
+      "answer": "Mongolia has ambitious renewable energy plans targeting 2,000 MW by 2025. Major projects include: Salkhit Wind Farm (55 MW operational), Tsogttsetsii Wind Farm (100 MW under development), and multiple solar installations in the Gobi region totaling 300 MW planned capacity. The Asian Super Grid initiative could make Mongolia a renewable energy exporter to Northeast Asia. Challenges include grid integration, seasonal variability, and financing. Rural areas benefit from 100,000+ solar home systems. The Renewable Energy Law 2019 provides feed-in tariffs and tax incentives. International partnerships with Japan, South Korea, and China support technology transfer and investment.",
+      "category": "energy",
+      "confidence": "medium",
+      "sources": ["Sustainable Energy Authority", "Asian Development Bank", "Mongolia Renewable Energy Association"]
+    }
+  ]
+}

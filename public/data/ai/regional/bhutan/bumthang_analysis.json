@@ -1,0 +1,155 @@
+{
+  "regionName": "Bumthang",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 18000,
+    "density": 6.4,
+    "urbanization": 25,
+    "ageDistribution": {
+      "youth": 28,
+      "adult": 65,
+      "elderly": 7
+    },
+    "economicProfile": {
+      "primarySector": 55,
+      "secondarySector": 25,
+      "tertiarySector": 20
+    },
+    "insights": {
+      "populationGrowth": "Stable at 0.8% annually. Cultural and spiritual significance attracts some tourism employment while maintaining traditional lifestyle.",
+      "educationLevel": "Good education with 85% literacy. Traditional Buddhist education combined with modern schooling.",
+      "employmentPattern": "Agriculture 45%, tourism 20%, traditional crafts 15%, government 12%, services 8%. Cultural tourism growing sector.",
+      "housingPattern": "Traditional Bhutanese houses 70%, modern houses 25%, guesthouses/hotels 5%."
+    },
+    "confidence": "high",
+    "sources": [
+      "Bumthang Dzongkhag Administration",
+      "Bhutan National Statistics Bureau",
+      "Tourism Council of Bhutan"
+    ],
+    "lastUpdated": "2024-09-28"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Temperate climate with cold winters (5°C) and mild summers (20°C). High altitude (2,600m-4,500m) creates cool conditions year-round.",
+      "precipitation": "Annual precipitation 1,200mm with monsoon concentration (June-September). Good water resources from high elevation catchments.",
+      "seasonality": "Cool dry winter (December-February), pre-monsoon spring (March-May), wet monsoon summer (June-September), clear autumn (October-November).",
+      "extremeEvents": "Occasional late snowfall affecting crops, monsoon flooding in valleys, landslides on steep slopes, drought during failed monsoons."
+    },
+    "trends": {
+      "temperatureTrend": "+1.8°C increase over past 50 years, affecting high-altitude agriculture",
+      "precipitationTrend": "Monsoon timing becoming more erratic, -8% decrease in winter precipitation",
+      "droughtFrequency": "Occasional drought stress during weak monsoons",
+      "floodRisk": "Medium risk during intense monsoon periods, flash flooding in valleys"
+    },
+    "recentEvents": [
+      {
+        "event": "Late Spring Snow",
+        "date": "2024-04",
+        "impact": "Apple and potato crops damaged, tourism activities delayed",
+        "severity": "medium"
+      },
+      {
+        "event": "Monsoon Flooding",
+        "date": "2024-07",
+        "impact": "Valley roads blocked, some agricultural fields flooded",
+        "severity": "medium"
+      },
+      {
+        "event": "Autumn Drought",
+        "date": "2024-10",
+        "impact": "Water sources stressed, late crop harvest affected",
+        "severity": "low"
+      }
+    ],
+    "projections": {
+      "temperature": "Additional 1.5-2.5°C increase by 2050, affecting high-altitude ecosystems",
+      "precipitation": "More erratic monsoons, potential decrease in winter snowfall",
+      "extremes": "Increased risk of extreme weather events, shifting agricultural seasons"
+    },
+    "confidence": "medium",
+    "sources": [
+      "Bhutan Department of Hydro-Meteorological Services",
+      "Bumthang Weather Station",
+      "National Environment Commission"
+    ],
+    "lastUpdated": "2024-09-20"
+  },
+  "disasters": {
+    "riskProfile": {
+      "drought": "medium",
+      "flood": "medium", 
+      "landslide": "high",
+      "earthquake": "medium",
+      "fire": "low",
+      "glof": "medium",
+      "agricultural_pest": "medium"
+    },
+    "recentDisasters": [
+      {
+        "type": "Landslide",
+        "date": "2024-08-15",
+        "impact": "Road to Jakar blocked for 3 days, 15 families evacuated, agricultural terraces damaged",
+        "economicLoss": "$2M USD",
+        "response": "Road clearance, temporary shelter, slope stabilization work"
+      },
+      {
+        "type": "Flash Flooding",
+        "date": "2024-07-22",
+        "impact": "Valley farmland flooded, traditional bridges damaged, tourist accommodations affected",
+        "economicLoss": "$1.5M USD",
+        "response": "Flood cleanup, bridge repairs, farmer compensation, tourism sector support"
+      }
+    ],
+    "preparedness": {
+      "earlyWarning": true,
+      "evacuationPlans": true,
+      "reliefCapacity": "Medium - Remote mountain location but good community organization and government support",
+      "infrastructure": {
+        "hospitals": 1,
+        "fireStations": 1,
+        "emergencyShelters": 8,
+        "evacuationRoutes": "Limited by mountain geography, helicopter access for emergencies"
+      },
+      "training": "Community disaster preparedness, traditional coping mechanisms, Buddhist community mutual support"
+    },
+    "vulnerabilities": {
+      "geographical": "High-altitude mountain location with steep terrain, prone to landslides and weather extremes",
+      "infrastructure": "Limited road access, vulnerable to weather-related disruptions",
+      "social": "Traditional agricultural lifestyle vulnerable to climate change, aging population in rural areas",
+      "economic": "Tourism and agriculture dependent on favorable weather conditions"
+    },
+    "adaptationMeasures": {
+      "structural": "Slope stabilization, improved drainage, weather-resistant agricultural infrastructure",
+      "nonStructural": "Early warning systems, crop diversification, tourism emergency protocols",
+      "ecosystem": "Forest conservation, watershed management, sustainable agriculture practices"
+    },
+    "confidence": "medium",
+    "sources": [
+      "Department of Disaster Management",
+      "Bumthang Dzongkhag Disaster Committee",
+      "Bhutan Climate Resilience Study 2024"
+    ],
+    "lastUpdated": "2024-09-15"
+  },
+  "economicProfile": {
+    "gdpContribution": "2.1% of national GDP, cultural tourism and agriculture focus",
+    "majorIndustries": ["Agriculture", "Cultural Tourism", "Traditional Crafts", "Dairy Production", "Forestry"],
+    "employmentRate": 87.5,
+    "averageIncome": "$3,800 USD annually",
+    "businessEnvironment": "Cultural heritage tourism center, traditional agriculture, handicraft production, Buddhist pilgrimage destination"
+  },
+  "infrastructure": {
+    "transportation": "Mountain roads connecting to Thimphu (200km), small airstrip for emergencies, traditional footpaths",
+    "utilities": "85% electricity coverage (hydropower), 75% clean water access, basic sewerage in town centers, mobile coverage 70%",
+    "healthcare": "Regional hospital in Jakar, basic health units in villages, traditional medicine practices",
+    "education": "Dzongkhag schools including traditional Buddhist education, 12 primary schools, distance learning programs"
+  },
+  "culturalHeritage": {
+    "ethnic": "Predominantly Ngalop (western Bhutanese) with strong Buddhist cultural traditions",
+    "traditions": "Spiritual center of Bhutan, ancient monasteries, traditional textiles, Buddhist festivals, sacred sites",
+    "festivals": "Jakar Tsechu (major Buddhist festival), Tharpaling Thangka festival, traditional harvest celebrations"
+  }
+}

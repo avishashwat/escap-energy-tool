@@ -1,0 +1,42 @@
+{
+  "layerName": "bhutan_climate_Precipitation_SSP1_2021-2040_classified_classified",
+  "classifications": [
+    {
+      "min": 316.84512329102,
+      "max": 1258.12,
+      "color": "#0571b0",
+      "label": "316.845123 - 1258.12"
+    },
+    {
+      "min": 1258.12,
+      "max": 2199.39,
+      "color": "#92c5de",
+      "label": "1258.12 - 2199.39"
+    },
+    {
+      "min": 2199.39,
+      "max": 3140.67,
+      "color": "#f7f7f7",
+      "label": "2199.39 - 3140.67"
+    },
+    {
+      "min": 3140.67,
+      "max": 4081.94,
+      "color": "#f4a582",
+      "label": "3140.67 - 4081.94"
+    },
+    {
+      "min": 4081.94,
+      "max": 5023.212890625,
+      "color": "#ca0020",
+      "label": "4081.94 - 5023.212891"
+    }
+  ],
+  "rasterStats": {
+    "min": 316.84512329102,
+    "max": 5023.212890625,
+    "noData": -3.4028235e+38
+  },
+  "projection": "EPSG:4326",
+  "timestamp": "2025-10-06T08:13:34.091Z"
+}

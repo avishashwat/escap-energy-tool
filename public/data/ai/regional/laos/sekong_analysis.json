@@ -1,0 +1,10 @@
+{
+  "regionName": "Sekong",
+  "country": "Laos",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 113000, "density": 15.2, "urbanization": 20, "ageDistribution": {"youth": 46, "adult": 49, "elderly": 5}, "economicProfile": {"primarySector": 78, "secondarySector": 15, "tertiarySector": 7}},
+  "climate": {"insights": {"precipitation": "2,400mm", "extremeEvents": "Flash floods, ethnic village isolation"}},
+  "disasters": {"riskProfile": {"flash_flood": "very_high", "isolation": "high"}},
+  "economicProfile": {"majorIndustries": ["Subsistence Agriculture", "Forestry"], "averageIncome": "$850 USD"}
+}

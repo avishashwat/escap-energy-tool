@@ -1,0 +1,45 @@
+{
+  "regionName": "Dagana",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 25000,
+    "density": 17.8,
+    "urbanization": 22,
+    "ageDistribution": {"youth": 35, "adult": 58, "elderly": 7},
+    "economicProfile": {"primarySector": 68, "secondarySector": 18, "tertiarySector": 14},
+    "insights": {
+      "populationGrowth": "Slow growth 0.6% with limited economic opportunities driving youth migration to urban areas.",
+      "educationLevel": "Moderate 78% literacy. Rural location limits access to higher education.",
+      "employmentPattern": "Agriculture 58%, forestry 15%, small industry 12%, government 10%, services 5%.",
+      "housingPattern": "Traditional houses 75%, modern houses 20%, temporary shelters 5%."
+    },
+    "confidence": "medium",
+    "sources": ["Dagana Administration"],
+    "lastUpdated": "2024-09-26"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Subtropical climate, mild winters (12°C), hot summers (32°C). Lower elevation creates warmer conditions.",
+      "precipitation": "High precipitation 2,200mm with intense monsoons supporting agriculture and forests.",
+      "seasonality": "Mild winter, hot pre-monsoon, heavy monsoon, pleasant post-monsoon.",
+      "extremeEvents": "Monsoon flooding, landslides, occasional droughts, pest outbreaks."
+    },
+    "trends": {"temperatureTrend": "+1.7°C warming", "precipitationTrend": "Variable monsoon timing", "floodRisk": "High during monsoon"},
+    "recentEvents": [
+      {"event": "Agricultural Flood", "date": "2024-08", "impact": "Rice paddies flooded, crop losses", "severity": "medium"}
+    ],
+    "confidence": "medium",
+    "sources": ["Agricultural Extension Office"],
+    "lastUpdated": "2024-09-18"
+  },
+  "disasters": {
+    "riskProfile": {"flood": "high", "landslide": "high", "drought": "medium", "pest_outbreak": "medium"},
+    "recentDisasters": [
+      {"type": "Monsoon Landslide", "date": "2024-07-15", "impact": "Village access cut off, evacuations needed", "economicLoss": "$3M USD"}
+    ],
+    "preparedness": {"reliefCapacity": "Low - Rural location with limited infrastructure"},
+    "confidence": "medium"
+  }
+}

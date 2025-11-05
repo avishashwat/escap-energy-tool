@@ -1,0 +1,58 @@
+[
+  {
+    "regionName": "Salavan",
+    "country": "Laos",
+    "demographics": {"population": 396000, "urbanization": 25, "economicProfile": {"primarySector": 75, "secondarySector": 15, "tertiarySector": 10}},
+    "climate": {"insights": {"precipitation": "2,100mm with severe flooding", "extremeEvents": "Annual Mekong tributary floods"}},
+    "disasters": {"riskProfile": {"flood": "very_high", "agricultural_loss": "high"}},
+    "economicProfile": {"majorIndustries": ["Agriculture", "Forestry"], "averageIncome": "$1,000 USD"}
+  },
+  {
+    "regionName": "Savannakhet", 
+    "country": "Laos",
+    "demographics": {"population": 969000, "urbanization": 48, "economicProfile": {"primarySector": 45, "secondarySector": 35, "tertiarySector": 20}},
+    "climate": {"insights": {"precipitation": "1,400mm", "extremeEvents": "Mekong flooding, droughts"}},
+    "disasters": {"riskProfile": {"flood": "high", "economic_disruption": "medium"}},
+    "economicProfile": {"gdpContribution": "16.2% - second largest", "majorIndustries": ["Agriculture", "Manufacturing", "Trade"], "averageIncome": "$1,600 USD"}
+  },
+  {
+    "regionName": "Sekong",
+    "country": "Laos", 
+    "demographics": {"population": 113000, "urbanization": 20, "economicProfile": {"primarySector": 78, "secondarySector": 15, "tertiarySector": 7}},
+    "climate": {"insights": {"precipitation": "2,400mm", "extremeEvents": "Flash floods, ethnic village isolation"}},
+    "disasters": {"riskProfile": {"flash_flood": "very_high", "isolation": "high"}},
+    "economicProfile": {"majorIndustries": ["Subsistence Agriculture", "Forestry"], "averageIncome": "$850 USD"}
+  },
+  {
+    "regionName": "Vientiane Province",
+    "country": "Laos",
+    "demographics": {"population": 419000, "urbanization": 55, "economicProfile": {"primarySector": 35, "secondarySector": 40, "tertiarySector": 25}},
+    "climate": {"insights": {"precipitation": "1,600mm", "extremeEvents": "Mekong flooding around capital"}},
+    "disasters": {"riskProfile": {"flood": "high", "infrastructure_risk": "medium"}},
+    "economicProfile": {"gdpContribution": "12.8%", "majorIndustries": ["Manufacturing", "Agriculture", "Services"], "averageIncome": "$2,200 USD"}
+  },
+  {
+    "regionName": "Xiangkhouang",
+    "country": "Laos",
+    "demographics": {"population": 244000, "urbanization": 32, "economicProfile": {"primarySector": 65, "secondarySector": 22, "tertiarySector": 13}},
+    "climate": {"insights": {"temperature": "Cool plateau (18°C-28°C)", "precipitation": "1,800mm"}},
+    "disasters": {"riskProfile": {"uxo_risk": "extreme", "landslide": "medium"}},
+    "economicProfile": {"majorIndustries": ["Agriculture", "Tourism (Plain of Jars)", "Mining"], "averageIncome": "$1,100 USD"}
+  },
+  {
+    "regionName": "Xaisomboun",
+    "country": "Laos",
+    "demographics": {"population": 85000, "urbanization": 15, "economicProfile": {"primarySector": 80, "secondarySector": 12, "tertiarySector": 8}},
+    "climate": {"insights": {"temperature": "Mountain (20°C-32°C)", "precipitation": "2,200mm"}},
+    "disasters": {"riskProfile": {"isolation": "very_high", "flash_flood": "high"}},
+    "economicProfile": {"majorIndustries": ["Subsistence Agriculture", "Forestry"], "averageIncome": "$750 USD"}
+  },
+  {
+    "regionName": "Xainyabuli", 
+    "country": "Laos",
+    "demographics": {"population": 382000, "urbanization": 35, "economicProfile": {"primarySector": 58, "secondarySector": 28, "tertiarySector": 14}},
+    "climate": {"insights": {"precipitation": "1,500mm", "extremeEvents": "Mekong flooding, landslides"}},
+    "disasters": {"riskProfile": {"flood": "high", "landslide": "medium", "dam_risk": "medium"}},
+    "economicProfile": {"majorIndustries": ["Agriculture", "Hydropower", "Forestry"], "averageIncome": "$1,300 USD"}
+  }
+]

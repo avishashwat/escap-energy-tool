@@ -1,0 +1,51 @@
+{
+  "regionName": "Mongar",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 45000,
+    "density": 27.6,
+    "urbanization": 28,
+    "ageDistribution": {"youth": 34, "adult": 59, "elderly": 7},
+    "economicProfile": {"primarySector": 62, "secondarySector": 22, "tertiarySector": 16},
+    "insights": {
+      "populationGrowth": "Moderate growth 1.0% with regional administrative center providing employment opportunities.",
+      "educationLevel": "Good 83% literacy as regional education hub for eastern Bhutan.",
+      "employmentPattern": "Agriculture 52%, government 22%, services 15%, small industry 8%, crafts 3%.",
+      "housingPattern": "Traditional houses 60%, modern houses 35%, government housing 5%."
+    },
+    "confidence": "high",
+    "sources": ["Mongar Administration", "Eastern Regional Office"],
+    "lastUpdated": "2024-09-28"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Temperate to subtropical, mild winters (8°C), warm summers (26°C). Varied elevation zones.",
+      "precipitation": "High precipitation 1,800mm supporting diverse agriculture and forests.",
+      "seasonality": "Mild winter, hot pre-monsoon, intense monsoon, pleasant post-monsoon.",
+      "extremeEvents": "Monsoon flooding, landslides, hailstorms, crop pests."
+    },
+    "trends": {"temperatureTrend": "+1.7°C warming", "precipitationTrend": "More intense events", "floodRisk": "Increasing"},
+    "recentEvents": [
+      {"event": "Regional Flooding", "date": "2024-08", "impact": "Town center flooded, administrative offices affected", "severity": "high"}
+    ],
+    "confidence": "high",
+    "sources": ["Regional Meteorological Office"],
+    "lastUpdated": "2024-09-25"
+  },
+  "disasters": {
+    "riskProfile": {"flood": "high", "landslide": "high", "infrastructure_damage": "medium"},
+    "recentDisasters": [
+      {"type": "Urban Flooding", "date": "2024-08-12", "impact": "Administrative center flooded, services disrupted", "economicLoss": "$8M USD"}
+    ],
+    "preparedness": {"reliefCapacity": "Medium - Regional administrative center with better resources"},
+    "confidence": "high"
+  },
+  "economicProfile": {
+    "gdpContribution": "4.2% of national GDP",
+    "majorIndustries": ["Agriculture", "Government Services", "Education", "Small Industry", "Trade"],
+    "averageIncome": "$3,200 USD annually",
+    "businessEnvironment": "Regional administrative and educational hub for eastern Bhutan"
+  }
+}

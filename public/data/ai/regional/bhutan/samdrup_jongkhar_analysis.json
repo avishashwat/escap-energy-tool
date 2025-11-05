@@ -1,0 +1,51 @@
+{
+  "regionName": "Samdrup Jongkhar",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 41000,
+    "density": 22.1,
+    "urbanization": 38,
+    "ageDistribution": {"youth": 35, "adult": 58, "elderly": 7},
+    "economicProfile": {"primarySector": 42, "secondarySector": 35, "tertiarySector": 23},
+    "insights": {
+      "populationGrowth": "Rapid growth 2.3% driven by border trade with India and industrial development.",
+      "educationLevel": "Good 85% literacy due to cross-border commerce and development.",
+      "employmentPattern": "Border trade 35%, industry 25%, agriculture 25%, services 12%, government 3%.",
+      "housingPattern": "Modern houses 45%, traditional houses 35%, commercial buildings 20%."
+    },
+    "confidence": "high",
+    "sources": ["Samdrup Jongkhar Administration", "India-Bhutan Trade Council"],
+    "lastUpdated": "2024-09-30"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Subtropical climate, warm winters (15°C), hot summers (35°C). Border plains location.",
+      "precipitation": "Very high 2,800mm with intense monsoons and flooding risks.",
+      "seasonality": "Warm winter, hot pre-monsoon, intense monsoon flooding, humid post-monsoon.",
+      "extremeEvents": "Severe monsoon flooding, waterlogging, infrastructure damage, cross-border impacts."
+    },
+    "trends": {"temperatureTrend": "+1.5°C warming", "precipitationTrend": "More intense flooding", "floodRisk": "Very high"},
+    "recentEvents": [
+      {"event": "Cross-border Flooding", "date": "2024-08", "impact": "Trade routes flooded, economic disruption", "severity": "very_high"}
+    ],
+    "confidence": "high",
+    "sources": ["Border Weather Station", "Trade Facilitation Office"],
+    "lastUpdated": "2024-09-25"
+  },
+  "disasters": {
+    "riskProfile": {"flood": "extreme", "infrastructure_damage": "high", "economic_disruption": "high", "cross_border_impacts": "high"},
+    "recentDisasters": [
+      {"type": "Monsoon Mega-Flood", "date": "2024-08-10", "impact": "Border trade halted, major infrastructure damage", "economicLoss": "$35M USD"}
+    ],
+    "preparedness": {"reliefCapacity": "Medium - Border infrastructure but extreme flood risks"},
+    "confidence": "high"
+  },
+  "economicProfile": {
+    "gdpContribution": "8.2% of national GDP",
+    "majorIndustries": ["Cross-border Trade", "Manufacturing", "Agriculture", "Logistics", "Services"],
+    "averageIncome": "$3,900 USD annually",
+    "businessEnvironment": "Major India-Bhutan trade gateway, industrial development, flood risk management critical"
+  }
+}

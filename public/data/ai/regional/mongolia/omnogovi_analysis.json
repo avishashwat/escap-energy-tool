@@ -1,0 +1,56 @@
+{
+  "regionName": "Omnogovi",
+  "country": "Mongolia",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 63000,
+    "density": 0.4,
+    "urbanization": 35,
+    "ageDistribution": {"youth": 38, "adult": 55, "elderly": 7},
+    "economicProfile": {"primarySector": 45, "secondarySector": 40, "tertiarySector": 15},
+    "insights": {
+      "populationGrowth": "Rapid growth at 2.8% driven by major mining developments including Tavan Tolgoi coal mine.",
+      "educationLevel": "Improving education with 76% literacy due to mining company investments in education infrastructure.",
+      "employmentPattern": "Coal mining 50%, livestock herding 25%, services 15%, construction 7%, government 3%. Mining-dominated economy.",
+      "housingPattern": "Mining worker housing 50%, traditional gers 30%, permanent houses 20%."
+    },
+    "confidence": "high",
+    "sources": ["Omnogovi Administration", "Tavan Tolgoi JSC", "Energy Resources LLC"],
+    "lastUpdated": "2024-09-30"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "True Gobi Desert climate with extreme temperature range, winters (-30°C), summers (40°C+). Harshest conditions in Mongolia.",
+      "precipitation": "Extremely low precipitation 80mm annually. Desert conditions with critical water scarcity for all activities.",
+      "seasonality": "Extreme winter cold, extreme summer heat with minimal precipitation. No favorable seasons for traditional activities.",
+      "extremeEvents": "Perpetual drought, severe sandstorms, record-breaking temperatures, rare destructive flash floods."
+    },
+    "trends": {"temperatureTrend": "+3.5°C over 50 years - highest in Mongolia", "precipitationTrend": "-35% decrease", "droughtFrequency": "Continuous", "floodRisk": "Rare but severe"},
+    "recentEvents": [
+      {"event": "Record Heat Wave", "date": "2024-07", "impact": "45°C temperatures, mining equipment failures, health emergencies", "severity": "extreme"},
+      {"event": "Massive Sandstorm", "date": "2024-05", "impact": "Mining operations shutdown for 5 days, respiratory crisis", "severity": "very_high"}
+    ],
+    "confidence": "high",
+    "sources": ["Gobi Desert Climate Observatory", "Mining Environmental Monitoring"],
+    "lastUpdated": "2024-09-25"
+  },
+  "disasters": {
+    "riskProfile": {"drought": "extreme", "heat_waves": "extreme", "mining_accidents": "very_high", "sandstorms": "extreme", "equipment_failure": "high"},
+    "recentDisasters": [
+      {"type": "Mining Equipment Fire", "date": "2024-08-20", "impact": "Coal conveyor fire, production halt, air pollution", "economicLoss": "$80M USD"},
+      {"type": "Water Crisis", "date": "2024-06-01", "impact": "Critical water shortage for mining operations and communities", "economicLoss": "$25M USD"}
+    ],
+    "preparedness": {"earlyWarning": true, "reliefCapacity": "High - Major mining operations provide substantial emergency resources"},
+    "confidence": "high",
+    "sources": ["Tavan Tolgoi Emergency Response", "Mongolia Mining Safety Authority"],
+    "lastUpdated": "2024-09-18"
+  },
+  "economicProfile": {
+    "gdpContribution": "15.2% of national GDP - highest due to coal exports",
+    "majorIndustries": ["Coal Mining", "Copper Mining", "Livestock", "Transportation", "Construction"],
+    "employmentRate": 91.5,
+    "averageIncome": "$6,800 USD annually",
+    "businessEnvironment": "Major mining hub with Tavan Tolgoi coal mine, critical for national economy, extreme environmental challenges"
+  }
+}

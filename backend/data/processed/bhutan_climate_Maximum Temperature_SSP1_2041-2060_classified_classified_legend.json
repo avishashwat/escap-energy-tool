@@ -1,0 +1,42 @@
+{
+  "layerName": "bhutan_climate_Maximum Temperature_SSP1_2041-2060_classified_classified",
+  "classifications": [
+    {
+      "min": -7.8021283149719,
+      "max": 5.95,
+      "color": "#bfd2ff",
+      "label": "<= 5.95"
+    },
+    {
+      "min": 5.95,
+      "max": 11.76,
+      "color": "#ffffbf",
+      "label": "5.95 - 11.76"
+    },
+    {
+      "min": 11.76,
+      "max": 16.25,
+      "color": "#ffd380",
+      "label": "11.76 - 16.25"
+    },
+    {
+      "min": 16.25,
+      "max": 20.51,
+      "color": "#ffaa00",
+      "label": "16.25 - 20.51"
+    },
+    {
+      "min": 20.51,
+      "max": 31.468982696533,
+      "color": "#e60000",
+      "label": "> 20.51"
+    }
+  ],
+  "rasterStats": {
+    "min": -7.8021283149719,
+    "max": 31.468982696533,
+    "noData": -3.402823e+38
+  },
+  "created": "2025-11-03T18:05:11.175Z",
+  "type": "classified_raster"
+}

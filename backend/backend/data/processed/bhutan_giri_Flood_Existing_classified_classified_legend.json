@@ -1,0 +1,42 @@
+{
+  "layerName": "bhutan_giri_Flood_Existing_classified_classified",
+  "classifications": [
+    {
+      "min": 1,
+      "max": 1528,
+      "color": "#0571b0",
+      "label": "0 - 1528"
+    },
+    {
+      "min": 1528,
+      "max": 3056,
+      "color": "#92c5de",
+      "label": "1528 - 3056"
+    },
+    {
+      "min": 3056,
+      "max": 4584,
+      "color": "#f7f7f7",
+      "label": "3056 - 4584"
+    },
+    {
+      "min": 4584,
+      "max": 6112,
+      "color": "#f4a582",
+      "label": "4584 - 6112"
+    },
+    {
+      "min": 6112,
+      "max": 7640,
+      "color": "#ca0020",
+      "label": "6112 - 7640"
+    }
+  ],
+  "rasterStats": {
+    "min": 1,
+    "max": 7640,
+    "noData": 0
+  },
+  "projection": "EPSG:4326",
+  "timestamp": "2025-10-06T10:23:22.279Z"
+}

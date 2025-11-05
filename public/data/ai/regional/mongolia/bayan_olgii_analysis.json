@@ -1,0 +1,57 @@
+{
+  "regionName": "Bayan-Olgii",
+  "country": "Mongolia",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 123000,
+    "density": 2.7,
+    "urbanization": 35,
+    "ageDistribution": {"youth": 38, "adult": 55, "elderly": 7},
+    "economicProfile": {"primarySector": 65, "secondarySector": 20, "tertiarySector": 15},
+    "insights": {
+      "populationGrowth": "Stable 0.1% with unique Kazakh cultural identity supporting population retention despite remote location.",
+      "educationLevel": "Good 78% literacy with trilingual education (Mongolian, Kazakh, Russian/Chinese).",
+      "employmentPattern": "Livestock 50%, eagle hunting tourism 20%, crafts 15%, cross-border trade 10%, government 5%.",
+      "housingPattern": "Traditional houses 45%, gers 35%, seasonal shelters 20%."
+    },
+    "confidence": "high",
+    "sources": ["Bayan-Olgii Administration", "Kazakh Cultural Association"],
+    "lastUpdated": "2024-09-30"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "High-altitude mountain climate, extreme winters (-40°C), cool summers (22°C). Altai Mountains create severe conditions.",
+      "precipitation": "Moderate 240mm with mountain snow. Winter snow critical for water supply.",
+      "seasonality": "Brutal 7-month winter, brief summer, spectacular autumn for eagle hunting tourism.",
+      "extremeEvents": "Extreme dzud events, avalanches, severe mountain storms, flash floods."
+    },
+    "trends": {"temperatureTrend": "+2.8°C with glacial retreat", "precipitationTrend": "Snow pattern changes", "extremeWeather": "Increasing"},
+    "recentEvents": [
+      {"event": "Extreme Dzud", "date": "2024-01", "impact": "Worst in 50 years, 180,000 livestock deaths", "severity": "extreme"},
+      {"event": "Avalanche Risk", "date": "2024-03", "impact": "Villages threatened, transportation blocked", "severity": "high"}
+    ],
+    "confidence": "medium",
+    "sources": ["Altai Mountain Research Station"],
+    "lastUpdated": "2024-09-20"
+  },
+  "disasters": {
+    "riskProfile": {"dzud": "extreme", "avalanche": "high", "flash_flood": "medium", "isolation": "high"},
+    "recentDisasters": [
+      {"type": "Catastrophic Dzud", "date": "2024-01-15", "impact": "Cultural way of life threatened, mass livestock death", "economicLoss": "$45M USD"}
+    ],
+    "preparedness": {"reliefCapacity": "Very Low - Extreme remoteness, harsh terrain, limited access"},
+    "confidence": "medium"
+  },
+  "economicProfile": {
+    "gdpContribution": "2.1% of national GDP",
+    "majorIndustries": ["Livestock", "Eagle Hunting Tourism", "Traditional Crafts", "Cross-border Trade"],
+    "averageIncome": "$2,200 USD annually",
+    "businessEnvironment": "Unique Kazakh culture drives specialized tourism, traditional economy, extreme geographic challenges"
+  },
+  "culturalHeritage": {
+    "ethnic": "Majority Kazakh (90%) with distinct cultural identity, language, and traditions",
+    "traditions": "Eagle hunting heritage, traditional crafts, nomadic lifestyle, Islamic culture",
+    "festivals": "Golden Eagle Festival (world-famous), Kazakh cultural celebrations, hunting competitions"
+  }
+}

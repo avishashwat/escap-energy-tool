@@ -1,0 +1,155 @@
+{
+  "regionName": "Khentii",
+  "country": "Mongolia",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 72000,
+    "density": 0.9,
+    "urbanization": 38,
+    "ageDistribution": {
+      "youth": 34,
+      "adult": 59,
+      "elderly": 7
+    },
+    "economicProfile": {
+      "primarySector": 68,
+      "secondarySector": 18,
+      "tertiarySector": 14
+    },
+    "insights": {
+      "populationGrowth": "Stable population with minimal growth (0.3% annually). Historical significance as birthplace of Genghis Khan attracts some cultural tourism employment.",
+      "educationLevel": "Good education levels with 79% literacy. Cultural heritage programs provide educational opportunities in traditional knowledge preservation.",
+      "employmentPattern": "Livestock herding 55%, agriculture 18%, tourism/cultural services 12%, government 8%, traditional crafts 7%. Growing cultural tourism sector.",
+      "housingPattern": "Traditional gers 50%, permanent houses 35%, seasonal camps 15%. Balance between traditional lifestyle and modern housing needs."
+    },
+    "confidence": "medium",
+    "sources": [
+      "Khentii Aimag Administration",
+      "National Statistical Office Mongolia",
+      "Mongolia Tourism Board"
+    ],
+    "lastUpdated": "2024-09-25"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Continental climate with cold winters (-28°C) and warm summers (28°C). Forest-steppe zone provides more moderate conditions than pure steppe regions.",
+      "precipitation": "Annual precipitation 300-350mm with summer concentration. Higher precipitation supports forest areas and better grasslands than southern regions.",
+      "seasonality": "Cold winter (November-March) with moderate dzud risk, pleasant spring (April-May), warm humid summer (June-August), colorful autumn (September-October) good for tourism.",
+      "extremeEvents": "Moderate dzud events, summer thunderstorms with hail risk, occasional forest fires during dry periods, flash flooding in mountainous areas."
+    },
+    "trends": {
+      "temperatureTrend": "+2.3°C increase over past 50 years, consistent with national trends",
+      "precipitationTrend": "Slight decrease (-5%) but more variable timing affecting agriculture",
+      "droughtFrequency": "Moderate drought frequency, forest areas provide some buffer effects",
+      "floodRisk": "Medium flood risk in mountainous areas during heavy summer rains"
+    },
+    "recentEvents": [
+      {
+        "event": "Forest Fire",
+        "date": "2024-08",
+        "impact": "2,000 hectares burned, wildlife habitat affected, tourism areas temporarily closed",
+        "severity": "medium"
+      },
+      {
+        "event": "Hailstorm",
+        "date": "2024-07",
+        "impact": "Crop damage in agricultural areas, livestock stress, temporary infrastructure damage",
+        "severity": "medium"
+      },
+      {
+        "event": "Winter Dzud",
+        "date": "2024-02",
+        "impact": "Moderate livestock losses, 150 families affected, managed through traditional coping methods",
+        "severity": "medium"
+      }
+    ],
+    "projections": {
+      "temperature": "Additional 2-3°C increase expected by 2050, affecting forest ecosystems",
+      "precipitation": "Slight increase in summer precipitation but higher variability",
+      "extremes": "Increased forest fire risk, more intense summer storms, extended dry periods"
+    },
+    "confidence": "medium",
+    "sources": [
+      "National Agency for Meteorology and Environment",
+      "Khentii Forest Management Office",
+      "Mongolia Forest Fire Prevention Center"
+    ],
+    "lastUpdated": "2024-09-12"
+  },
+  "disasters": {
+    "riskProfile": {
+      "drought": "medium",
+      "flood": "medium",
+      "storm": "medium",
+      "earthquake": "low",
+      "landslide": "low",
+      "dzud": "medium",
+      "forest_fire": "high"
+    },
+    "recentDisasters": [
+      {
+        "type": "Wildfire",
+        "date": "2024-08-15",
+        "impact": "2,000 hectares forest burned, wildlife displacement, tourism infrastructure threatened, air quality issues",
+        "economicLoss": "$8M USD",
+        "response": "National fire service deployment, volunteer firefighters, helicopter water drops, tourist evacuation"
+      },
+      {
+        "type": "Flash Flooding",
+        "date": "2024-07-20",
+        "impact": "Mountain valley flooding, bridge damage, temporary road closures, archaeological site protection needed",
+        "economicLoss": "$3M USD",
+        "response": "Emergency road repairs, cultural site protection, drainage improvements"
+      }
+    ],
+    "preparedness": {
+      "earlyWarning": true,
+      "evacuationPlans": true,
+      "reliefCapacity": "Medium - Cultural heritage sites require specialized protection, tourism infrastructure provides additional resources",
+      "infrastructure": {
+        "hospitals": 1,
+        "fireStations": 2,
+        "emergencyShelters": 10,
+        "evacuationRoutes": "Multiple routes to Ulaanbaatar, protected cultural sites evacuation protocols"
+      },
+      "training": "Forest fire prevention training, cultural heritage protection protocols, traditional disaster management, tourism emergency procedures"
+    },
+    "vulnerabilities": {
+      "geographical": "Mountain-forest terrain increases fire risk, cultural heritage sites require special protection",
+      "infrastructure": "Tourism infrastructure concentrated in cultural areas, limited backup systems",
+      "social": "Traditional communities mixed with tourism workers, cultural site dependencies",
+      "economic": "Dependence on cultural tourism vulnerable to disasters affecting heritage sites and access"
+    },
+    "adaptationMeasures": {
+      "structural": "Fire breaks around cultural sites, improved water access for firefighting, weather monitoring stations",
+      "nonStructural": "Community fire prevention training, cultural heritage disaster protocols, tourism emergency plans",
+      "ecosystem": "Forest management programs, fire-resistant landscaping, watershed protection, biodiversity conservation"
+    },
+    "confidence": "medium",
+    "sources": [
+      "National Emergency Management Agency",
+      "Khentii Cultural Heritage Protection Office",
+      "Mongolia Forest Disaster Management 2024"
+    ],
+    "lastUpdated": "2024-09-08"
+  },
+  "economicProfile": {
+    "gdpContribution": "2.5% of national GDP, mix of traditional and cultural tourism economy",
+    "majorIndustries": ["Livestock Herding", "Agriculture", "Cultural Tourism", "Traditional Crafts", "Forestry"],
+    "employmentRate": 86.8,
+    "averageIncome": "$2,600 USD annually",
+    "businessEnvironment": "Growing cultural tourism sector based on Genghis Khan heritage, traditional pastoral economy, forest resources"
+  },
+  "infrastructure": {
+    "transportation": "Good highway connections to Ulaanbaatar (200km), cultural site access roads, regional airport with tourism flights",
+    "utilities": "78% electricity coverage, 68% clean water access, expanding sewerage in tourist areas, good mobile coverage",
+    "healthcare": "Regional hospital with emergency services, medical facilities at major tourist sites, helicopter evacuation capability",
+    "education": "Cultural heritage college, 35 schools including traditional knowledge programs, tourism training institutes"
+  },
+  "culturalHeritage": {
+    "ethnic": "Predominantly Khalkh Mongol with strong cultural identity tied to Genghis Khan heritage",
+    "traditions": "Birthplace of Genghis Khan, traditional nomadic culture, sacred natural sites, UNESCO World Heritage considerations",
+    "festivals": "Genghis Khan commemoration events, traditional Naadam, cultural festivals attracting international tourists"
+  }
+}

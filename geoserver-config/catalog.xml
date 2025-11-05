@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <workspace>
+    <name>un_escap</name>
+  </workspace>
+  
+  <dataStore>
+    <name>postgis_store</name>
+    <workspace>un_escap</workspace>
+    <connectionParameters>
+      <host>postgis</host>
+      <port>5432</port>
+      <database>un_escap_geospatial</database>
+      <user>geouser</user>
+      <passwd>geopass123</passwd>
+      <dbtype>postgis</dbtype>
+    </connectionParameters>
+  </dataStore>
+</catalog>

@@ -1,0 +1,10 @@
+{
+  "regionName": "Bokeo",
+  "country": "Laos",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 179000, "density": 29.1, "urbanization": 35, "ageDistribution": {"youth": 39, "adult": 56, "elderly": 5}, "economicProfile": {"primarySector": 55, "secondarySector": 32, "tertiarySector": 13}, "insights": {"populationGrowth": "Rapid 2.5% growth due to Golden Triangle Special Economic Zone and cross-border trade.", "educationLevel": "Moderate 72% literacy with Chinese investment in education.", "employmentPattern": "Services/trade 35%, agriculture 30%, manufacturing 20%, government 10%, tourism 5%.", "housingPattern": "Modern houses 45%, traditional 35%, commercial buildings 20%."}},
+  "climate": {"insights": {"temperature": "Tropical, hot dry season (25°C-38°C), warm wet season.", "precipitation": "Moderate 1,400mm with Mekong flooding risks.", "extremeEvents": "Mekong flooding, droughts, cross-border pollution."}, "trends": {"mekongLevel": "More variable", "floodRisk": "High along Mekong"}},
+  "disasters": {"riskProfile": {"flood": "high", "economic_disruption": "medium", "cross_border_impacts": "medium"}, "recentDisasters": [{"type": "Mekong Flooding", "date": "2024-09", "impact": "Economic zone affected, trade disrupted", "economicLoss": "$15M USD"}], "preparedness": {"reliefCapacity": "Medium - Economic zone provides resources but flood risks"}},
+  "economicProfile": {"gdpContribution": "5.2% of national GDP", "majorIndustries": ["Cross-border Trade", "Manufacturing", "Agriculture", "Tourism", "Services"], "averageIncome": "$1,800 USD", "businessEnvironment": "Golden Triangle Special Economic Zone, Chinese investment, Mekong trade corridor"}
+}

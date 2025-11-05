@@ -1,0 +1,10 @@
+{
+  "regionName": "Houaphanh",
+  "country": "Laos", 
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 289000, "density": 18.2, "urbanization": 22, "ageDistribution": {"youth": 43, "adult": 52, "elderly": 5}, "economicProfile": {"primarySector": 78, "secondarySector": 15, "tertiarySector": 7}, "insights": {"populationGrowth": "Slow 0.8% with subsistence agriculture and limited development.", "educationLevel": "Lower 63% literacy due to ethnic diversity and remote location.", "employmentPattern": "Subsistence agriculture 68%, forestry 15%, government 10%, small trade 5%, services 2%.", "housingPattern": "Traditional ethnic houses 85%, concrete 10%, temporary 5%."}},
+  "climate": {"insights": {"temperature": "Mountainous tropical, cooler than lowlands (20°C-32°C).", "precipitation": "High 2,200mm with intense monsoon flooding in valleys.", "extremeEvents": "Flash floods in valleys, landslides, isolation during monsoon."}, "trends": {"isolationRisk": "High during wet season", "landslideRisk": "Increasing"}},
+  "disasters": {"riskProfile": {"flash_flood": "very_high", "landslide": "high", "isolation": "very_high"}, "recentDisasters": [{"type": "Valley Flash Flood", "date": "2024-07", "impact": "Multiple villages cut off, subsistence crops destroyed", "economicLoss": "$8M USD"}], "preparedness": {"reliefCapacity": "Very Low - Remote mountain location, minimal infrastructure"}},
+  "economicProfile": {"gdpContribution": "2.1% of national GDP", "majorIndustries": ["Subsistence Agriculture", "Forestry", "Small Trade"], "averageIncome": "$800 USD", "businessEnvironment": "Subsistence economy with ethnic diversity, limited market access, high poverty"}
+}

@@ -1,0 +1,135 @@
+/* OpenLayers Map Controls Styling */
+
+/* Scale Line Positioning - Bottom Left */
+.ol-scale-line {
+  position: absolute !important;
+  bottom: 16px !important;
+  left: 16px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 4px !important;
+  padding: 4px 8px !important;
+  font-size: 12px !important;
+  font-family: Arial, sans-serif !important;
+  color: #333 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+  z-index: 1000 !important;
+}
+
+/* Scale Line Bar Styling */
+.ol-scale-line-inner {
+  border: 2px solid #333 !important;
+  border-top: none !important;
+  color: #333 !important;
+  font-size: 11px !important;
+  text-align: center !important;
+  margin: 1px !important;
+  will-change: contents, width !important;
+}
+
+/* Zoom Controls Positioning - Top Right */
+.ol-zoom {
+  position: absolute !important;
+  top: 16px !important;
+  right: 16px !important;
+  left: auto !important;
+}
+
+.ol-zoom button {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  width: 32px !important;
+  height: 32px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: #333 !important;
+  margin: 2px !important;
+  cursor: pointer !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.2s ease !important;
+}
+
+.ol-zoom button:hover {
+  background: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+.ol-zoom button:focus {
+  outline: 2px solid #3b82f6 !important;
+  outline-offset: 2px !important;
+}
+
+/* Attribution Positioning - Bottom Right */
+.ol-attribution {
+  position: absolute !important;
+  bottom: 8px !important;
+  right: 8px !important;
+  font-size: 11px !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  padding: 2px 4px !important;
+  border-radius: 2px !important;
+}
+
+/* Map Container Styling */
+.ol-viewport {
+  position: relative !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Ensure map controls don't interfere with map interactions */
+.ol-control {
+  pointer-events: auto !important;
+}
+
+.ol-control button {
+  pointer-events: auto !important;
+}
+
+/* North Arrow - Custom Control (to be added) */
+.ol-north-arrow {
+  position: absolute !important;
+  top: 70px !important;
+  right: 16px !important;
+  width: 32px !important;
+  height: 32px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid #ccc !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 16px !important;
+  color: #333 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+  cursor: pointer !important;
+  z-index: 1000 !important;
+}
+
+.ol-north-arrow:hover {
+  background: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Custom styling for vector boundary layers */
+.boundary-layer {
+  stroke: #000000 !important;
+  stroke-width: 2 !important;
+  fill: transparent !important;
+}
+
+/* Map loading indicator */
+.map-loading {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  padding: 12px 20px !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  color: #333 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  z-index: 2000 !important;
+}

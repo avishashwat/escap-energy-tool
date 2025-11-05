@@ -1,0 +1,49 @@
+{
+  "country": "Bhutan",
+  "lastUpdated": "2024-11-04",
+  "aiGenerated": true,
+  "questions": [
+    {
+      "question": "What is Bhutan's current population and demographic structure?",
+      "answer": "Bhutan has a population of approximately 770,000 people with a young demographic profile. About 65% of the population lives in rural areas, with an urbanization rate of 42%. The age distribution shows 35% youth (0-24), 58% adults (25-64), and 7% elderly (65+). The population density is low at 20 people per km², reflecting the mountainous terrain and concentrated settlements in valleys. Literacy rates have improved significantly, reaching 71% overall with gender parity in education showing positive trends.",
+      "category": "demographics",
+      "confidence": "high",
+      "sources": ["National Statistics Bureau Bhutan", "World Bank Population Data 2024", "UN Population Division"]
+    },
+    {
+      "question": "How is Bhutan's energy infrastructure developed and what are the main sources?",
+      "answer": "Bhutan's energy sector is dominated by hydropower, which accounts for over 95% of electricity generation. The country has an installed capacity of approximately 2,335 MW from major projects like Tala, Chukha, and Kurichhu. Bhutan is unique as a carbon-negative country, exporting surplus clean energy to India. Rural electrification has reached 100%, connecting all villages to the national grid. Future projects include Punatsangchhu I & II, which will significantly increase generation capacity. The energy infrastructure supports both domestic needs and provides substantial export revenue.",
+      "category": "energy",
+      "confidence": "high",
+      "sources": ["Druk Green Power Corporation", "Department of Renewable Energy", "Bhutan Electricity Authority"]
+    },
+    {
+      "question": "What climate challenges does Bhutan face and how are they being addressed?",
+      "answer": "Bhutan faces significant climate challenges despite being carbon-negative. Rising temperatures (1.4°C increase since 1960) are causing glacial lake outburst flood risks, with 2,674 glacial lakes identified. Changing precipitation patterns affect hydropower generation and agriculture. The country experiences increased frequency of extreme weather events including flash floods and droughts. Bhutan's response includes the Climate Change Policy 2020, early warning systems, and maintaining constitutional forest coverage of 60%. Adaptation strategies focus on climate-resilient agriculture, disaster risk reduction, and ecosystem conservation.",
+      "category": "climate",
+      "confidence": "medium",
+      "sources": ["National Center for Hydrology & Meteorology", "Bhutan Climate Change Policy 2020", "IPCC AR6 Regional Chapter"]
+    },
+    {
+      "question": "What are the major geographical regions in Bhutan and their characteristics?",
+      "answer": "Bhutan is divided into three main geographical zones: the Southern Plains (200-600m elevation) with subtropical climate and agricultural activity; the Inner Himalayas (1,500-3,000m) where most population lives in fertile valleys; and the Great Himalayas (above 4,000m) with alpine climate and sparse population. The country has 20 administrative districts (dzongkhags) across these zones. The western and central regions are more developed with better infrastructure, while eastern regions remain more traditional and less connected. River valleys like Thimphu, Paro, and Punakha are population and economic centers.",
+      "category": "geography",
+      "confidence": "high",
+      "sources": ["Ministry of Works and Human Settlement", "Bhutan Administrative Atlas", "National Land Commission"]
+    },
+    {
+      "question": "How is Bhutan's economy structured and what are the main sectors?",
+      "answer": "Bhutan's economy is transitioning from primarily agricultural (agriculture contributes 16% to GDP) to services (45% of GDP) and industry (39% of GDP). Hydropower exports to India provide substantial revenue, contributing over 25% to government budget. Tourism follows a 'high value, low impact' policy generating significant foreign currency. The services sector includes government, education, health, and financial services. Manufacturing focuses on food processing, textiles, and cement. The economy maintains Gross National Happiness principles, balancing economic growth with environmental conservation and cultural preservation.",
+      "category": "demographics",
+      "confidence": "high",
+      "sources": ["National Statistics Bureau", "Ministry of Economic Affairs", "World Bank Bhutan Overview 2024"]
+    },
+    {
+      "question": "What renewable energy potential does Bhutan have beyond hydropower?",
+      "answer": "While hydropower dominates, Bhutan has significant untapped renewable potential. Solar energy potential is estimated at 12,000 MW, particularly in southern regions receiving high solar irradiation. Wind energy resources exist in mountain passes and ridges, with preliminary assessments indicating 760 MW potential. Biomass resources from agricultural residues and forest waste could support rural energy needs and heating. Geothermal potential exists in specific locations with hot springs, though not yet quantified. The government is developing a renewable energy policy to diversify beyond hydropower, with pilot solar projects already initiated in remote areas.",
+      "category": "energy",
+      "confidence": "medium",
+      "sources": ["Department of Renewable Energy", "Bhutan Renewable Energy Master Plan", "Alternative Energy Division"]
+    }
+  ]
+}

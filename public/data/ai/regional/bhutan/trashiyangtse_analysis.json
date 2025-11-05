@@ -1,0 +1,10 @@
+{
+  "regionName": "Trashiyangtse",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 19000, "density": 13.2, "urbanization": 15, "ageDistribution": {"youth": 38, "adult": 55, "elderly": 7}, "economicProfile": {"primarySector": 75, "secondarySector": 15, "tertiarySector": 10}, "insights": {"populationGrowth": "Declining -0.6% due to remoteness.", "educationLevel": "Moderate 74% literacy.", "employmentPattern": "Agriculture 65%, crafts 15%, government 12%, services 8%.", "housingPattern": "Traditional 85%, modern 12%, temporary 3%."}},
+  "climate": {"insights": {"temperature": "Cool temperate, cold winters (2°C), mild summers (24°C).", "precipitation": "Moderate 1,300mm.", "extremeEvents": "Landslides, crop diseases, isolation during monsoon."}, "trends": {"isolationRisk": "High during monsoon"}},
+  "disasters": {"riskProfile": {"landslide": "high", "isolation": "very_high"}, "preparedness": {"reliefCapacity": "Very Low - Extremely remote"}},
+  "economicProfile": {"majorIndustries": ["Agriculture", "Traditional Crafts", "Government"], "averageIncome": "$2,400 USD"}
+}

@@ -1,0 +1,155 @@
+{
+  "regionName": "Dornod",
+  "country": "Mongolia",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 75000,
+    "density": 0.6,
+    "urbanization": 52,
+    "ageDistribution": {
+      "youth": 32,
+      "adult": 61,
+      "elderly": 7
+    },
+    "economicProfile": {
+      "primarySector": 58,
+      "secondarySector": 25,
+      "tertiarySector": 17
+    },
+    "insights": {
+      "populationGrowth": "Slow growth at 0.5% annually due to outmigration to central regions. Mining development creates temporary population increases in specific areas.",
+      "educationLevel": "Above-average education with 82% literacy rate. Technical education programs support mining and energy sectors.",
+      "employmentPattern": "Livestock herding 45%, mining operations 20%, agriculture 15%, energy sector 8%, services 12%. Seasonal employment in cross-border trade.",
+      "housingPattern": "Traditional gers 45%, permanent housing 40%, temporary mining accommodations 15%. Infrastructure development supports mining workforce housing."
+    },
+    "confidence": "medium",
+    "sources": [
+      "Dornod Aimag Administration",
+      "National Statistical Office Mongolia",
+      "Mongolia Mining Association"
+    ],
+    "lastUpdated": "2024-09-28"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Continental steppe climate with cold winters (-30°C) and warm summers (30°C). Eastern location experiences more moderate conditions than western regions.",
+      "precipitation": "Annual precipitation 250-300mm, primarily summer rainfall. Adequate moisture supports better grasslands than western Mongolia.",
+      "seasonality": "Cold winter (November-March) with less severe dzud risk than western regions, mild spring (April-May), warm summer (June-September) with most rainfall, dry autumn (October).",
+      "extremeEvents": "Periodic dzud events, summer droughts, and occasional flooding from heavy summer rains. Generally less extreme than central/western Mongolia."
+    },
+    "trends": {
+      "temperatureTrend": "+2.2°C increase over past 50 years, moderate warming trend",
+      "precipitationTrend": "Stable precipitation with slight increase in variability",
+      "droughtFrequency": "Moderate drought risk, less frequent than western regions",
+      "floodRisk": "Low to moderate flood risk from summer precipitation events"
+    },
+    "recentEvents": [
+      {
+        "event": "Summer Flooding",
+        "date": "2024-07",
+        "impact": "Localized flooding in mining areas, temporary road closures, no major livestock losses",
+        "severity": "low"
+      },
+      {
+        "event": "Winter Dzud",
+        "date": "2023-01",
+        "impact": "Moderate livestock losses, 80 families affected, manageable with local resources",
+        "severity": "medium"
+      },
+      {
+        "event": "Drought Period",
+        "date": "2023-06",
+        "impact": "Reduced pasture quality, limited water source stress, minimal livestock mortality",
+        "severity": "low"
+      }
+    ],
+    "projections": {
+      "temperature": "Additional 2-3°C increase expected by 2050, extended growing seasons",
+      "precipitation": "Slight increase in summer precipitation, more variable timing",
+      "extremes": "Increased flood risk from intense summer rains, continued moderate dzud risk"
+    },
+    "confidence": "medium",
+    "sources": [
+      "National Agency for Meteorology and Environment",
+      "Dornod Regional Meteorological Station",
+      "Mongolia Climate Research Institute"
+    ],
+    "lastUpdated": "2024-09-15"
+  },
+  "disasters": {
+    "riskProfile": {
+      "drought": "medium",
+      "flood": "medium",
+      "storm": "medium",
+      "earthquake": "low",
+      "landslide": "very_low",
+      "dzud": "medium",
+      "mining_accidents": "medium"
+    },
+    "recentDisasters": [
+      {
+        "type": "Mining Equipment Fire",
+        "date": "2024-08-10",
+        "impact": "Temporary mine shutdown, equipment damage, no casualties but economic disruption",
+        "economicLoss": "$5M USD",
+        "response": "Industrial fire response team, equipment replacement, safety protocol review"
+      },
+      {
+        "type": "Flash Flooding",
+        "date": "2024-07-15",
+        "impact": "Mining access roads damaged, temporary operations suspension, infrastructure repairs needed",
+        "economicLoss": "$3M USD",
+        "response": "Road repairs, drainage improvements, mining operation adjustments"
+      }
+    ],
+    "preparedness": {
+      "earlyWarning": true,
+      "evacuationPlans": true,
+      "reliefCapacity": "Medium-High - Mining companies provide additional resources, better infrastructure than remote areas",
+      "infrastructure": {
+        "hospitals": 1,
+        "fireStations": 2,
+        "emergencyShelters": 8,
+        "evacuationRoutes": "Highway access to Russia and China, mining company emergency protocols"
+      },
+      "training": "Industrial safety training through mining operations, traditional disaster preparedness, cross-border cooperation protocols"
+    },
+    "vulnerabilities": {
+      "geographical": "Eastern border location with extreme weather variability, mining operation concentrations",
+      "infrastructure": "Mining-dependent infrastructure, limited backup systems, border region complications",
+      "social": "Mixed traditional and industrial populations, employment dependent on mining sector stability",
+      "economic": "High dependence on mining revenue creates vulnerability to market fluctuations and operational disruptions"
+    },
+    "adaptationMeasures": {
+      "structural": "Mining infrastructure hardening, improved drainage systems, redundant power supplies",
+      "nonStructural": "Industrial safety protocols, emergency response training, cross-sector coordination",
+      "ecosystem": "Reclamation of mining areas, pasture protection measures, water resource management"
+    },
+    "confidence": "medium",
+    "sources": [
+      "National Emergency Management Agency",
+      "Dornod Mining Safety Committee",
+      "Mongolia Mining Industry Risk Assessment 2024"
+    ],
+    "lastUpdated": "2024-09-05"
+  },
+  "economicProfile": {
+    "gdpContribution": "4.2% of national GDP, significant mining and energy contribution",
+    "majorIndustries": ["Coal Mining", "Livestock Herding", "Cross-border Trade", "Power Generation", "Agriculture"],
+    "employmentRate": 89.2,
+    "averageIncome": "$3,800 USD annually",
+    "businessEnvironment": "Growing mining sector with Chinese and Russian investment, strategic border location for trade"
+  },
+  "infrastructure": {
+    "transportation": "Highway connections to Russia and China, rail links for mining exports, regional airport with cargo capacity",
+    "utilities": "85% electricity coverage (mining areas well-served), 70% clean water access, expanding sewerage systems, excellent mobile coverage",
+    "healthcare": "Regional hospital with mining-related medical capabilities, occupational health services, emergency medical evacuation systems",
+    "education": "Technical colleges for mining training, 28 schools including specialized programs, distance learning for remote areas"
+  },
+  "culturalHeritage": {
+    "ethnic": "Predominantly Khalkh Mongol with small Russian and Chinese minorities due to border proximity",
+    "traditions": "Traditional nomadic herding combined with modern mining culture, border region cultural exchanges",
+    "festivals": "Naadam festival, mining industry celebrations, cross-border cultural events with Russia and China"
+  }
+}

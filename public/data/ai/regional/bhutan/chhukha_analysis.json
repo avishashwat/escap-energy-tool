@@ -1,0 +1,52 @@
+{
+  "regionName": "Chhukha",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 84000,
+    "density": 48.3,
+    "urbanization": 42,
+    "ageDistribution": {"youth": 32, "adult": 62, "elderly": 6},
+    "economicProfile": {"primarySector": 35, "secondarySector": 45, "tertiarySector": 20},
+    "insights": {
+      "populationGrowth": "Rapid growth at 2.1% annually driven by hydropower development and industrial employment opportunities.",
+      "educationLevel": "High education with 89% literacy due to industrial development and better infrastructure.",
+      "employmentPattern": "Hydropower/industry 35%, agriculture 25%, services 20%, construction 12%, government 8%. Industrial economy.",
+      "housingPattern": "Modern houses 50%, traditional houses 35%, worker accommodations 15%."
+    },
+    "confidence": "high",
+    "sources": ["Chhukha Administration", "Bhutan Power Corporation", "Druk Green Power"],
+    "lastUpdated": "2024-09-30"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Subtropical to temperate climate, mild winters (10°C), warm summers (28°C). Lower elevations create warmer conditions.",
+      "precipitation": "High precipitation 2,500mm annually with intense monsoons. Excellent water resources for hydropower.",
+      "seasonality": "Mild winter, hot pre-monsoon, intense monsoon (June-September), pleasant post-monsoon.",
+      "extremeEvents": "Intense monsoon flooding, landslides on steep slopes, occasional hailstorms, river erosion."
+    },
+    "trends": {"temperatureTrend": "+1.6°C warming", "precipitationTrend": "More intense monsoon events", "floodRisk": "Increasing"},
+    "recentEvents": [
+      {"event": "Monsoon Flooding", "date": "2024-07", "impact": "Hydropower operations affected, communities evacuated", "severity": "high"},
+      {"event": "Major Landslide", "date": "2024-08", "impact": "Highway blocked, power transmission disrupted", "severity": "high"}
+    ],
+    "confidence": "high",
+    "sources": ["Hydropower Environmental Monitoring", "Regional Weather Station"],
+    "lastUpdated": "2024-09-22"
+  },
+  "disasters": {
+    "riskProfile": {"flood": "very_high", "landslide": "very_high", "industrial_accident": "medium", "glof": "high"},
+    "recentDisasters": [
+      {"type": "Hydropower Dam Stress", "date": "2024-07-20", "impact": "Emergency spillway activation, downstream evacuation", "economicLoss": "$25M USD"}
+    ],
+    "preparedness": {"reliefCapacity": "High - Industrial infrastructure provides substantial emergency resources"},
+    "confidence": "high"
+  },
+  "economicProfile": {
+    "gdpContribution": "18.5% of national GDP - major hydropower contribution",
+    "majorIndustries": ["Hydropower Generation", "Heavy Industry", "Agriculture", "Construction", "Services"],
+    "averageIncome": "$4,200 USD annually",
+    "businessEnvironment": "Major hydropower hub generating significant export revenue to India, industrial development center"
+  }
+}

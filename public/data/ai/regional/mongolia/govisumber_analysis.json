@@ -1,0 +1,55 @@
+{
+  "regionName": "Govisumber",
+  "country": "Mongolia",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 16000,
+    "density": 2.8,
+    "urbanization": 55,
+    "ageDistribution": {"youth": 32, "adult": 61, "elderly": 7},
+    "economicProfile": {"primarySector": 48, "secondarySector": 32, "tertiarySector": 20},
+    "insights": {
+      "populationGrowth": "Moderate growth at 1.1% due to proximity to Ulaanbaatar providing economic opportunities while maintaining lower costs.",
+      "educationLevel": "High education with 88% literacy due to access to capital city resources and commuting opportunities.",
+      "employmentPattern": "Agriculture 30%, services 25%, manufacturing 20%, livestock 18%, government 7%. Diversified economy.",
+      "housingPattern": "Permanent houses 60%, apartments 25%, gers 15%. Most developed housing in smaller provinces."
+    },
+    "confidence": "high",
+    "sources": ["Govisumber Administration", "Ulaanbaatar Metropolitan Planning"],
+    "lastUpdated": "2024-09-29"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Steppe climate with continental influences, winters (-25°C), summers (28°C). Moderated by proximity to capital region.",
+      "precipitation": "Annual precipitation 220mm, better than southern Gobi regions. Summer concentration supports agriculture.",
+      "seasonality": "Cold winter, pleasant spring and autumn, warm summer with adequate growing season for agriculture.",
+      "extremeEvents": "Moderate dzud risk, occasional droughts, summer thunderstorms, dust storms from southern regions."
+    },
+    "trends": {"temperatureTrend": "+2.2°C over 50 years", "precipitationTrend": "-8% slight decrease", "droughtFrequency": "Moderate increase", "floodRisk": "Low"},
+    "recentEvents": [
+      {"event": "Drought Stress", "date": "2024-07", "impact": "Agricultural yields reduced, irrigation needs increased", "severity": "medium"},
+      {"event": "Spring Dust Storm", "date": "2024-04", "impact": "Air quality issues, transportation delays", "severity": "low"}
+    ],
+    "confidence": "high",
+    "sources": ["Central Mongolia Climate Station", "Agricultural Monitoring Service"],
+    "lastUpdated": "2024-09-20"
+  },
+  "disasters": {
+    "riskProfile": {"drought": "medium", "dzud": "medium", "dust_storms": "medium", "flood": "low"},
+    "recentDisasters": [
+      {"type": "Agricultural Drought", "date": "2024-07-01", "impact": "Crop yield reduction, irrigation system stress", "economicLoss": "$3M USD"}
+    ],
+    "preparedness": {"earlyWarning": true, "reliefCapacity": "High - Close proximity to capital provides extensive backup resources"},
+    "confidence": "high",
+    "sources": ["Metropolitan Emergency Services"],
+    "lastUpdated": "2024-09-15"
+  },
+  "economicProfile": {
+    "gdpContribution": "1.2% of national GDP",
+    "majorIndustries": ["Agriculture", "Food Processing", "Small Manufacturing", "Services", "Logistics"],
+    "employmentRate": 89.8,
+    "averageIncome": "$3,400 USD annually",
+    "businessEnvironment": "Suburban economy benefiting from capital proximity, agricultural production, growing logistics sector"
+  }
+}

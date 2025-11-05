@@ -1,0 +1,30 @@
+{
+  "layerName": "bhutan_giri_Drought_Existing_classified_classified",
+  "classifications": [
+    {
+      "min": 4.534330368042,
+      "max": 5,
+      "color": "#fff8dc",
+      "label": "2 - 5m"
+    },
+    {
+      "min": 5,
+      "max": 10,
+      "color": "#ffd700",
+      "label": "5 - 10m"
+    },
+    {
+      "min": 10,
+      "max": 13.603216171265,
+      "color": "#ff8c00",
+      "label": "10.0 - 13.6m"
+    }
+  ],
+  "rasterStats": {
+    "min": 4.534330368042,
+    "max": 13.603216171265,
+    "noData": "nan"
+  },
+  "created": "2025-11-04T01:27:23.250Z",
+  "type": "classified_raster"
+}

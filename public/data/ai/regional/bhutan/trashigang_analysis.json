@@ -1,0 +1,10 @@
+{
+  "regionName": "Trashigang",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 53000, "density": 30.1, "urbanization": 26, "ageDistribution": {"youth": 36, "adult": 57, "elderly": 7}, "economicProfile": {"primarySector": 64, "secondarySector": 22, "tertiarySector": 14}, "insights": {"populationGrowth": "Growing 1.2% as eastern regional hub.", "educationLevel": "Good 84% literacy as regional center.", "employmentPattern": "Agriculture 54%, government 22%, services 14%, industry 8%, trade 2%.", "housingPattern": "Traditional 65%, modern 30%, government 5%."}},
+  "climate": {"insights": {"temperature": "Temperate, mild winters (8°C), warm summers (28°C).", "precipitation": "High 1,900mm with monsoon flooding risks.", "extremeEvents": "Flash floods, landslides, crop diseases."}, "trends": {"floodRisk": "High", "landslideRisk": "High"}},
+  "disasters": {"riskProfile": {"flood": "high", "landslide": "high"}, "preparedness": {"reliefCapacity": "Medium - Regional administrative center"}},
+  "economicProfile": {"gdpContribution": "4.8% of national GDP", "majorIndustries": ["Agriculture", "Government", "Education", "Trade"], "averageIncome": "$3,300 USD"}
+}

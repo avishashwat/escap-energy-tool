@@ -1,0 +1,33 @@
+# Use official Python runtime with GDAL
+FROM ghcr.io/osgeo/gdal:ubuntu-full-3.7.2
+
+# Set working directory
+WORKDIR /app
+
+# Install Python dependencies
+RUN apt-get update && apt-get install -y \
+    python3-pip \
+    python3-dev \
+    curl \
+    wget \
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python packages
+COPY requirements-gdal.txt .
+RUN pip3 install --no-cache-dir -r requirements-gdal.txt
+
+# Copy application code
+COPY gdal-service/ ./
+
+# Create necessary directories
+RUN mkdir -p /app/data /app/uploads /app/processed /app/temp
+
+# Set permissions for directories  
+RUN chmod 755 /app/data /app/uploads /app/processed /app/temp
+
+# Expose port
+EXPOSE 8081
+
+# Start the service
+CMD ["python3", "main.py"]

@@ -1,0 +1,42 @@
+{
+  "layerName": "bhutan_climate_Maximum Temperature_Historical_mar_may_classified_classified",
+  "classifications": [
+    {
+      "min": -10.766666412354,
+      "max": 4.13,
+      "color": "#bfd2ff",
+      "label": "<= 4.13"
+    },
+    {
+      "min": 4.13,
+      "max": 10.17,
+      "color": "#ffffbf",
+      "label": "4.13 - 10.17"
+    },
+    {
+      "min": 10.17,
+      "max": 14.76,
+      "color": "#ffd380",
+      "label": "10.17 - 14.76"
+    },
+    {
+      "min": 14.76,
+      "max": 19.15,
+      "color": "#ffaa00",
+      "label": "14.76 - 19.15"
+    },
+    {
+      "min": 19.15,
+      "max": 31.266666412354,
+      "color": "#e60000",
+      "label": "> 19.15"
+    }
+  ],
+  "rasterStats": {
+    "min": -10.766666412354,
+    "max": 31.266666412354,
+    "noData": -3.4028235e+38
+  },
+  "created": "2025-11-03T17:31:25.894Z",
+  "type": "classified_raster"
+}

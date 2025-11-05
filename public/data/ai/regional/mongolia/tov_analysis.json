@@ -1,0 +1,155 @@
+{
+  "regionName": "Töv",
+  "country": "Mongolia",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 125000,
+    "density": 1.6,
+    "urbanization": 42,
+    "ageDistribution": {
+      "youth": 33,
+      "adult": 60,
+      "elderly": 7
+    },
+    "economicProfile": {
+      "primarySector": 55,
+      "secondarySector": 25,
+      "tertiarySector": 20
+    },
+    "insights": {
+      "populationGrowth": "Moderate growth at 1.1% annually, influenced by proximity to Ulaanbaatar providing economic opportunities while maintaining rural lifestyle.",
+      "educationLevel": "Good education with 84% literacy. Benefits from proximity to capital's educational resources and employment opportunities.",
+      "employmentPattern": "Livestock herding 45%, agriculture 20%, mining 15%, services 12%, government 8%. Mixed traditional and modern economy.",
+      "housingPattern": "Traditional gers 45%, permanent houses 40%, seasonal accommodations 15%. Balance between traditional nomadic and settled lifestyles."
+    },
+    "confidence": "medium",
+    "sources": [
+      "Töv Province Administration",
+      "National Statistical Office Mongolia",
+      "Central Mongolia Development Authority"
+    ],
+    "lastUpdated": "2024-09-26"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Central continental climate with cold winters (-30°C) and warm summers (28°C). Typical Mongolian steppe conditions with high seasonal variation.",
+      "precipitation": "Annual precipitation 250mm concentrated in summer. Adequate for traditional pastoralism but limited for intensive agriculture.",
+      "seasonality": "Harsh winter (November-March) with dzud risk, dry spring (April-May), warm summer (June-August), mild autumn (September-October).",
+      "extremeEvents": "Regular dzud events affecting livestock, summer droughts reducing pasture quality, occasional severe thunderstorms with hail."
+    },
+    "trends": {
+      "temperatureTrend": "+2.6°C increase over past 50 years, consistent with national warming trends",
+      "precipitationTrend": "12% decrease in annual precipitation with higher variability",
+      "droughtFrequency": "Increased drought frequency and intensity affecting traditional pastoralism",
+      "floodRisk": "Low overall flood risk but flash flooding during intense summer storms"
+    },
+    "recentEvents": [
+      {
+        "event": "Severe Dzud",
+        "date": "2024-02",
+        "impact": "200,000 livestock deaths, 500 herding families affected, emergency fodder distribution required",
+        "severity": "high"
+      },
+      {
+        "event": "Summer Drought",
+        "date": "2024-07",
+        "impact": "Severe pasture degradation, water source depletion, livestock condition deterioration",
+        "severity": "high"
+      },
+      {
+        "event": "Hailstorm",
+        "date": "2024-06",
+        "impact": "Localized crop and pasture damage, livestock injuries, infrastructure damage in 3 districts",
+        "severity": "medium"
+      }
+    ],
+    "projections": {
+      "temperature": "Additional 3-4°C increase expected by 2050, severe impacts on traditional pastoralism",
+      "precipitation": "Further 15-20% decrease with more extreme variability",
+      "extremes": "More frequent and severe dzud events, prolonged drought periods, extreme weather variability"
+    },
+    "confidence": "medium",
+    "sources": [
+      "National Agency for Meteorology and Environment",
+      "Central Mongolia Meteorological Station",
+      "Mongolia Pastoral Climate Study 2024"
+    ],
+    "lastUpdated": "2024-09-15"
+  },
+  "disasters": {
+    "riskProfile": {
+      "drought": "very_high",
+      "flood": "low",
+      "storm": "medium",
+      "earthquake": "medium",
+      "landslide": "very_low",
+      "dzud": "very_high",
+      "mining_accidents": "medium"
+    },
+    "recentDisasters": [
+      {
+        "type": "Extreme Dzud (White and Black Disaster)",
+        "date": "2024-02-01",
+        "impact": "200,000 livestock deaths, 500 families severely affected, pasture destruction, economic devastation",
+        "economicLoss": "$35M USD",
+        "response": "National emergency declaration, massive fodder distribution, livestock shelter construction, family relocation assistance"
+      },
+      {
+        "type": "Mining Accident",
+        "date": "2024-09-10",
+        "impact": "Coal mine collapse, 3 workers injured, production shutdown, environmental concerns",
+        "economicLoss": "$12M USD",
+        "response": "Mine rescue operations, safety inspection, regulatory review, worker compensation"
+      }
+    ],
+    "preparedness": {
+      "earlyWarning": true,
+      "evacuationPlans": false,
+      "reliefCapacity": "Medium - Benefits from proximity to capital resources, traditional coping mechanisms, government support",
+      "infrastructure": {
+        "hospitals": 2,
+        "fireStations": 2,
+        "emergencyShelters": 15,
+        "evacuationRoutes": "Good access to Ulaanbaatar (100km), multiple highway routes, helicopter access"
+      },
+      "training": "Traditional dzud preparedness, livestock protection methods, modern disaster response training, mining safety protocols"
+    },
+    "vulnerabilities": {
+      "geographical": "Central steppe location with extreme continental climate, high exposure to weather extremes",
+      "infrastructure": "Mixed infrastructure development, rural areas with limited services, mining operation dependencies",
+      "social": "Traditional lifestyle vulnerable to climate extremes, mixed urban-rural population needs",
+      "economic": "Dependence on climate-sensitive livestock and mining sectors, vulnerable to multiple disaster types"
+    },
+    "adaptationMeasures": {
+      "structural": "Livestock shelters, water infrastructure, mining safety improvements, weather monitoring expansion",
+      "nonStructural": "Enhanced early warning systems, livestock insurance, mining safety regulations, diversified livelihood programs",
+      "ecosystem": "Pasture management, sustainable grazing practices, mining rehabilitation, water conservation"
+    },
+    "confidence": "medium",
+    "sources": [
+      "National Emergency Management Agency",
+      "Töv Province Disaster Management Committee",
+      "Central Mongolia Risk Assessment 2024"
+    ],
+    "lastUpdated": "2024-09-12"
+  },
+  "economicProfile": {
+    "gdpContribution": "7.2% of national GDP, central agricultural and mining hub",
+    "majorIndustries": ["Livestock Herding", "Coal Mining", "Agriculture", "Food Processing", "Transportation"],
+    "employmentRate": 87.8,
+    "averageIncome": "$2,800 USD annually",
+    "businessEnvironment": "Strategic central location, proximity to capital markets, mixed traditional and industrial economy"
+  },
+  "infrastructure": {
+    "transportation": "Excellent highway connections to Ulaanbaatar, trans-Mongolian railway passes through, regional airports",
+    "utilities": "82% electricity coverage, 75% clean water access, expanding sewerage, good mobile coverage due to capital proximity",
+    "healthcare": "Regional hospitals with capital city backup, mobile health services, mining occupational health programs",
+    "education": "Agricultural colleges, mining technical institutes, 48 schools, access to capital's universities"
+  },
+  "culturalHeritage": {
+    "ethnic": "Predominantly Khalkh Mongol with traditional pastoral culture",
+    "traditions": "Strong nomadic traditions, seasonal migration patterns, traditional livestock management, cultural preservation",
+    "festivals": "Traditional Naadam celebrations, seasonal herding festivals, cultural events with capital city connections"
+  }
+}

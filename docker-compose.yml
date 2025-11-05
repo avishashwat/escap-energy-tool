@@ -1,0 +1,204 @@
+services:
+  # PostGIS Database for spatial data storage
+  postgis:
+    image: postgis/postgis:15-3.3
+    container_name: escap_postgis
+    environment:
+      POSTGRES_DB: escap_climate
+      POSTGRES_USER: escap_user
+      POSTGRES_PASSWORD: escap_password_2024
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgis_data:/var/lib/postgresql/data
+      - ./scripts/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    networks:
+      - escap_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U escap_user -d escap_climate"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # GeoServer for web mapping services
+  geoserver:
+    image: kartoza/geoserver:2.23.0
+    container_name: escap_geoserver
+    environment:
+      GEOSERVER_DATA_DIR: /opt/geoserver/data_dir
+      GEOSERVER_ADMIN_PASSWORD: geoserver_admin_2024
+      GEOSERVER_ADMIN_USER: admin
+      DB_BACKEND: POSTGRES
+      HOST: postgis
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: escap_climate
+      POSTGRES_USER: escap_user
+      POSTGRES_PASS: escap_password_2024
+      GEOSERVER_LOG_LOCATION: /opt/geoserver/data_dir/logs/geoserver.log
+      MAXIMUM_MEMORY: 2G
+      INITIAL_MEMORY: 1G
+    ports:
+      - "8081:8080"
+    volumes:
+      - geoserver_data:/opt/geoserver/data_dir
+      - ./data/uploads:/opt/geoserver/uploads
+      - ./data/cog:/opt/geoserver/cog
+    networks:
+      - escap_network
+    depends_on:
+      postgis:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/geoserver/web/"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Redis for caching and real-time collaboration
+  redis:
+    image: redis:7-alpine
+    container_name: escap_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - escap_network
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+
+  # React Frontend Application
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: escap_frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_URL=http://backend:8000
+      - VITE_GEOSERVER_URL=http://geoserver:8080/geoserver
+      - NODE_ENV=development
+    networks:
+      - escap_network
+    restart: unless-stopped
+    # depends_on:
+    #   backend:
+    #     condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  # GDAL service for advanced geospatial processing
+  gdal:
+    build:
+      context: ./gdal-service
+      dockerfile: Dockerfile
+    container_name: escap_gdal
+    ports:
+      - "8082:5001"
+    environment:
+      - POSTGRES_HOST=postgis
+      - POSTGRES_DB=escap_climate
+      - POSTGRES_USER=escap_user
+      - POSTGRES_PASSWORD=escap_password_2024
+      - GEOSERVER_URL=http://geoserver:8080/geoserver
+      - GEOSERVER_USER=admin
+      - GEOSERVER_PASSWORD=geoserver_admin_2024
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - ./data:/app/data
+      - gdal_tmp:/tmp/processing
+    networks:
+      - escap_network
+    depends_on:
+      postgis:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  # FastAPI Backend for data processing
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: escap_backend
+    environment:
+      DATABASE_URL: postgresql://escap_user:escap_password_2024@postgis:5432/escap_climate
+      GEOSERVER_URL: http://geoserver:8080/geoserver
+      GEOSERVER_USER: admin
+      GEOSERVER_PASSWORD: geoserver_admin_2024
+      GDAL_SERVICE_URL: http://gdal:5001
+      REDIS_URL: redis://redis:6379
+      PYTHONPATH: /app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data/uploads:/app/uploads
+      - ./data/cog:/app/cog
+      - ./data/processed:/app/processed
+    networks:
+      - escap_network
+    depends_on:
+      postgis:
+        condition: service_healthy
+      redis:
+        condition: service_started
+      gdal:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+
+  # Nginx reverse proxy for production
+  nginx:
+    image: nginx:alpine
+    container_name: escap_nginx
+    ports:
+      - "8090:80"
+      - "8443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/ssl:/etc/nginx/ssl
+    networks:
+      - escap_network
+    depends_on:
+      frontend:
+        condition: service_healthy
+      backend:
+        condition: service_healthy
+      geoserver:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  postgis_data:
+  geoserver_data:
+  redis_data:
+  gdal_tmp:
+
+networks:
+  escap_network:
+    driver: bridge

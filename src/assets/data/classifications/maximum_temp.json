@@ -1,0 +1,14 @@
+{
+  "variable": "maximum_temp",
+  "unit": "°C",
+  "description": "Maximum Temperature",
+  "ranges": [
+    { "min": -20, "max": -10, "color": "#000080", "label": "Extremely Cold" },
+    { "min": -10, "max": 0, "color": "#0066cc", "label": "Very Cold" },
+    { "min": 0, "max": 10, "color": "#3399ff", "label": "Cold" },
+    { "min": 10, "max": 20, "color": "#66cc00", "label": "Moderate" },
+    { "min": 20, "max": 30, "color": "#ffcc00", "label": "Warm" },
+    { "min": 30, "max": 40, "color": "#ff6600", "label": "Hot" },
+    { "min": 40, "max": 50, "color": "#cc0000", "label": "Very Hot" }
+  ]
+}

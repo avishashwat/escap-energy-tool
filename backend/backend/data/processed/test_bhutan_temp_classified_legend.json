@@ -1,0 +1,42 @@
+{
+  "layerName": "test_bhutan_temp_classified",
+  "classifications": [
+    {
+      "min": -9.6916666030884,
+      "max": 10,
+      "color": "#0000FF",
+      "label": "Very Cold"
+    },
+    {
+      "min": 10,
+      "max": 20,
+      "color": "#00FFFF",
+      "label": "Cold"
+    },
+    {
+      "min": 20,
+      "max": 25,
+      "color": "#00FF00",
+      "label": "Moderate"
+    },
+    {
+      "min": 25,
+      "max": 30,
+      "color": "#FFFF00",
+      "label": "Warm"
+    },
+    {
+      "min": 30,
+      "max": 30.008333206177,
+      "color": "#FF0000",
+      "label": "Hot"
+    }
+  ],
+  "rasterStats": {
+    "min": -9.6916666030884,
+    "max": 30.008333206177,
+    "noData": -3.4028235e+38
+  },
+  "projection": "EPSG:4326",
+  "timestamp": "2025-10-01T03:32:42.436Z"
+}

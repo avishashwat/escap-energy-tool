@@ -1,0 +1,10 @@
+{
+  "regionName": "Khammouane",
+  "country": "Laos",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 392000, "density": 24.1, "urbanization": 45, "ageDistribution": {"youth": 35, "adult": 60, "elderly": 5}, "economicProfile": {"primarySector": 42, "secondarySector": 38, "tertiarySector": 20}, "insights": {"populationGrowth": "Growing 2.1% with industrial corridor development to Vietnam.", "educationLevel": "Good 79% literacy with industrial development support.", "employmentPattern": "Industry/manufacturing 35%, agriculture 30%, services/trade 20%, government 10%, tourism 5%.", "housingPattern": "Modern industrial housing 40%, traditional 45%, commercial 15%."}},
+  "climate": {"insights": {"temperature": "Tropical monsoon, hot dry season (25°C-36°C), warm wet season.", "precipitation": "Moderate-high 1,500mm with karst landscape flooding.", "extremeEvents": "Karst area flash flooding, cave system risks, industrial weather impacts."}, "trends": {"karstFlooding": "Unpredictable patterns", "industrialVulnerability": "Growing"}},
+  "disasters": {"riskProfile": {"flash_flood": "high", "karst_collapse": "medium", "industrial_accident": "medium"}, "recentDisasters": [{"type": "Karst Flash Flood", "date": "2024-08", "impact": "Industrial areas flooded, cave tourism affected", "economicLoss": "$18M USD"}], "preparedness": {"reliefCapacity": "Medium - Industrial development provides resources but karst risks"}},
+  "economicProfile": {"gdpContribution": "8.9% of national GDP", "majorIndustries": ["Manufacturing", "Agriculture", "Cave Tourism", "Cross-border Trade"], "averageIncome": "$1,700 USD", "businessEnvironment": "Industrial corridor to Vietnam, karst landscape tourism, manufacturing hub"}
+}

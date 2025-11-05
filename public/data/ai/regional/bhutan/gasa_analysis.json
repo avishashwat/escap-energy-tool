@@ -1,0 +1,45 @@
+{
+  "regionName": "Gasa",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 3500,
+    "density": 0.9,
+    "urbanization": 8,
+    "ageDistribution": {"youth": 30, "adult": 63, "elderly": 7},
+    "economicProfile": {"primarySector": 75, "secondarySector": 15, "tertiarySector": 10},
+    "insights": {
+      "populationGrowth": "Declining -1.2% due to extreme remoteness and harsh climate driving outmigration.",
+      "educationLevel": "Lower education 68% literacy due to geographic isolation and traditional lifestyle.",
+      "employmentPattern": "Livestock/yak herding 60%, agriculture 20%, government 15%, services 5%.",
+      "housingPattern": "Traditional stone houses 85%, temporary shelters 15%."
+    },
+    "confidence": "low",
+    "sources": ["Gasa Administration"],
+    "lastUpdated": "2024-09-20"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Alpine climate, very cold winters (-10°C), cool summers (15°C). Highest elevations in Bhutan.",
+      "precipitation": "Moderate 800mm with winter snow. Snow-dependent water systems.",
+      "seasonality": "Long harsh winter (October-April), brief summer growing season.",
+      "extremeEvents": "Severe snowstorms, avalanches, glacial lake outburst floods (GLOF), extreme cold."
+    },
+    "trends": {"temperatureTrend": "+2.1°C rapid warming", "glacialRetreat": "Accelerating", "glofRisk": "Increasing"},
+    "recentEvents": [
+      {"event": "GLOF Risk", "date": "2024-06", "impact": "Glacial lake monitoring increased, evacuation planning", "severity": "high"}
+    ],
+    "confidence": "low",
+    "sources": ["Glacial Research Unit"],
+    "lastUpdated": "2024-09-15"
+  },
+  "disasters": {
+    "riskProfile": {"glof": "extreme", "avalanche": "very_high", "extreme_cold": "high", "isolation": "extreme"},
+    "recentDisasters": [
+      {"type": "Avalanche", "date": "2024-02-10", "impact": "Village isolated, helicopter rescue required", "economicLoss": "$1M USD"}
+    ],
+    "preparedness": {"reliefCapacity": "Very Low - Extreme remoteness, helicopter access only"},
+    "confidence": "low"
+  }
+}

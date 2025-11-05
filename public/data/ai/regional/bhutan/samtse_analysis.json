@@ -1,0 +1,43 @@
+{
+  "regionName": "Samtse",
+  "country": "Bhutan", 
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 65000,
+    "density": 47.8,
+    "urbanization": 25,
+    "ageDistribution": {"youth": 38, "adult": 55, "elderly": 7},
+    "economicProfile": {"primarySector": 58, "secondarySector": 25, "tertiarySector": 17},
+    "insights": {
+      "populationGrowth": "Growing 1.6% with agricultural productivity and border access supporting population.",
+      "educationLevel": "Moderate 81% literacy with agricultural and cross-border influences.",
+      "employmentPattern": "Agriculture 48%, small industry 18%, border trade 15%, services 12%, government 7%.",
+      "housingPattern": "Traditional houses 65%, modern houses 25%, border facilities 10%."
+    },
+    "confidence": "high",
+    "sources": ["Samtse Administration"],
+    "lastUpdated": "2024-09-27"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Subtropical, warm winters (18°C), hot summers (32°C). Southern border plains.",
+      "precipitation": "Very high 3,200mm, among highest in Bhutan. Extreme monsoon flooding.",
+      "seasonality": "Warm winter, hot pre-monsoon, extreme monsoon, humid post-monsoon.",
+      "extremeEvents": "Catastrophic monsoon flooding, landslides, infrastructure destruction."
+    },
+    "trends": {"precipitationTrend": "Increasing intensity", "floodRisk": "Extreme", "infrastructureRisk": "Very high"},
+    "recentEvents": [
+      {"event": "Catastrophic Flooding", "date": "2024-07", "impact": "Entire region flooded, mass evacuations", "severity": "extreme"}
+    ],
+    "confidence": "high"
+  },
+  "disasters": {
+    "riskProfile": {"flood": "extreme", "landslide": "very_high", "infrastructure_collapse": "high"},
+    "recentDisasters": [
+      {"type": "Regional Flood Disaster", "date": "2024-07-25", "impact": "90% of area flooded, complete infrastructure failure", "economicLoss": "$80M USD"}
+    ],
+    "preparedness": {"reliefCapacity": "Medium - Border access but extreme risks"},
+    "confidence": "high"
+  }
+}

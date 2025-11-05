@@ -1,0 +1,10 @@
+{
+  "regionName": "Bolikhamxai", 
+  "country": "Laos",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {"population": 275000, "density": 18.3, "urbanization": 42, "ageDistribution": {"youth": 38, "adult": 57, "elderly": 5}, "economicProfile": {"primarySector": 48, "secondarySector": 35, "tertiarySector": 17}, "insights": {"populationGrowth": "Growing 1.9% with industrial development and transportation corridor.", "educationLevel": "Good 75% literacy due to industrial investment and connectivity.", "employmentPattern": "Agriculture 35%, industry/mining 30%, transportation/logistics 20%, services 10%, government 5%.", "housingPattern": "Mixed housing: concrete 40%, traditional 45%, industrial 15%."}},
+  "climate": {"insights": {"temperature": "Tropical monsoon, hot dry season (24°C-36°C), warm wet season.", "precipitation": "High 1,800mm with Mekong tributary flooding.", "extremeEvents": "Monsoon flooding, landslides in mountainous areas, droughts."}, "trends": {"floodRisk": "High along rivers", "landslideRisk": "Medium in hills"}},
+  "disasters": {"riskProfile": {"flood": "high", "landslide": "medium", "industrial_accident": "medium"}, "recentDisasters": [{"type": "Industrial Flooding", "date": "2024-08", "impact": "Factories flooded, supply chain disrupted", "economicLoss": "$20M USD"}], "preparedness": {"reliefCapacity": "Medium - Industrial infrastructure provides resources"}},
+  "economicProfile": {"gdpContribution": "7.8% of national GDP", "majorIndustries": ["Manufacturing", "Agriculture", "Mining", "Transportation", "Logistics"], "averageIncome": "$1,600 USD", "businessEnvironment": "Industrial development corridor, Vietnamese investment, transportation hub"}
+}

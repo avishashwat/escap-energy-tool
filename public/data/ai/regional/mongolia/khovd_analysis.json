@@ -1,0 +1,155 @@
+{
+  "regionName": "Khovd",
+  "country": "Mongolia", 
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 123000,
+    "density": 1.3,
+    "urbanization": 48,
+    "ageDistribution": {
+      "youth": 35,
+      "adult": 58,
+      "elderly": 7
+    },
+    "economicProfile": {
+      "primarySector": 65,
+      "secondarySector": 20,
+      "tertiarySector": 15
+    },
+    "insights": {
+      "populationGrowth": "Stable population with 0.8% annual growth, balanced by outmigration to urban centers and climate-driven movement patterns.",
+      "educationLevel": "Moderate education levels with 78% literacy, challenges in remote areas with nomadic populations accessing education services.",
+      "employmentPattern": "Livestock herding dominates (55%), agriculture 15%, mining 12%, services 10%, government 8%. Seasonal employment patterns follow traditional nomadic cycles.",
+      "housingPattern": "Mix of traditional gers (40%), permanent houses (35%), and seasonal camps (25%). Climate adaptation influences housing choices and mobility patterns."
+    },
+    "confidence": "medium",
+    "sources": [
+      "Khovd Aimag Administration",
+      "National Statistical Office Mongolia",
+      "Ministry of Food, Agriculture and Light Industry"
+    ],
+    "lastUpdated": "2024-09-25"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Extreme continental climate with harsh winters reaching -35°C and hot summers up to 35°C. Located at 1,405m elevation with high temperature variability.",
+      "precipitation": "Low annual precipitation of 150mm concentrated in summer months. High evaporation rates and frequent drought conditions affect pastoral activities.",
+      "seasonality": "Four extreme seasons: brutal winter (November-March) with dzud risk, brief spring (April-May) with dust storms, warm summer (June-August) with most precipitation, short autumn (September-October).",
+      "extremeEvents": "Severe dzud (winter disaster) events, intense dust storms, summer droughts, and flash floods from sudden snowmelt affecting traditional herding patterns."
+    },
+    "trends": {
+      "temperatureTrend": "+2.8°C increase over past 50 years, among highest globally",
+      "precipitationTrend": "20% decrease in annual precipitation with higher variability",
+      "droughtFrequency": "Increased drought frequency, especially severe summers affecting pasture quality",
+      "floodRisk": "Low overall flood risk but flash flooding during intense summer storms"
+    },
+    "recentEvents": [
+      {
+        "event": "Severe Dzud (Winter Disaster)",
+        "date": "2023-12",
+        "impact": "150,000 livestock deaths, 400 families affected, emergency fodder distribution required",
+        "severity": "high"
+      },
+      {
+        "event": "Summer Drought",
+        "date": "2024-06",
+        "impact": "Pasture degradation, water source depletion, forced migration of herders",
+        "severity": "medium"
+      },
+      {
+        "event": "Dust Storm",
+        "date": "2024-04",
+        "impact": "Visibility reduced to 50m, respiratory health issues, livestock stress",
+        "severity": "medium"
+      }
+    ],
+    "projections": {
+      "temperature": "Additional 3-5°C increase expected by 2050, severe winter temperature extremes",
+      "precipitation": "Further 15-25% decrease in annual precipitation, more erratic patterns",
+      "extremes": "More frequent and severe dzud events, prolonged droughts, extreme temperature fluctuations"
+    },
+    "confidence": "medium",
+    "sources": [
+      "National Agency for Meteorology and Environment",
+      "Khovd Meteorological Station",
+      "Climate Research Institute Mongolia"
+    ],
+    "lastUpdated": "2024-09-10"
+  },
+  "disasters": {
+    "riskProfile": {
+      "drought": "very_high",
+      "flood": "low",
+      "storm": "medium",
+      "earthquake": "medium",
+      "landslide": "low",
+      "dzud": "very_high",
+      "desertification": "high"
+    },
+    "recentDisasters": [
+      {
+        "type": "Dzud (Severe Winter)",
+        "date": "2023-12-15",
+        "impact": "150,000 livestock mortality, 400 herding families affected, economic losses in livestock sector",
+        "economicLoss": "$25M USD",
+        "response": "Emergency fodder distribution, veterinary support, temporary shelters for affected families"
+      },
+      {
+        "type": "Severe Drought",
+        "date": "2024-07-01",
+        "impact": "60% pasture degradation, 200 water sources depleted, forced herder migration",
+        "economicLoss": "$15M USD",
+        "response": "Water trucking to remote areas, livestock vaccination programs, pasture management support"
+      }
+    ],
+    "preparedness": {
+      "earlyWarning": true,
+      "evacuationPlans": false,
+      "reliefCapacity": "Medium - Remote location limits rapid response, local disaster committees coordinate with national support",
+      "infrastructure": {
+        "hospitals": 2,
+        "fireStations": 1,
+        "emergencyShelters": 12,
+        "evacuationRoutes": "Limited by remote geography, helicopter access for extreme emergencies"
+      },
+      "training": "Traditional knowledge of dzud preparation, livestock protection methods, community mutual support systems"
+    },
+    "vulnerabilities": {
+      "geographical": "Remote western location with extreme climate, limited transportation access",
+      "infrastructure": "Sparse infrastructure, limited communication networks, isolated settlements",
+      "social": "Traditional nomadic lifestyle vulnerable to climate extremes, limited alternative livelihoods",
+      "economic": "Heavy dependence on livestock economy vulnerable to climate disasters"
+    },
+    "adaptationMeasures": {
+      "structural": "Livestock shelters construction, water point development, weather monitoring stations",
+      "nonStructural": "Dzud preparedness training, livestock insurance schemes, alternative livelihood programs",
+      "ecosystem": "Pasture management programs, sustainable grazing practices, rangeland restoration"
+    },
+    "confidence": "medium",
+    "sources": [
+      "National Emergency Management Agency",
+      "Khovd Disaster Risk Management Committee",
+      "World Bank Mongolia Risk Assessment 2023"
+    ],
+    "lastUpdated": "2024-08-20"
+  },
+  "economicProfile": {
+    "gdpContribution": "2.8% of national GDP, livestock and agricultural focus",
+    "majorIndustries": ["Livestock Herding", "Agriculture", "Mining", "Food Processing", "Traditional Crafts"],
+    "employmentRate": 87.5,
+    "averageIncome": "$2,400 USD annually",
+    "businessEnvironment": "Traditional pastoral economy with growing mining sector, cross-border trade with China"
+  },
+  "infrastructure": {
+    "transportation": "Regional airport with limited flights, highway connections to Ulaanbaatar (700km), border crossing with China",
+    "utilities": "75% electricity coverage (lower in rural areas), 60% clean water access, limited sewerage, mobile coverage 70%",
+    "healthcare": "Khovd General Hospital, regional medical center, mobile health services for nomadic populations",
+    "education": "University of Khovd, 45 schools including mobile schools for nomadic children, distance learning programs"
+  },
+  "culturalHeritage": {
+    "ethnic": "Multi-ethnic province with Kazakh minority (largest Kazakh population in Mongolia), traditional eagle hunting culture",
+    "traditions": "Traditional nomadic lifestyle, livestock management practices, seasonal migration patterns",
+    "festivals": "Golden Eagle Festival, traditional Kazakh and Mongolian celebrations, cultural preservation programs"
+  }
+}

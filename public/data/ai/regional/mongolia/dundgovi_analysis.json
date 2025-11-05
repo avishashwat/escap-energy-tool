@@ -1,0 +1,48 @@
+{
+  "regionName": "Dundgovi",
+  "country": "Mongolia",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 63000,
+    "density": 0.8,
+    "urbanization": 42,
+    "ageDistribution": {"youth": 34, "adult": 59, "elderly": 7},
+    "economicProfile": {"primarySector": 65, "secondarySector": 22, "tertiarySector": 13},
+    "insights": {
+      "populationGrowth": "Stable at 0.1% annually. Mining development provides some employment but climate challenges drive emigration.",
+      "educationLevel": "Moderate education with 75% literacy. Limited educational infrastructure in remote areas.",
+      "employmentPattern": "Livestock herding 50%, mining 25%, agriculture 12%, services 8%, government 5%. Mining sector growing.",
+      "housingPattern": "Traditional gers 50%, permanent houses 35%, mining accommodations 15%."
+    },
+    "confidence": "medium",
+    "sources": ["Dundgovi Province Administration", "Mongolia Mining Association"],
+    "lastUpdated": "2024-09-25"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Desert-steppe climate with extreme temperatures, winters (-30°C), summers (35°C). Gobi Desert influence.",
+      "precipitation": "Very low precipitation 120mm annually. Arid desert conditions with high water stress.",
+      "seasonality": "Cold dry winter, hot dry summer with minimal precipitation. Extreme aridity year-round.",
+      "extremeEvents": "Severe droughts, dust storms, extreme temperature swings, rare but destructive flash floods."
+    },
+    "trends": {"temperatureTrend": "+3.1°C over 50 years", "precipitationTrend": "-25% decrease", "droughtFrequency": "Constant", "floodRisk": "Very low"},
+    "recentEvents": [
+      {"event": "Extreme Drought", "date": "2024-06", "impact": "Total pasture failure, livestock mortality", "severity": "extreme"},
+      {"event": "Dust Storm", "date": "2024-04", "impact": "Mining operations halted, health crisis", "severity": "high"}
+    ],
+    "confidence": "medium",
+    "sources": ["Gobi Desert Research Station", "Mining Climate Monitoring"],
+    "lastUpdated": "2024-09-12"
+  },
+  "disasters": {
+    "riskProfile": {"drought": "extreme", "desertification": "extreme", "dust_storms": "very_high", "mining_accidents": "medium"},
+    "recentDisasters": [
+      {"type": "Total Drought", "date": "2024-06-01", "impact": "Complete ecosystem failure, mass livestock death", "economicLoss": "$35M USD"}
+    ],
+    "preparedness": {"earlyWarning": false, "reliefCapacity": "Very Low - Extreme remoteness, minimal infrastructure"},
+    "confidence": "low",
+    "sources": ["Emergency Management", "Gobi Research Center"],
+    "lastUpdated": "2024-09-08"
+  }
+}

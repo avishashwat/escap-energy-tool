@@ -1,0 +1,51 @@
+{
+  "regionName": "Arkhangai",
+  "country": "Mongolia",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 97000,
+    "density": 1.7,
+    "urbanization": 44,
+    "ageDistribution": {"youth": 34, "adult": 59, "elderly": 7},
+    "economicProfile": {"primarySector": 62, "secondarySector": 22, "tertiarySector": 16},
+    "insights": {
+      "populationGrowth": "Slight decline -0.2% due to youth outmigration, but cultural tourism provides some retention.",
+      "educationLevel": "Good education 80% literacy. Traditional knowledge preservation programs active.",
+      "employmentPattern": "Livestock 50%, agriculture 20%, tourism 15%, crafts 8%, government 7%.",
+      "housingPattern": "Gers 48%, houses 40%, tourism facilities 12%."
+    },
+    "confidence": "medium",
+    "sources": ["Arkhangai Administration", "Cultural Heritage Office"],
+    "lastUpdated": "2024-09-25"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Mountain-steppe climate, winters (-28°C), summers (26°C). Elevation creates diverse microclimates.",
+      "precipitation": "Good precipitation 280mm with mountain effects. Supports agriculture and tourism.",
+      "seasonality": "Cold winter, pleasant spring/summer tourist season, colorful autumn.",
+      "extremeEvents": "Moderate dzud, mountain weather extremes, flash floods in valleys."
+    },
+    "trends": {"temperatureTrend": "+2.3°C warming", "precipitationTrend": "Slight decrease -5%", "seasonShift": "Earlier spring"},
+    "recentEvents": [
+      {"event": "Flash Flood", "date": "2024-07", "impact": "Valley settlements affected, tourism disrupted", "severity": "medium"}
+    ],
+    "confidence": "medium",
+    "sources": ["Arkhangai Climate Station"],
+    "lastUpdated": "2024-09-18"
+  },
+  "disasters": {
+    "riskProfile": {"dzud": "medium", "flash_flood": "medium", "drought": "medium", "landslide": "low"},
+    "recentDisasters": [
+      {"type": "Dzud Event", "date": "2024-02", "impact": "95,000 livestock affected, tourism disrupted", "economicLoss": "$15M USD"}
+    ],
+    "preparedness": {"reliefCapacity": "Medium - Mountain terrain challenges but tourism infrastructure helps"},
+    "confidence": "medium"
+  },
+  "economicProfile": {
+    "gdpContribution": "3.2% of national GDP",
+    "majorIndustries": ["Livestock", "Agriculture", "Tourism", "Traditional Crafts", "Food Processing"],
+    "averageIncome": "$2,500 USD annually",
+    "businessEnvironment": "Mountain tourism development, traditional crafts, agricultural production center"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "regionName": "Attapeu",
+  "country": "Laos",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-04",
+  "demographics": {
+    "population": 139000,
+    "density": 11.2,
+    "urbanization": 28,
+    "ageDistribution": {"youth": 42, "adult": 53, "elderly": 5},
+    "economicProfile": {"primarySector": 72, "secondarySector": 18, "tertiarySector": 10},
+    "insights": {
+      "populationGrowth": "Growing 1.8% with agricultural development and cross-border trade with Vietnam and Cambodia.",
+      "educationLevel": "Moderate 68% literacy with rural agricultural focus and ethnic diversity challenges.",
+      "employmentPattern": "Agriculture 62%, forestry 15%, mining 10%, government 8%, services 5%. Subsistence agriculture dominates.",
+      "housingPattern": "Traditional stilt houses 70%, concrete houses 20%, temporary shelters 10%."
+    },
+    "confidence": "medium",
+    "sources": ["Attapeu Provincial Office", "Lao Statistics Bureau"],
+    "lastUpdated": "2024-09-25"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Tropical monsoon climate, warm year-round with temperatures 22°C-35°C. Hot dry season and warm wet season.",
+      "precipitation": "Annual precipitation 2,400mm heavily concentrated in monsoon (May-October). Dry season water stress common.",
+      "seasonality": "Hot dry season (November-April), wet monsoon season (May-October) with intense rainfall and flooding.",
+      "extremeEvents": "Severe monsoon flooding, flash floods, droughts during failed monsoons, tropical storm impacts."
+    },
+    "trends": {
+      "temperatureTrend": "+1.4°C increase over past 30 years",
+      "precipitationTrend": "More intense monsoon events with longer dry periods",
+      "floodRisk": "Increasing frequency and severity of flooding",
+      "droughtRisk": "Extended dry seasons becoming more common"
+    },
+    "recentEvents": [
+      {"event": "Mekong Tributary Flooding", "date": "2024-08", "impact": "Villages evacuated, rice paddies flooded, livestock losses", "severity": "high"},
+      {"event": "Extended Dry Season", "date": "2024-03", "impact": "Water shortages, crop stress, well depletion", "severity": "medium"}
+    ],
+    "confidence": "medium",
+    "sources": ["Lao Meteorological Department", "Mekong River Commission"],
+    "lastUpdated": "2024-09-18"
+  },
+  "disasters": {
+    "riskProfile": {"flood": "very_high", "drought": "high", "landslide": "medium", "dam_failure": "high"},
+    "recentDisasters": [
+      {"type": "Dam Collapse", "date": "2018-07-23", "impact": "Catastrophic flooding, 71 deaths, thousands displaced, long-term economic devastation", "economicLoss": "$500M USD"},
+      {"type": "Monsoon Flooding", "date": "2024-08-15", "impact": "Agricultural areas flooded, infrastructure damage, temporary displacement", "economicLoss": "$25M USD"}
+    ],
+    "preparedness": {
+      "earlyWarning": true,
+      "reliefCapacity": "Low - Remote location, limited infrastructure, dependence on external aid",
+      "infrastructure": {"hospitals": 1, "emergencyShelters": 12, "evacuationRoutes": "Limited by terrain and seasonal roads"}
+    },
+    "confidence": "high",
+    "sources": ["National Disaster Management Office", "UN OCHA Laos"],
+    "lastUpdated": "2024-09-10"
+  },
+  "economicProfile": {
+    "gdpContribution": "2.8% of national GDP",
+    "majorIndustries": ["Agriculture", "Forestry", "Hydropower", "Mining", "Cross-border Trade"],
+    "averageIncome": "$1,200 USD annually",
+    "businessEnvironment": "Agricultural economy with hydropower development, vulnerable to dam risks and flooding"
+  }
+}

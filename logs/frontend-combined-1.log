@@ -1,0 +1,1485 @@
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
+C:\PROGRAM FILES\NODEJS\NPX.CMD:1
+:: Created by npm, please don't edit manually.
+^
+
+SyntaxError: Unexpected token ':'
+    at wrapSafe (node:internal/modules/cjs/loader:1638:18)
+    at Module._compile (node:internal/modules/cjs/loader:1680:20)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainer.js:292:27
+    at wrapper (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\once.js:12:16)
+    at next (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\waterfall.js:96:20)
+    at C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\node_modules\async\internal\onlyOnce.js:12:16
+    at WriteStream.<anonymous> (C:\Users\91878\AppData\Roaming\npm\node_modules\pm2\lib\Utility.js:186:13)
