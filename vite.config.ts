@@ -17,6 +17,11 @@ export default defineConfig({
     port: 3000,
     host: "127.0.0.1",
     strictPort: false,
+    allowedHosts: [
+      "localhost",
+      "127.0.0.1",
+      "escap-tools.thinkbluedata.org"
+    ],
     proxy: {
       '/api': {
         target: 'http://localhost:5000',
