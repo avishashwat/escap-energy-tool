@@ -6,6 +6,13 @@ import { Progress } from '@/components/ui/progress'
 import { Upload, HardDrives, Database, Stack, CheckCircle, Warning, ArrowLeft, Play, Square } from '@phosphor-icons/react'
 import { toast } from 'sonner'
 
+// Import configuration
+const DB_HOST = import.meta.env.VITE_DB_HOST || 'localhost'
+const DB_PORT = import.meta.env.VITE_DB_PORT || '5432'
+const GEOSERVER_URL = import.meta.env.VITE_GEOSERVER_URL || 'http://localhost:8081/geoserver'
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000'
+const REDIS_URL = import.meta.env.VITE_REDIS_URL || 'redis://localhost:6379'
+
 interface ServiceStatus {
   name: string
   status: 'healthy' | 'unhealthy' | 'unknown'
@@ -24,25 +31,25 @@ export function GeospatialInfrastructure() {
     {
       name: 'PostGIS Database',
       status: 'unknown',
-      url: 'postgresql://localhost:5432',
+      url: `postgresql://${DB_HOST}:${DB_PORT}`,
       description: 'Spatial database with optimized indexing'
     },
     {
       name: 'GeoServer',
       status: 'unknown', 
-      url: 'http://localhost:8080',
+      url: GEOSERVER_URL,
       description: 'Map server for high-performance data serving'
     },
     {
       name: 'GDAL Processing Service',
       status: 'unknown',
-      url: 'http://localhost:8081', 
+      url: BACKEND_URL, 
       description: 'Automatic COG conversion and spatial processing'
     },
     {
       name: 'Redis Cache',
       status: 'unknown',
-      url: 'redis://localhost:6379',
+      url: REDIS_URL,
       description: 'High-speed caching for instant data access'
     }
   ])
@@ -61,7 +68,7 @@ export function GeospatialInfrastructure() {
   const checkInfrastructureStatus = async () => {
     try {
       // Check GDAL service health endpoint
-      const response = await fetch('http://localhost:8081/health')
+      const response = await fetch(`${BACKEND_URL}/health`)
       if (response.ok) {
         const health = await response.json()
         
@@ -151,7 +158,7 @@ export function GeospatialInfrastructure() {
       
       setUploadProgress({ phase: 'converting', progress: 30, message: 'Converting to COG format...' })
       
-      const response = await fetch('http://localhost:8081/process-raster', {
+      const response = await fetch(`${BACKEND_URL}/process-raster`, {
         method: 'POST',
         body: formData
       })

@@ -3,7 +3,7 @@
 // Purpose: API service for AI features communication with backend
 // Status: NEW FILE - SAFE TO CREATE
 
-const AI_API_BASE_URL = process.env.REACT_APP_AI_API_URL || 'http://localhost:8000/api/ai';
+const AI_API_BASE_URL = import.meta.env.VITE_AI_API_URL || 'http://localhost:8000/api/ai';
 
 export interface ChatMessage {
   id: string;

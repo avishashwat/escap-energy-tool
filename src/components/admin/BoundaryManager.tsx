@@ -11,6 +11,9 @@ import { SparkFallback } from '../../utils/sparkFallback'
 import { COUNTRIES_LIST, TOTAL_COUNTRIES, isCountrySupported } from '@/constants/countries'
 import { toast } from 'sonner'
 
+// Import API configuration
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000'
+
 interface BoundaryFile {
   id: string
   name: string
@@ -82,7 +85,7 @@ export function BoundaryManager({ onStatsUpdate }: BoundaryManagerProps) {
   const loadBoundaryFiles = async () => {
     try {
       console.log('🔄 Loading boundary files from GeoServer...')
-      const response = await fetch('http://localhost:5000/api/geoserver/boundaries')
+      const response = await fetch(`${BACKEND_URL}/api/geoserver/boundaries`)
       const data = await response.json()
       
       if (data.success && data.boundaries) {
@@ -128,7 +131,7 @@ export function BoundaryManager({ onStatsUpdate }: BoundaryManagerProps) {
   const checkBackendAvailability = async () => {
     try {
       console.log('🔧 Checking GeoServer backend availability...')
-      const response = await fetch('http://localhost:5000/api/geoserver', {
+      const response = await fetch(`${BACKEND_URL}/api/geoserver`, {
         method: 'GET',
         signal: AbortSignal.timeout(3000) // 3 second timeout
       })
@@ -163,7 +166,7 @@ export function BoundaryManager({ onStatsUpdate }: BoundaryManagerProps) {
       
       setMaskProcessingStatus('Uploading to GeoServer...')
 
-      const response = await fetch('http://localhost:5000/api/geoserver/upload-shapefile', {
+      const response = await fetch(`${BACKEND_URL}/api/geoserver/upload-shapefile`, {
         method: 'POST',
         body: formData,
         signal: AbortSignal.timeout(120000) // 2 minute timeout for processing

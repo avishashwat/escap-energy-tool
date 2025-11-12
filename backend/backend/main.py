@@ -470,9 +470,11 @@ async def get_country_layers(country: str, db: Session = Depends(get_db)):
 async def proxy_geoserver(workspace: str, path: str, request: Request):
     """Proxy requests to GeoServer to avoid CORS issues"""
     import httpx
+    import os
     
     # Construct the GeoServer URL
-    geoserver_url = f"http://localhost:8081/geoserver/{workspace}/{path}"
+    geoserver_base_url = os.getenv("GEOSERVER_URL", "http://localhost:8081/geoserver")
+    geoserver_url = f"{geoserver_base_url}/{workspace}/{path}"
     
     # Get query parameters from the request
     query_params = "?" + str(request.url.query) if request.url.query else ""

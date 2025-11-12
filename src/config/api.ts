@@ -1,7 +1,7 @@
 // API configuration for switching between proxy and direct backend access
 const USE_PROXY = false // Set to true to use Vite proxy, false for direct backend
 
-export const API_BASE_URL = USE_PROXY ? '' : 'http://localhost:5000'
+export const API_BASE_URL = USE_PROXY ? '' : (import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000')
 
 export const API_ENDPOINTS = {
   // GeoServer endpoints

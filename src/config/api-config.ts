@@ -33,8 +33,8 @@ export const API_CONFIG = {
     WORKSPACE: 'escap_climate',
     DATASTORE: 'escap_datastore',
     CREDENTIALS: {
-      USERNAME: 'admin',
-      PASSWORD: 'geoserver_admin_2024'
+      USERNAME: import.meta.env.VITE_GEOSERVER_USERNAME || 'admin',
+      PASSWORD: import.meta.env.VITE_GEOSERVER_PASSWORD || 'geoserver_admin_2024'
     },
     SERVICES: {
       WFS: {

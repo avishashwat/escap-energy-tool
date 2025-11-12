@@ -14,7 +14,7 @@ export const DEBUG_CONFIG = {
 
 // Backend API Configuration
 export const BACKEND_CONFIG = {
-  baseUrl: process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000',
+  baseUrl: import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000',
   timeout: 30000, // 30 seconds
   retryAttempts: 3,
   retryDelay: 1000 // 1 second
@@ -23,14 +23,14 @@ export const BACKEND_CONFIG = {
 // GeoServer Configuration  
 export const GEOSERVER_CONFIG = {
   // Direct GeoServer access (used as fallback)
-  directUrl: process.env.REACT_APP_GEOSERVER_URL || 'http://localhost:8081/geoserver',
+  directUrl: import.meta.env.VITE_GEOSERVER_URL || 'http://localhost:8081/geoserver',
   // Backend proxy routes (preferred for CORS handling)
   proxyUrl: `${BACKEND_CONFIG.baseUrl}/api/geoserver`,
-  workspace: process.env.REACT_APP_GEOSERVER_WORKSPACE || 'escap_climate',
-  datastore: process.env.REACT_APP_GEOSERVER_DATASTORE || 'escap_datastore',
+  workspace: 'escap_climate',
+  datastore: 'escap_datastore',
   credentials: {
-    username: process.env.REACT_APP_GEOSERVER_USERNAME || 'admin',
-    password: process.env.REACT_APP_GEOSERVER_PASSWORD || 'geoserver_admin_2024'
+    username: import.meta.env.VITE_GEOSERVER_USERNAME || 'admin',
+    password: import.meta.env.VITE_GEOSERVER_PASSWORD || 'geoserver_admin_2024'
   }
 }
 

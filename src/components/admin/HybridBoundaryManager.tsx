@@ -11,6 +11,9 @@ import { SparkFallback } from '../../utils/sparkFallback'
 import { toast } from 'sonner'
 import { COUNTRIES_LIST } from '../../constants/countries'
 
+// Import API configuration
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000'
+
 // Debug: Check if countries are loaded
 console.log('🔍 COUNTRIES_LIST loaded:', COUNTRIES_LIST)
 
@@ -67,7 +70,7 @@ export function HybridBoundaryManager({ onStatsUpdate }: HybridBoundaryManagerPr
       
       // PURE SERVER-DRIVEN APPROACH: Only use GeoServer as source of truth
       try {
-        const response = await fetch('http://localhost:5000/api/geoserver/boundaries')
+        const response = await fetch(`${BACKEND_URL}/api/geoserver/boundaries`)
         if (response.ok) {
           const geoserverData = await response.json()
           console.log('🔍 DEBUG - GeoServer API raw response:', geoserverData)
@@ -171,7 +174,7 @@ export function HybridBoundaryManager({ onStatsUpdate }: HybridBoundaryManagerPr
 
   const checkBackendAvailability = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/geoserver', {
+      const response = await fetch(`${BACKEND_URL}/api/geoserver`, {
         method: 'GET',
         signal: AbortSignal.timeout(3000) // 3 second timeout
       })
@@ -213,7 +216,7 @@ export function HybridBoundaryManager({ onStatsUpdate }: HybridBoundaryManagerPr
       console.log('🔥🔥🔥 FRONTEND FORM DATA CHECK:', formData.get('workspace'))
       console.log('🔥🔥🔥 FRONTEND FILE SIZE:', formData.get('fileSize'))
 
-      const response = await fetch('http://localhost:5000/api/geoserver/upload-shapefile', {
+      const response = await fetch(`${BACKEND_URL}/api/geoserver/upload-shapefile`, {
         method: 'POST',
         body: formData,
         signal: AbortSignal.timeout(30000)
@@ -299,7 +302,7 @@ export function HybridBoundaryManager({ onStatsUpdate }: HybridBoundaryManagerPr
       console.log('  - attributes:', formData.get('attributes'))
       console.log('  - uploadedAt:', formData.get('uploadedAt'))
 
-      const response = await fetch('http://localhost:5000/api/geoserver/upload-shapefile', {
+      const response = await fetch(`${BACKEND_URL}/api/geoserver/upload-shapefile`, {
         method: 'POST',
         body: formData,
         signal: AbortSignal.timeout(30000)
@@ -633,7 +636,7 @@ export function HybridBoundaryManager({ onStatsUpdate }: HybridBoundaryManagerPr
 
       // SERVER-DRIVEN: Delete from server first
       try {
-        const deleteResponse = await fetch(`http://localhost:5000/api/geoserver/layers/${fileToDelete.name}`, {
+        const deleteResponse = await fetch(`${BACKEND_URL}/api/geoserver/layers/${fileToDelete.name}`, {
           method: 'DELETE'
         })
         

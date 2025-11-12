@@ -167,18 +167,18 @@ export function useGeospatialService() {
   
   // Get WMS URL for raster layer
   const getWMSUrl = useCallback((layerName: string) => {
-    const baseUrl = process.env.NODE_ENV === 'production' 
+    const baseUrl = import.meta.env.MODE === 'production' 
       ? `${window.location.protocol}//${window.location.host}/geoserver`
-      : 'http://localhost:8080/geoserver'
+      : (import.meta.env.VITE_GEOSERVER_URL || 'http://localhost:8081/geoserver')
     
     return `${baseUrl}/wms`
   }, [])
   
   // Get WFS URL for vector layer
   const getWFSUrl = useCallback((layerName: string) => {
-    const baseUrl = process.env.NODE_ENV === 'production' 
+    const baseUrl = import.meta.env.MODE === 'production' 
       ? `${window.location.protocol}//${window.location.host}/geoserver`
-      : 'http://localhost:8080/geoserver'
+      : (import.meta.env.VITE_GEOSERVER_URL || 'http://localhost:8081/geoserver')
     
     return `${baseUrl}/wfs`
   }, [])

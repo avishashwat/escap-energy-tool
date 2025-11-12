@@ -54,9 +54,8 @@ export function AdminAccessCard() {
             Access Admin Panel
           </Button>
           
-          <div className="text-xs text-muted-foreground">
-            <p><strong>Demo Credentials:</strong></p>
-            <p>Username: admin | Password: escap2024</p>
+          <div className="text-xs text-muted-foreground text-center">
+            <p>Authorized access only. Contact system administrator for credentials.</p>
           </div>
         </div>
       </CardContent>

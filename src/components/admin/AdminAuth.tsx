@@ -34,15 +34,17 @@ export function AdminAuth({ onAuthenticated }: AdminAuthProps) {
     console.log('Password length:', credentials.password.length)
 
     try {
-      console.log('Login attempt with:', { username: credentials.username, password: credentials.password })
+      console.log('Login attempt with username:', credentials.username)
       
-      // For local development: Bypass Spark authentication due to rate limiting
-      // Simple credential check for demo
+      // Get credentials from environment variables
+      const validUsername = import.meta.env.VITE_ADMIN_USERNAME || 'admin'
+      const validPassword = import.meta.env.VITE_ADMIN_PASSWORD || 'admin123'
+      
       console.log('Checking credentials...')
-      console.log('Username match?', credentials.username === 'admin')
-      console.log('Password match?', credentials.password === 'escap2024')
+      console.log('Username match?', credentials.username === validUsername)
+      console.log('Password match?', credentials.password === validPassword)
       
-      if (credentials.username === 'admin' && credentials.password === 'escap2024') {
+      if (credentials.username === validUsername && credentials.password === validPassword) {
         console.log('✅ AdminAuth: Credentials match! Proceeding with authentication...')
         // Store auth status using localStorage
         const authData = {
@@ -68,9 +70,7 @@ export function AdminAuth({ onAuthenticated }: AdminAuthProps) {
         }, 1000)
       } else {
         console.log('❌ Invalid credentials provided')
-        console.log('Expected: admin / escap2024')
-        console.log('Received:', credentials.username, '/', credentials.password)
-        setMessage('Invalid credentials. Please use admin/escap2024')
+        setMessage('Invalid credentials. Please contact your system administrator.')
       }
     } catch (error) {
       console.error('❌ Authentication error:', error)
@@ -145,10 +145,8 @@ export function AdminAuth({ onAuthenticated }: AdminAuthProps) {
             )}
           </form>
           
-          <div className="mt-6 text-xs text-muted-foreground">
-            <p><strong>Demo Credentials:</strong></p>
-            <p>Username: admin</p>
-            <p>Password: escap2024</p>
+          <div className="mt-6 text-xs text-muted-foreground text-center">
+            <p>Authorized personnel only. Contact your system administrator if you need access credentials.</p>
           </div>
         </CardContent>
       </Card>

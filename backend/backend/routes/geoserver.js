@@ -16,6 +16,9 @@ const execAsync = promisify(exec)
 
 // Cross-platform environment configuration
 const config = {
+  backend: {
+    url: process.env.BACKEND_URL || 'http://localhost:5000'
+  },
   geoserver: {
     url: process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver',
     workspace: process.env.GEOSERVER_WORKSPACE || 'escap_climate',
@@ -859,10 +862,11 @@ router.post('/create-layer', async (req, res) => {
     console.log(`🔧 Manual layer creation: ${workspace}:${layerName}`)
     await createGeoServerLayer(workspace, layerName)
     
+    const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
     res.json({ 
       success: true, 
       message: `Layer ${workspace}:${layerName} created successfully`,
-      vectorTileUrl: `http://localhost:8081/geoserver/${workspace}/ows?service=WMS&request=GetMap&version=1.1.0&layers=${workspace}:${layerName}&format=application/vnd.mapbox-vector-tile&width=256&height=256&bbox={bbox-epsg-4326}&srs=EPSG:4326`
+      vectorTileUrl: `${geoserverUrl}/${workspace}/ows?service=WMS&request=GetMap&version=1.1.0&layers=${workspace}:${layerName}&format=application/vnd.mapbox-vector-tile&width=256&height=256&bbox={bbox-epsg-4326}&srs=EPSG:4326`
     })
   } catch (error) {
     console.error('Manual layer creation failed:', error)
@@ -929,13 +933,13 @@ router.post('/upload-shapefile', upload.single('shapefile'), async (req, res) =>
       
       // Delete boundary layer via API (includes GeoServer cleanup)
       try {
-        await fetch(`http://localhost:5000/api/geoserver/layers/${cleanLayerName}`, { method: 'DELETE' })
+        await fetch(`${config.backend.url}/api/geoserver/layers/${cleanLayerName}`, { method: 'DELETE' })
         console.log(`🗑️ Deleted boundary layer: ${cleanLayerName}`)
       } catch (e) { console.log(`ℹ️ No existing boundary layer to delete`) }
       
       // Delete mask layer via API (includes GeoServer cleanup)  
       try {
-        await fetch(`http://localhost:5000/api/geoserver/layers/${cleanMaskName}`, { method: 'DELETE' })
+        await fetch(`${config.backend.url}/api/geoserver/layers/${cleanMaskName}`, { method: 'DELETE' })
         console.log(`🗑️ Deleted mask layer: ${cleanMaskName}`)
       } catch (e) { console.log(`ℹ️ No existing mask layer to delete`) }
       

@@ -700,7 +700,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
           if (maskLayerName) {
             // Add workspace prefix for GeoServer WFS request
             const fullMaskLayerName = `escap_climate:${maskLayerName}`
-            const maskWfsUrl = `http://localhost:8081/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=${fullMaskLayerName}&outputFormat=application/json&srsName=EPSG:4326`
+            const maskWfsUrl = getGeoServerWfsUrl(fullMaskLayerName)
             console.log('🔍 Fetching mask GeoJSON from WFS:', maskWfsUrl)
             
             const maskResponse = await fetch(maskWfsUrl)
@@ -1408,7 +1408,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
               if (maskLayerName) {
                 // Add workspace prefix for GeoServer WFS request
                 const fullMaskLayerName = `escap_climate:${maskLayerName}`
-                const maskWfsUrl = `http://localhost:8081/geoserver/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=${fullMaskLayerName}&outputFormat=application/json&srsName=EPSG:4326`
+                const maskWfsUrl = getGeoServerWfsUrl(fullMaskLayerName)
                 console.log('🔍 Fetching mask GeoJSON from WFS:', maskWfsUrl)
                 
                 const maskResponse = await fetch(maskWfsUrl)
@@ -1985,7 +1985,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
           try {
             const rasterLayer = new ImageLayer({
               source: new ImageWMS({
-                url: 'http://localhost:8081/geoserver/escap_climate/wms',
+                url: `${API_CONFIG.GEOSERVER.BASE_URL}/${API_CONFIG.GEOSERVER.WORKSPACE}/wms`,
                 params: {
                   'LAYERS': `escap_climate:${raster.layerName}`,
                   'FORMAT': 'image/png',
@@ -2298,7 +2298,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
             const vectorLayer = new VectorLayer({
               source: new VectorSource({
                 format: new GeoJSON(),
-                url: `http://localhost:8081/geoserver/escap_climate/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=escap_climate:${layerName}&outputFormat=application/json`
+                url: getGeoServerWfsUrl(`escap_climate:${layerName}`)
               }),
               style: (feature) => {
                 // Use dynamic styling based on energy configuration and feature properties
