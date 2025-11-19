@@ -14,7 +14,9 @@ export class CSVLoader {
    */
   static async loadClimateData(country: string): Promise<ClimateRow[]> {
     try {
-      const csvPath = `${this.baseDataPath}/Climate/Climate trend ${country}.csv`
+      // Capitalize country name to match file naming convention (e.g., "bhutan" → "Bhutan")
+      const capitalizedCountry = country.charAt(0).toUpperCase() + country.slice(1)
+      const csvPath = `${this.baseDataPath}/Climate/Climate trend ${capitalizedCountry}.csv`
       console.log(`📊 Loading climate data from: ${csvPath}`)
       
       const response = await fetch(csvPath)
@@ -69,7 +71,9 @@ export class CSVLoader {
   private static getGIRIFilePath(country: string, energyType: string): string {
     // Normalize energy type for consistent file naming
     const normalizedEnergyType = this.normalizeEnergyType(energyType)
-    return `${this.baseDataPath}/${normalizedEnergyType}/${country}_GIRIExposure_${normalizedEnergyType}_tool.csv`
+    // Capitalize country name to match file naming convention (e.g., "bhutan" → "Bhutan")
+    const capitalizedCountry = country.charAt(0).toUpperCase() + country.slice(1)
+    return `${this.baseDataPath}/${normalizedEnergyType}/${capitalizedCountry}_GIRIExposure_${normalizedEnergyType}_tool.csv`
   }
 
   /**
@@ -185,10 +189,12 @@ export class CSVLoader {
    */
   static async validateCountryData(country: string): Promise<{climate: boolean, giri: boolean}> {
     const results = { climate: false, giri: false }
+    // Capitalize country name to match file naming convention
+    const capitalizedCountry = country.charAt(0).toUpperCase() + country.slice(1)
 
     try {
       // Check climate data
-      const climateResponse = await fetch(`${this.baseDataPath}/Climate/Climate trend ${country}.csv`, { method: 'HEAD' })
+      const climateResponse = await fetch(`${this.baseDataPath}/Climate/Climate trend ${capitalizedCountry}.csv`, { method: 'HEAD' })
       results.climate = climateResponse.ok
     } catch (error) {
       console.warn(`Climate data not available for ${country}`)
@@ -196,7 +202,7 @@ export class CSVLoader {
 
     try {
       // Check GIRI data
-      const giriResponse = await fetch(`${this.baseDataPath}/Hydropower/${country}_GIRIExposure_Hydropower_tool.csv`, { method: 'HEAD' })
+      const giriResponse = await fetch(`${this.baseDataPath}/Hydropower/${capitalizedCountry}_GIRIExposure_Hydropower_tool.csv`, { method: 'HEAD' })
       results.giri = giriResponse.ok
     } catch (error) {
       console.warn(`GIRI data not available for ${country}`)
