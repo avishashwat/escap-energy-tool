@@ -6,6 +6,13 @@
  * to ensure maintainability and prevent hardcoded values throughout the codebase.
  */
 
+// Environment variable diagnostics - log at module load time
+if (typeof window !== 'undefined') {
+  console.log('🔧 [API-CONFIG Module] Environment variables at load time:')
+  console.log('   import.meta.env.VITE_BACKEND_URL:', import.meta.env.VITE_BACKEND_URL)
+  console.log('   import.meta.env.VITE_GEOSERVER_URL:', import.meta.env.VITE_GEOSERVER_URL)
+}
+
 // Environment detection
 const isDevelopment = import.meta.env.MODE === 'development'
 const isProduction = import.meta.env.MODE === 'production'
@@ -95,7 +102,9 @@ export const getBackendUrl = (endpoint: string): string => {
 }
 
 export const getGeoServerWfsUrl = (layerName: string, maxFeatures?: number): string => {
-  const { BASE_URL, WORKSPACE, SERVICES } = API_CONFIG.GEOSERVER
+  // ✅ AUTHENTICATION FIX: Route through backend proxy instead of calling GeoServer directly
+  // This way frontend doesn't expose credentials and leverages backend's authenticated connection
+  const { WORKSPACE, SERVICES } = API_CONFIG.GEOSERVER
   const params = new URLSearchParams({
     service: 'WFS',
     version: SERVICES.WFS.VERSION,
@@ -109,7 +118,19 @@ export const getGeoServerWfsUrl = (layerName: string, maxFeatures?: number): str
     params.append('maxFeatures', maxFeatures.toString())
   }
   
-  return `${BASE_URL}/ows?${params.toString()}`
+  // Route through backend proxy endpoint which handles authentication
+  // Backend endpoint: GET /api/geoserver/{workspace}/ows?service=WFS&...
+  const backendUrl = getBackendUrl('/geoserver')
+  const finalUrl = `${backendUrl}/${WORKSPACE}/ows?${params.toString()}`
+  
+  // 🔍 DIAGNOSTIC LOGGING
+  console.log('🔧 [getGeoServerWfsUrl] Configuration:')
+  console.log('   VITE_BACKEND_URL env:', import.meta.env.VITE_BACKEND_URL)
+  console.log('   API_CONFIG.BACKEND.BASE_URL:', API_CONFIG.BACKEND.BASE_URL)
+  console.log('   getBackendUrl result:', backendUrl)
+  console.log('   Final WFS URL:', finalUrl)
+  
+  return finalUrl
 }
 
 export const getVectorTileUrl = (layerName: string): string => {

@@ -22,7 +22,7 @@ const config = {
   geoserver: {
     url: process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver',
     workspace: process.env.GEOSERVER_WORKSPACE || 'escap_climate',
-    datastore: process.env.GEOSERVER_DATASTORE || 'escap_datastore',
+    datastore: process.env.GEOSERVER_DATASTORE || 'escap_postgis',
     user: process.env.GEOSERVER_USER || 'admin',
     password: process.env.GEOSERVER_PASSWORD || 'geoserver_admin_2024',
     containerName: process.env.GEOSERVER_CONTAINER || 'escap_geoserver'
@@ -606,7 +606,7 @@ router.get('/energy-infrastructure', async (req, res) => {
                 
                 if (configResult.rows.length > 0) {
                   const config = configResult.rows[0]
-                  console.log(`📋 Raw config data:`, JSON.stringify(config))
+                  // console.log(`📋 Raw config data:`, JSON.stringify(config))
                   energyConfig = {
                     capacityAttribute: config.capacity_attribute,
                     useCustomIcon: config.use_custom_icon,
@@ -1022,7 +1022,7 @@ router.post('/upload-shapefile', upload.single('shapefile'), async (req, res) =>
       // Verify the layer was actually created in GeoServer
       const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
       const auth = getGeoServerAuth()
-      const verifyUrl = `${geoserverUrl}/rest/workspaces/${workspace}/datastores/escap_datastore/featuretypes/${layerName}.json`
+      const verifyUrl = `${geoserverUrl}/rest/workspaces/${workspace}/datastores/${config.geoserver.datastore}/featuretypes/${layerName}.json`
       
       const verifyResponse = await fetch(verifyUrl, {
         headers: { 'Authorization': `Basic ${auth}` }
@@ -1449,11 +1449,17 @@ router.post('/upload-energy-infrastructure', upload.fields([
 router.delete('/layers/:layerName', async (req, res) => {
   const { layerName } = req.params
   console.log(`🚀 DELETE ROUTE CALLED for: ${layerName}`)
+  console.log(`🚀 Received request body:`, req.body)
   
   try {
+    console.log(`🔍 Checking if boundary layer...`)
     // Detect if this is a boundary/vector layer or a raster layer
     const isBoundaryLayer = layerName.includes('_boundary') || layerName.includes('_mask')
+    console.log(`🔍 Is boundary: ${isBoundaryLayer}`)
+    
+    console.log(`🔍 Checking if raster layer...`)
     const isRasterLayer = await checkIfRasterLayer(layerName)
+    console.log(`🔍 Is raster: ${isRasterLayer}`)
     
     if (isBoundaryLayer) {
       console.log(`📊 Treating as boundary/vector layer: ${layerName}`)
@@ -1477,8 +1483,16 @@ router.delete('/layers/:layerName', async (req, res) => {
       }
     }
   } catch (error) {
-    console.error(`❌ Deletion failed for ${layerName}:`, error.message)
-    res.status(500).json({ error: 'Deletion failed', details: error.message })
+    console.error(`❌ Deletion failed for ${layerName}:`, error)
+    console.error(`❌ Error message:`, error?.message)
+    console.error(`❌ Error stack:`, error?.stack)
+    const errorDetails = error?.message || String(error) || 'Unknown error'
+    res.status(500).json({ 
+      success: false,
+      error: 'Deletion failed', 
+      details: errorDetails,
+      type: error?.name || 'Error'
+    })
   }
 })
 
@@ -1487,6 +1501,9 @@ async function checkIfRasterLayer(layerName) {
   try {
     const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
     const auth = getGeoServerAuth()
+    
+    // GeoServer keeps spaces in store names, so DON'T normalize them
+    const normalizedName = layerName
     
     // Check if layer exists in escap_climate workspace coveragestores
     const response = await fetch(`${geoserverUrl}/rest/workspaces/escap_climate/coveragestores.json`, {
@@ -1497,16 +1514,30 @@ async function checkIfRasterLayer(layerName) {
       const data = await response.json()
       const stores = data.coverageStores?.coverageStore || []
       
-      // Check if any coverage store name matches our layer (with various suffixes)
-      const matchingStore = stores.find(store => 
-        store.name === `${layerName}_classified` || 
-        store.name === `${layerName}_store` ||
-        store.name === layerName ||
-        store.name === layerName.replace(/_classified$/, '') ||
-        store.name === `${layerName.replace(/_classified$/, '')}_store`
-      )
+      console.log(`🔍 checkIfRasterLayer: Checking if ${normalizedName} is a raster layer...`)
+      console.log(`🔍 Available stores: ${stores.map(s => s.name).join(', ')}`)
       
-      return !!matchingStore
+      // Check if any coverage store name matches our layer (with various suffixes, using normalized name)
+      const possibleStoreNames = [
+        normalizedName,
+        `${normalizedName}_classified`,
+        `${normalizedName}_classified_classified`,
+        `${normalizedName}_store`,
+        normalizedName.replace(/_classified_classified$/, ''),
+        normalizedName.replace(/_classified$/, ''),
+        `${normalizedName.replace(/_classified$/, '')}_store`,
+        `${normalizedName.replace(/_classified_classified$/, '')}_store`
+      ]
+      
+      const matchingStore = stores.find(store => possibleStoreNames.includes(store.name))
+      
+      if (matchingStore) {
+        console.log(`✅ Found matching raster store: ${matchingStore.name}`)
+        return true
+      }
+      
+      console.log(`⚠️ No matching raster store found for ${normalizedName}`)
+      return false
     }
     
     return false
@@ -1745,8 +1776,8 @@ async function createGeoServerLayer(workspace, layerName) {
   const auth = getGeoServerAuth()
 
   try {
-    // Use existing datastore 'escap_datastore' that we created
-    const datastoreName = 'escap_datastore'
+    // Use existing datastore from config (escap_postgis)
+    const datastoreName = config.geoserver.datastore
     
     // First check if layer already exists and delete it
     const checkUrl = `${geoserverUrl}/rest/workspaces/${workspace}/datastores/${datastoreName}/featuretypes/${layerName}.json`
@@ -1852,7 +1883,7 @@ async function createGeoServerEnergyLayer(workspace, layerName, metadata = {}) {
   const auth = getGeoServerAuth()
 
   try {
-    const datastoreName = 'escap_datastore'
+    const datastoreName = config.geoserver.datastore
     
     // Comprehensive cleanup of existing layer
     console.log(`🧹 Starting comprehensive cleanup for layer: ${layerName}`)
@@ -2018,7 +2049,8 @@ async function configureVectorTileService(workspace, layerName) {
 async function getLayerBoundsFromGeoServer(workspace, layerName) {
   try {
     const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
-    const url = `${geoserverUrl}/rest/workspaces/${workspace}/datastores/escap_datastore/featuretypes/${layerName}.json`
+    const datastoreName = config.geoserver.datastore
+    const url = `${geoserverUrl}/rest/workspaces/${workspace}/datastores/${datastoreName}/featuretypes/${layerName}.json`
     
     const response = await fetch(url, {
       method: 'GET',
@@ -2356,8 +2388,8 @@ async function deleteGeoServerLayer(layerName) {
 async function deleteGeoServerVectorLayer(layerName) {
   const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
   const auth = getGeoServerAuth()
-  const workspace = 'escap_climate'
-  const datastore = 'escap_datastore'
+  const workspace = config.geoserver.workspace
+  const datastore = config.geoserver.datastore
   
   console.log(`🗑️ STARTING VECTOR LAYER DELETION: ${layerName}`)
   
@@ -2409,23 +2441,69 @@ async function deleteGeoServerVectorLayer(layerName) {
 async function deleteGeoServerRasterLayer(layerName) {
   const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
   const auth = getGeoServerAuth()
-  const workspace = 'escap_climate'
+  const workspace = config.geoserver.workspace
   
   console.log(`🗑️ STARTING RASTER DELETION: ${layerName}`)
+  console.log(`🔍 Original layer name: ${layerName}`)
+  
+  // GeoServer keeps spaces in store names, so DON'T normalize them
+  // The layer name already has the correct format from the frontend
+  const normalizedName = layerName
+  console.log(`🔍 Store name to use: ${normalizedName}`)
+  console.log(`🔍 Ends with _classified_classified: ${normalizedName.endsWith('_classified_classified')}`)
   
   try {
+    // First, fetch and log all available coverage stores
+    console.log(`📋 Fetching list of all coverage stores from GeoServer...`)
+    const storesResponse = await fetch(`${geoserverUrl}/rest/workspaces/${workspace}/coveragestores.json`, {
+      headers: { 'Authorization': `Basic ${auth}` }
+    })
+    
+    if (storesResponse.ok) {
+      const storesData = await storesResponse.json()
+      const allStores = storesData.coverageStores?.coverageStore || []
+      console.log(`📋 Available coverage stores in GeoServer:`)
+      allStores.forEach((store, idx) => {
+        console.log(`   ${idx + 1}. ${store.name}`)
+      })
+    }
     // For rasters, try multiple store name patterns
-    const possibleStoreNames = [
-      `${layerName}_classified`,
-      `${layerName}_store`,
-      layerName,
-      layerName.replace(/_classified$/, ''), // Remove _classified suffix if present
-      `${layerName.replace(/_classified$/, '')}_store`
-    ]
+    // The frontend passes the full layer name, which may already include double suffix
+    const possibleStoreNames = []
     
-    console.log(`🔍 Trying store names: ${possibleStoreNames.join(', ')}`)
+    // If name already ends with _classified_classified, use it directly as first priority
+    if (normalizedName.endsWith('_classified_classified')) {
+      console.log(`📍 Layer name already has double suffix, using as-is`)
+      possibleStoreNames.push(normalizedName)
+      // Also try without the last _classified
+      possibleStoreNames.push(normalizedName.replace(/_classified$/, ''))
+      // And try the base name
+      possibleStoreNames.push(normalizedName.replace(/_classified_classified$/, ''))
+    } else if (normalizedName.endsWith('_classified')) {
+      // Name has single suffix from frontend
+      console.log(`📍 Layer name has single _classified suffix, trying double and variants`)
+      possibleStoreNames.push(`${normalizedName}_classified`) // Add another for double suffix
+      possibleStoreNames.push(normalizedName)                  // Try as-is
+      possibleStoreNames.push(normalizedName.replace(/_classified$/, '')) // Try base
+    } else {
+      // No suffix, try adding them
+      console.log(`📍 Layer name has no _classified suffix, trying all variants`)
+      possibleStoreNames.push(`${normalizedName}_classified_classified`)
+      possibleStoreNames.push(`${normalizedName}_classified`)
+      possibleStoreNames.push(normalizedName)
+    }
     
-    for (const storeName of possibleStoreNames) {
+    // Add fallback patterns
+    possibleStoreNames.push(`${normalizedName}_store`)
+    possibleStoreNames.push(`${normalizedName.replace(/_classified_classified$/, '')}_store`)
+    possibleStoreNames.push(`${normalizedName.replace(/_classified$/, '')}_store`)
+    
+    // Remove duplicates
+    const uniqueStoreNames = [...new Set(possibleStoreNames)]
+    
+    console.log(`🔍 Trying store names: ${uniqueStoreNames.join(', ')}`)
+    
+    for (const storeName of uniqueStoreNames) {
       try {
         console.log(`\n🔄 TESTING STORE NAME: ${storeName}`)
         
@@ -2869,10 +2947,62 @@ async function setupCOGRasterTiles(rasterPath, layerName, workspace = config.geo
 }
 
 /**
+ * Retrieve boundary shapefile for a country
+ * First attempts to export from PostGIS, falls back to file system
+ * @param {string} country - Country name for boundary lookup
+ * @returns {Promise<string|null>} Path to boundary shapefile or null if not found
+ */
+async function getBoundaryShapefileForCountry(country) {
+  try {
+    if (!country) {
+      console.warn(`⚠️ Country not provided for boundary retrieval`)
+      return null
+    }
+    
+    // Try PostGIS export first
+    const tableName = `${country.toLowerCase().replace(/\s+/g, '_')}_boundary`
+    const boundaryDir = path.join(process.env.DATA_DIR || './data/boundaries', country)
+    
+    // Ensure directory exists (using fsSync for synchronous operations)
+    if (!fsSync.existsSync(boundaryDir)) {
+      fsSync.mkdirSync(boundaryDir, { recursive: true })
+    }
+    
+    const boundaryShapefile = path.join(boundaryDir, `${country}_boundary.shp`)
+    
+    // Check if already exported
+    if (fsSync.existsSync(boundaryShapefile)) {
+      console.log(`✅ Found boundary shapefile for ${country}: ${boundaryShapefile}`)
+      return boundaryShapefile
+    }
+    
+    // Try to export from PostGIS
+    console.log(`🌍 Exporting boundary for ${country} from PostGIS table: ${tableName}`)
+    
+    const ogr2ogrCommand = `ogr2ogr -f "ESRI Shapefile" "${boundaryDir}" "PG:host=${config.database.host} user=${config.database.user} password=${config.database.password} dbname=${config.database.name}" ${tableName}`
+    
+    await execAsync(ogr2ogrCommand)
+    
+    if (fsSync.existsSync(boundaryShapefile)) {
+      console.log(`✅ Successfully exported boundary shapefile for ${country}`)
+      return boundaryShapefile
+    } else {
+      console.warn(`⚠️ Boundary shapefile not found for ${country} after export attempt`)
+      return null
+    }
+    
+  } catch (error) {
+    console.warn(`⚠️ Error retrieving boundary for ${country}: ${error.message}`)
+    console.log(`📌 Note: Raster will be processed without clipping - boundary not available`)
+    return null
+  }
+}
+
+/**
  * Process classified raster with custom color scheme and COG optimization
  * Validates classification ranges against raster data and handles no-data values
  */
-async function setupClassifiedCOGRasterTiles(rasterPath, layerName, classifications, workspace = config.geoserver.workspace) {
+async function setupClassifiedCOGRasterTiles(rasterPath, layerName, classifications, workspace = config.geoserver.workspace, country) {
   try {
     console.log(`🎨 Setting up classified RGB COG for: ${layerName}`)
     console.log(`📊 Classifications provided: ${classifications.length} classes`)
@@ -3046,12 +3176,51 @@ async function setupClassifiedCOGRasterTiles(rasterPath, layerName, classificati
     console.log(`📋 Color table contents (${colorTableContent.split('\n').filter(line => line.trim()).length} entries):`)
     console.log(colorTableContent.split('\n').filter(line => line.trim()).map(line => `  ${line}`).join('\n'))
     
+    // Initialize processedRasterPath before clipping step
+    let processedRasterPath = rasterPath
+    
+    // Step 5A: Clip raster to country boundary (if country provided)
+    if (country) {
+      console.log(`🌍 Step 5A: Clipping raster to ${country} boundary...`)
+      
+      const boundaryShapefile = await getBoundaryShapefileForCountry(country)
+      
+      if (boundaryShapefile && fsSync.existsSync(boundaryShapefile)) {
+        try {
+          const clippedRasterPath = path.join(path.dirname(rasterPath), `${layerName}_clipped.tif`)
+          
+          // Use gdalwarp with cutline to clip the raster to the boundary
+          const gdalwarpCommand = `gdalwarp -cutline "${boundaryShapefile}" -crop_to_cutline -dstnodata ${noDataValue === 'nan' ? -9999 : (noDataValue || -9999)} "${processedRasterPath}" "${clippedRasterPath}"`
+          
+          console.log(`🔄 Executing gdalwarp clipping: ${gdalwarpCommand}`)
+          await execAsync(gdalwarpCommand)
+          
+          // Verify clipped file was created
+          if (fsSync.existsSync(clippedRasterPath)) {
+            const originalSize = fsSync.statSync(processedRasterPath).size
+            const clippedSize = fsSync.statSync(clippedRasterPath).size
+            console.log(`✅ Raster successfully clipped to boundary`)
+            console.log(`📊 File size: ${(originalSize / 1024 / 1024).toFixed(2)} MB → ${(clippedSize / 1024 / 1024).toFixed(2)} MB`)
+            
+            // Update processedRasterPath to use clipped version
+            processedRasterPath = clippedRasterPath
+          } else {
+            console.warn(`⚠️ Clipped raster file not created, using original`)
+          }
+          
+        } catch (clipError) {
+          console.warn(`⚠️ Error clipping raster to boundary: ${clipError.message}`)
+          console.log(`📌 Continuing with original raster (not clipped)`)
+        }
+      } else {
+        console.warn(`⚠️ Boundary shapefile not found for ${country}, proceeding without clipping`)
+      }
+    }
+    
     // Step 5: Create RGB COG with classification
     console.log(`🔄 Step 5: Converting to classified RGB COG...`)
     const outputCogPath = path.join(path.dirname(rasterPath), `${layerName}_classified.tif`)
     const tempColoredPath = path.join(path.dirname(rasterPath), `${layerName}_temp_colored.tif`)
-    
-    let processedRasterPath = rasterPath
     
     // Handle NaN NoData values by converting to numeric NoData
     if (noDataValue === 'nan') {
@@ -3309,13 +3478,19 @@ router.post('/upload-classified-raster', upload.single('raster'), async (req, re
       return res.status(400).json({ error: 'No raster file uploaded' })
     }
     
-    const { layerName, classifications } = req.body
+    const { layerName, classifications, country } = req.body
     
     console.log('🔍 Backend: layerName:', layerName)
+    console.log('🔍 Backend: country:', country)
     console.log('🔍 Backend: classifications (raw):', classifications)
     
     if (!layerName) {
       return res.status(400).json({ error: 'Layer name is required' })
+    }
+    
+    // 🌍 Validate country is provided for clipping
+    if (!country) {
+      return res.status(400).json({ error: 'Country is required for raster clipping to boundary' })
     }
     
     // Parse classifications if provided, otherwise will auto-generate based on raster data
@@ -3363,7 +3538,7 @@ router.post('/upload-classified-raster', upload.single('raster'), async (req, re
     console.log(`📊 Classifications: ${JSON.stringify(parsedClassifications, null, 2)}`)
     
     const rasterPath = req.file.path
-    const result = await setupClassifiedCOGRasterTiles(rasterPath, layerName, parsedClassifications)
+    const result = await setupClassifiedCOGRasterTiles(rasterPath, layerName, parsedClassifications, config.geoserver.workspace, country)
     
     res.json(result)
     

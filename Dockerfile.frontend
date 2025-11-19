@@ -13,8 +13,10 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Copy source code
-COPY . .
+# Copy all configuration files and source code
+COPY vite.config.ts tsconfig.json index.html ./
+COPY src ./src
+COPY public ./public
 
 # Expose port
 EXPOSE 3000

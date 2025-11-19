@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frontend WFS URL Test</title>
+    <style>
+        body { font-family: monospace; padding: 20px; background: #f5f5f5; }
+        .test { background: white; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .pass { border-left: 4px solid #4CAF50; }
+        .fail { border-left: 4px solid #f44336; }
+        code { background: #eee; padding: 2px 5px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h1>Frontend API Configuration Test</h1>
+    <div id="results"></div>
+    
+    <script>
+        async function runTests() {
+            const results = document.getElementById('results');
+            
+            // Test 1: Check environment variables
+            let html = '<h2>Environment Variables</h2>';
+            const env = {
+                'VITE_BACKEND_URL': import.meta.env.VITE_BACKEND_URL,
+                'VITE_GEOSERVER_URL': import.meta.env.VITE_GEOSERVER_URL,
+                'VITE_API_URL': import.meta.env.VITE_API_URL,
+            };
+            
+            for (const [key, value] of Object.entries(env)) {
+                const status = value ? 'pass' : 'fail';
+                html += `<div class="test ${status}">
+                    <strong>${key}:</strong> <code>${value || 'NOT SET'}</code>
+                </div>`;
+            }
+            
+            results.innerHTML = html;
+            
+            // Test 2: Test backend connection
+            html += '<h2>Backend WFS Proxy Test</h2>';
+            
+            const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+            const wfsUrl = `${backendUrl}/api/geoserver/escap_climate/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=escap_climate:bhutan_boundary&outputFormat=application/json&srsName=EPSG:4326`;
+            
+            html += `<div class="test"><strong>Testing URL:</strong><br><code style="display:block; word-break: break-all; margin-top:5px;">${wfsUrl}</code></div>`;
+            
+            try {
+                const response = await fetch(wfsUrl);
+                const data = await response.json();
+                
+                if (response.ok && data.features) {
+                    html += `<div class="test pass"><strong>✅ WFS Proxy Working!</strong><br>
+                        Status: ${response.status}<br>
+                        Features: ${data.features.length}<br>
+                        Sample property: ${JSON.stringify(data.features[0].properties, null, 2).substring(0, 200)}...
+                    </div>`;
+                } else {
+                    html += `<div class="test fail"><strong>❌ WFS Proxy Error</strong><br>
+                        Status: ${response.status}<br>
+                        Response: ${JSON.stringify(data).substring(0, 300)}
+                    </div>`;
+                }
+            } catch (error) {
+                html += `<div class="test fail"><strong>❌ Request Failed</strong><br>
+                    Error: ${error.message}
+                </div>`;
+            }
+            
+            results.innerHTML = html;
+        }
+        
+        window.addEventListener('load', () => {
+            setTimeout(runTests, 500);
+        });
+    </script>
+</body>
+</html>

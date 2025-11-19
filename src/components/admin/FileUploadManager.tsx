@@ -292,7 +292,7 @@ export function FileUploadManager({ onStatsUpdate }: FileUploadManagerProps) {
         layerName += `_${selectedSeason}`
       }
       
-      // Check file type and add classification suffix for rasters
+      // Check file type for rasters (DO NOT add _classified here - backend will add it during publication)
       const fileExtension = file.name.toLowerCase().split('.').pop()
       const isRaster = fileExtension === 'tif' || fileExtension === 'tiff'
       
@@ -305,6 +305,7 @@ export function FileUploadManager({ onStatsUpdate }: FileUploadManagerProps) {
         const formData = new FormData()
         formData.append('raster', file)
         formData.append('layerName', layerName)
+        formData.append('country', selectedCountry)  // 🌍 Send country for clipping to boundary
         
         // Handle classifications intelligently based on user configuration
         if (config?.classification?.classes && Array.isArray(config.classification.classes) && config.classification.classes.length > 0) {
@@ -530,7 +531,8 @@ export function FileUploadManager({ onStatsUpdate }: FileUploadManagerProps) {
           
           // Properly encode spaces as %20 instead of +
           const encodedLayerName = encodeURIComponent(fileToDelete.name).replace(/\+/g, '%20')
-          const deleteUrl = `/api/geoserver/layers/${encodedLayerName}`
+          console.log(`🗑️ encodedLayerName : ${encodedLayerName}`)
+          const deleteUrl = `${API_ENDPOINTS.deleteRaster}/${encodedLayerName}`
           console.log(`🌐 DELETE URL: ${deleteUrl}`)
           
           const response = await fetch(deleteUrl, {

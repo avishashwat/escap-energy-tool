@@ -10,14 +10,14 @@ Get-Process -Name node -ErrorAction SilentlyContinue | Stop-Process -Force
 Start-Sleep 2
 
 # Set working directory
-Set-Location "h:\Agriculture and Energy Tool\Tool\spark-template"
+Set-Location "h:\Agriculture and Energy Tool\New folder"
 
 Write-Host "✅ Starting Backend Server..." -ForegroundColor Green
 # Start backend in a new PowerShell window
 $backendJob = Start-Process powershell -ArgumentList @(
     "-NoExit",
     "-Command",
-    "Set-Location 'h:\Agriculture and Energy Tool\Tool\spark-template\backend'; Write-Host '🟢 Backend Server Starting...' -ForegroundColor Green; node server.js"
+    "Set-Location 'h:\Agriculture and Energy Tool\New folder\backend'; Write-Host '🟢 Backend Server Starting...' -ForegroundColor Green; node server.js"
 ) -PassThru
 
 Start-Sleep 3
@@ -27,7 +27,7 @@ Write-Host "✅ Starting Frontend Server..." -ForegroundColor Green
 $frontendJob = Start-Process powershell -ArgumentList @(
     "-NoExit", 
     "-Command",
-    "Set-Location 'h:\Agriculture and Energy Tool\Tool\spark-template'; Write-Host '🟢 Frontend Server Starting...' -ForegroundColor Green; npm run dev"
+    "Set-Location 'h:\Agriculture and Energy Tool\New folder'; Write-Host '🟢 Frontend Server Starting...' -ForegroundColor Green; npm run dev"
 ) -PassThru
 
 Start-Sleep 5

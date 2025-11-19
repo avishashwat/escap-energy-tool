@@ -12,7 +12,7 @@ os.environ['CPL_LOG'] = 'OFF'
 
 try:
     # 1. Load the boundary shapefile with encoding handling
-    input_shapefile = "H:/Agriculture and Energy Tool/Tool/spark-template/data/uploads/extracted/mongolia_boundary/BNDA1_MNG_2002-01-01_lastupdate.shp"
+    input_shapefile = "H:/Agriculture and Energy Tool/New folder/data/uploads/extracted/mongolia_boundary/BNDA1_MNG_2002-01-01_lastupdate.shp"
     print("Loading shapefile: " + input_shapefile)
     
     # Try to read with UTF-8 encoding first, fallback to latin-1
@@ -64,7 +64,7 @@ try:
     print(f"Inverse geometry area: {inverse_polygon.area}")
     
     # 5. Save as Shapefile
-    output_shapefile = "H:/Agriculture and Energy Tool/Tool/spark-template/data/processed/mongolia_mask.shp"
+    output_shapefile = "H:/Agriculture and Energy Tool/New folder/data/processed/mongolia_mask.shp"
     print("Saving inverse mask to: " + output_shapefile)
     
     # Create a new GeoDataFrame for the inverse polygon with explicit EPSG:4326 and clean data

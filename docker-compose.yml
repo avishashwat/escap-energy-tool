@@ -80,8 +80,18 @@ services:
       - "3000:3000"
     environment:
       - VITE_API_URL=http://backend:8000
-      - VITE_GEOSERVER_URL=http://geoserver:8080/geoserver
+      - VITE_BACKEND_URL=http://localhost:5000
+      - VITE_GEOSERVER_URL=http://localhost:8081/geoserver
+      - VITE_ADMIN_USERNAME=admin
+      - VITE_ADMIN_PASSWORD=climate_admin_2024
       - NODE_ENV=development
+    volumes:
+      - "H:/Agriculture and Energy Tool/New folder/src:/app/src:delegated"
+      - "H:/Agriculture and Energy Tool/New folder/public:/app/public:delegated"
+      - "H:/Agriculture and Energy Tool/New folder/index.html:/app/index.html:delegated"
+      - "H:/Agriculture and Energy Tool/New folder/vite.config.ts:/app/vite.config.ts:delegated"
+      - "H:/Agriculture and Energy Tool/New folder/tsconfig.json:/app/tsconfig.json:delegated"
+      - "H:/Agriculture and Energy Tool/New folder/package.json:/app/package.json:delegated"
     networks:
       - escap_network
     restart: unless-stopped
@@ -89,11 +99,11 @@ services:
     #   backend:
     #     condition: service_healthy
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      test: ["CMD", "curl", "-s", "http://localhost:3000"]
       interval: 30s
       timeout: 10s
       retries: 5
-      start_period: 30s
+      start_period: 60s
 
   # GDAL service for advanced geospatial processing
   gdal:

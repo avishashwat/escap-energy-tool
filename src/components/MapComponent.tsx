@@ -155,6 +155,71 @@ const formatLayerName = (overlayInfo: any): string => {
   return displayName
 }
 
+/**
+ * 🏷️ Helper function to get property value from GeoJSON feature with smart attribute name matching
+ * Handles casing and format differences between stored hover attribute names and actual GeoJSON property keys
+ * 
+ * Strategy:
+ * 1. Try exact attribute name (case-sensitive)
+ * 2. Try lowercase version
+ * 3. Try lowercase with underscores replacing spaces/hyphens
+ * 4. Try well-known fallback columns in order: dzongkhag, adm1nm, adm1_en, name
+ * 5. Return 'Unknown Region' as final fallback
+ * 
+ * @param properties - Feature properties object from GeoJSON
+ * @param attributeName - Requested attribute name (may be uppercase or have different casing)
+ * @returns String value of region name or 'Unknown Region'
+ */
+const getRegionNameFromProperties = (properties: any, attributeName?: string): string => {
+  if (!properties || typeof properties !== 'object') {
+    return 'Unknown Region'
+  }
+
+  // Exact match first (case-sensitive)
+  if (attributeName && properties[attributeName]) {
+    const value = properties[attributeName]
+    if (value && typeof value === 'string') {
+      return value.trim()
+    }
+  }
+
+  // Lowercase version of requested attribute
+  if (attributeName) {
+    const lowerAttr = attributeName.toLowerCase()
+    if (properties[lowerAttr]) {
+      const value = properties[lowerAttr]
+      if (value && typeof value === 'string') {
+        return value.trim()
+      }
+    }
+  }
+
+  // Lowercase with underscores (handles "ADM1 EN" -> "adm1_en")
+  if (attributeName) {
+    const normalizedAttr = attributeName.toLowerCase().replace(/[\s\-]+/g, '_')
+    if (properties[normalizedAttr]) {
+      const value = properties[normalizedAttr]
+      if (value && typeof value === 'string') {
+        return value.trim()
+      }
+    }
+  }
+
+  // Try well-known fallback columns in priority order
+  const fallbackColumns = ['dzongkhag', 'adm1nm', 'adm1_en', 'name']
+  for (const column of fallbackColumns) {
+    if (properties[column]) {
+      const value = properties[column]
+      if (value && typeof value === 'string') {
+        return value.trim()
+      }
+    }
+  }
+
+  // Final fallback
+  return 'Unknown Region'
+}
+
 interface MapComponentProps {
   id: string
   isActive: boolean
@@ -487,12 +552,21 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         
         // ✨ DYNAMIC APPROACH: Skip hardcoded bounds check, fetch data directly
         // Use clean layer naming system
+        console.log(`🚀 CHECKPOINT A: About to load boundary for ${country}`)
         const cleanBoundaryName = `${country}_boundary`
         const cleanMaskName = `${country}_mask`
         console.log(`🏷️ Using clean boundary layer name: ${cleanBoundaryName}`)
         
+        console.log(`🚀 CHECKPOINT B: About to call getGeoServerWfsUrl with:`, cleanBoundaryName)
         const wfsUrl = getGeoServerWfsUrl(cleanBoundaryName)
+        console.log(`🚀 CHECKPOINT C: getGeoServerWfsUrl returned:`, wfsUrl)
         
+        console.log(`🔗 URL Type Check:`, {
+          'url': wfsUrl,
+          'contains_localhost': wfsUrl.includes('localhost'),
+          'contains_geoserver_service': wfsUrl.includes('geoserver:8080'),
+          'contains_api_geoserver': wfsUrl.includes('/api/geoserver'),
+        })
         console.log(`🔗 Fetching boundary data from: ${wfsUrl}`)
         
         const response = await fetch(wfsUrl)
@@ -698,9 +772,8 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         const maskLayerName = boundaryData.maskLayer.maskLayerName
         try {
           if (maskLayerName) {
-            // Add workspace prefix for GeoServer WFS request
-            const fullMaskLayerName = `escap_climate:${maskLayerName}`
-            const maskWfsUrl = getGeoServerWfsUrl(fullMaskLayerName)
+            // ✅ FIXED: Don't add workspace prefix - getGeoServerWfsUrl() does it automatically
+            const maskWfsUrl = getGeoServerWfsUrl(maskLayerName)
             console.log('🔍 Fetching mask GeoJSON from WFS:', maskWfsUrl)
             
             const maskResponse = await fetch(maskWfsUrl)
@@ -1022,7 +1095,14 @@ export const MapComponent: React.FC<MapComponentProps> = ({
           return true // Stop searching - energy tooltip has priority
         } else if (layer && layer.get('layerType') === 'boundary') {
           const properties = feature.getProperties()
-          const attributeName = properties[currentHoverAttribute.current] || properties.name || 'Unknown Region'
+          
+          // 🏷️ DEBUG: Log all properties and hover attribute for diagnostics
+          console.log('🎯 BOUNDARY HOVER - Available properties:', Object.keys(properties))
+          console.log('🎯 BOUNDARY HOVER - currentHoverAttribute:', currentHoverAttribute.current)
+          
+          // 🏷️ Get region name with smart attribute matching (handles casing/format differences)
+          const attributeName = getRegionNameFromProperties(properties, currentHoverAttribute.current)
+          console.log('🎯 BOUNDARY HOVER - Resolved region name:', attributeName)
           
           // Get pixel position relative to map container for accurate tooltip positioning
           const mapRect = map.getTargetElement().getBoundingClientRect()
@@ -1062,7 +1142,8 @@ export const MapComponent: React.FC<MapComponentProps> = ({
       map.forEachFeatureAtPixel(pixel, (feature, layer) => {
         if (layer && layer.get('layerType') === 'boundary') {
           const properties = feature.getProperties()
-          const regionName = properties[currentHoverAttribute.current] || properties.name || 'Unknown Region'
+          // 🏷️ Get region name with smart attribute matching
+          const regionName = getRegionNameFromProperties(properties, currentHoverAttribute.current)
           
           // 🏠 Store original country view ONLY ONCE (first time any region is clicked)
           if (!originalCountryView.current) {
@@ -1406,9 +1487,8 @@ export const MapComponent: React.FC<MapComponentProps> = ({
             const maskLayerName = boundaryData.maskLayer.maskLayerName
             try {
               if (maskLayerName) {
-                // Add workspace prefix for GeoServer WFS request
-                const fullMaskLayerName = `escap_climate:${maskLayerName}`
-                const maskWfsUrl = getGeoServerWfsUrl(fullMaskLayerName)
+                // ✅ FIXED: Don't add workspace prefix - getGeoServerWfsUrl() does it automatically
+                const maskWfsUrl = getGeoServerWfsUrl(maskLayerName)
                 console.log('🔍 Fetching mask GeoJSON from WFS:', maskWfsUrl)
                 
                 const maskResponse = await fetch(maskWfsUrl)
@@ -1632,7 +1712,8 @@ export const MapComponent: React.FC<MapComponentProps> = ({
           let isSelected = false
           if (currentSelection) {
             const featureProps = feature.getProperties()
-            const featureName = featureProps[currentHoverAttribute.current] || featureProps.name || 'Unknown Region'  // Use dynamic attribute
+            // 🏷️ Get feature name with smart attribute matching
+            const featureName = getRegionNameFromProperties(featureProps, currentHoverAttribute.current)
             // 🎯 Compare with the stored region name directly
             isSelected = featureName === currentSelection.name
             
@@ -1645,7 +1726,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
           }
           
           // 🐛 Debug logging to track masking behavior
-          const featureName = feature.getProperties()[currentHoverAttribute.current] || feature.getProperties().name || 'Unknown Region'  // Use dynamic attribute
+          const featureName = getRegionNameFromProperties(feature.getProperties(), currentHoverAttribute.current)
           
           // More aggressive masking: fade to 0.15 opacity for better contrast
           const hasSelection = Boolean(currentSelection)
@@ -2298,7 +2379,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
             const vectorLayer = new VectorLayer({
               source: new VectorSource({
                 format: new GeoJSON(),
-                url: getGeoServerWfsUrl(`escap_climate:${layerName}`)
+                url: getGeoServerWfsUrl(layerName)
               }),
               style: (feature) => {
                 // Use dynamic styling based on energy configuration and feature properties

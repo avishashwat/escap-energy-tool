@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WFS Proxy Test</title>
+</head>
+<body>
+    <h1>WFS Proxy Test</h1>
+    <button onclick="testProxy()">Test WFS Proxy</button>
+    <pre id="output"></pre>
+    
+    <script>
+        async function testProxy() {
+            const output = document.getElementById('output');
+            output.textContent = 'Testing WFS proxy...\n';
+            
+            try {
+                // Test the backend WFS proxy
+                const backendUrl = 'http://localhost:5000/api/geoserver/escap_climate/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=escap_climate:bhutan_boundary&outputFormat=application/json&srsName=EPSG:4326';
+                
+                output.textContent += `Fetching from: ${backendUrl}\n\n`;
+                
+                const response = await fetch(backendUrl);
+                output.textContent += `Status: ${response.status} ${response.statusText}\n`;
+                
+                if (!response.ok) {
+                    output.textContent += `ERROR: ${response.statusText}\n`;
+                    return;
+                }
+                
+                const data = await response.json();
+                output.textContent += `✅ Success!\n`;
+                output.textContent += `Type: ${data.type}\n`;
+                output.textContent += `Features: ${data.features?.length || 0}\n`;
+                
+                if (data.features && data.features.length > 0) {
+                    output.textContent += `\nFirst feature:\n`;
+                    output.textContent += JSON.stringify(data.features[0], null, 2);
+                }
+            } catch (error) {
+                output.textContent += `❌ Error: ${error.message}\n`;
+                output.textContent += error.stack;
+            }
+        }
+        
+        // Auto-test on load
+        window.addEventListener('load', () => {
+            setTimeout(testProxy, 500);
+        });
+    </script>
+</body>
+</html>

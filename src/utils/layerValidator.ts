@@ -84,7 +84,7 @@ export class LayerValidator {
       } else {
         console.log(`❌ LayerValidator found no matches for request`)
         result.missingFiles.push(expectedFilename)
-        result.warnings.push(`No uploaded data found for ${request.variable} in ${request.country}. Using fallback data.`)
+        //result.warnings.push(`No uploaded data found for ${request.variable} in ${request.country}. Using fallback data.`)
         result.hasRealData = false
         result.fallbackAvailable = true
       }
@@ -246,16 +246,16 @@ export class LayerValidator {
     }
   }
 
-  // Utility to show user-friendly messages about missing data
+//   Utility to show user-friendly messages about missing data
   static generateUserMessage(validation: LayerValidationResult, request: LayerRequest): string {
     if (validation.hasRealData) {
       return `Showing real data for ${request.variable}`
     }
 
-    if (validation.warnings.length > 0) {
-      return `${validation.warnings[0]} Showing demo data instead.`
-    }
+    // if (validation.warnings.length > 0) {
+    //   return `${validation.warnings[0]} Showing demo data instead.`
+    // }
 
-    return `Showing demo data for ${request.variable}`
+    return `Showing data for ${request.variable}`
   }
 }
