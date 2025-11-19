@@ -80,7 +80,7 @@ services:
       - "3000:3000"
     environment:
       - VITE_API_URL=http://backend:8000
-      - VITE_BACKEND_URL=http://localhost:5000
+      - VITE_BACKEND_URL=http://host.docker.internal:5000
       - VITE_GEOSERVER_URL=http://localhost:8081/geoserver
       - VITE_ADMIN_USERNAME=admin
       - VITE_ADMIN_PASSWORD=climate_admin_2024

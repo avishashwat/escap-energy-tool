@@ -31,7 +31,7 @@ structlog.configure(
 
 logger = structlog.get_logger()
 
-from database import get_db, engine, Base, SessionLocal
+from database import get_db, engine, Base
 from models import ClimateData, GiriData, EnergyData, BoundaryData
 from services.file_processor import FileProcessor
 from services.geoserver_manager import GeoServerManager
@@ -82,150 +82,6 @@ file_processor = FileProcessor()
 geoserver_manager = GeoServerManager()
 spatial_cache = SpatialCache()
 
-# Boundary initialization function
-async def initialize_existing_boundaries(db: Session):
-    """Initialize existing boundary shapefiles from /data/boundaries directory"""
-    import zipfile
-    import tempfile
-    import subprocess
-    from pathlib import Path
-    
-    boundaries_dir = Path("/app/data/boundaries")
-    if not boundaries_dir.exists():
-        boundaries_dir = Path("./data/boundaries")
-    
-    if not boundaries_dir.exists():
-        logger.info("Boundaries directory not found, skipping initialization")
-        return
-    
-    logger.info(f"🚀 Initializing existing boundaries from {boundaries_dir}")
-    
-    # Find all .zip files in the boundaries directory
-    zip_files = list(boundaries_dir.glob("*.zip"))
-    logger.info(f"📦 Found {len(zip_files)} boundary zip files")
-    
-    for zip_path in zip_files:
-        try:
-            layer_name = zip_path.stem.lower().replace(" ", "_").replace("-", "_")
-            country = "bhutan" if "bhutan" in layer_name.lower() or "dzongkhag" in layer_name.lower() else layer_name.split("_")[0]
-            
-            logger.info(f"📥 Processing: {zip_path.name} → layer: {layer_name}, country: {country}")
-            
-            # Create temporary extraction directory
-            with tempfile.TemporaryDirectory() as tmpdir:
-                tmpdir_path = Path(tmpdir)
-                
-                # Extract the zip file
-                with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-                    zip_ref.extractall(tmpdir_path)
-                
-                # Find the .shp file
-                shp_files = list(tmpdir_path.glob("*.shp"))
-                if not shp_files:
-                    logger.warning(f"⚠️ No .shp file found in {zip_path.name}")
-                    continue
-                
-                shp_path = shp_files[0]
-                logger.info(f"📄 Found shapefile: {shp_path.name}")
-                
-                # Import to PostGIS using ogr2ogr
-                db_host = os.getenv("DB_HOST", "localhost")
-                db_port = os.getenv("DB_PORT", "5432")
-                db_name = os.getenv("DB_NAME", "escap_climate")
-                db_user = os.getenv("DB_USER", "escap_user")
-                db_password = os.getenv("DB_PASSWORD", "escap_password_2024")
-                
-                pg_conn_string = f"PG:host={db_host} port={db_port} dbname={db_name} user={db_user} password={db_password}"
-                
-                # Check if table already exists
-                try:
-                    existing = db.execute(f"SELECT 1 FROM {layer_name} LIMIT 1;").scalar()
-                    if existing:
-                        logger.info(f"✅ Table {layer_name} already exists, skipping import")
-                        continue
-                except:
-                    pass
-                
-                try:
-                    # Import shapefile to PostGIS
-                    cmd = [
-                        "ogr2ogr",
-                        "-f", "PostgreSQL",
-                        pg_conn_string,
-                        str(shp_path),
-                        "-nln", layer_name,
-                        "-overwrite",
-                        "-lco", "GEOMETRY_NAME=geom",
-                        "-lco", "FID=gid",
-                        "-fieldTypeToString", "All",
-                        "-unsetFieldWidth",
-                        "-t_srs", "EPSG:4326",
-                        "-nlt", "PROMOTE_TO_MULTI"
-                    ]
-                    
-                    result = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
-                    
-                    if result.returncode == 0:
-                        logger.info(f"✅ Imported to PostGIS: {layer_name}")
-                        
-                        # Count features
-                        try:
-                            feature_count_result = subprocess.run(
-                                ["psql", "-U", db_user, "-h", db_host, "-d", db_name, 
-                                 "-tc", f"SELECT COUNT(*) FROM {layer_name};"],
-                                capture_output=True,
-                                text=True,
-                                env={**os.environ, "PGPASSWORD": db_password},
-                                timeout=10
-                            )
-                            feature_count = int(feature_count_result.stdout.strip()) if feature_count_result.stdout else 0
-                            logger.info(f"📊 Feature count: {feature_count}")
-                        except Exception as count_err:
-                            feature_count = 0
-                            logger.warning(f"Could not get feature count: {count_err}")
-                        
-                        # Add to boundary_data table if not exists
-                        try:
-                            existing_boundary = db.query(BoundaryData).filter(BoundaryData.country == country).first()
-                            if not existing_boundary:
-                                boundary = BoundaryData(
-                                    country=country,
-                                    file_path=str(zip_path),
-                                    hover_attribute="dzongkhag" if "dzongkhag" in layer_name.lower() else country,
-                                    feature_count=feature_count,
-                                    bounds={"type": "geometry"}  # Placeholder
-                                )
-                                db.add(boundary)
-                                db.commit()
-                                logger.info(f"📋 Added boundary record for {country}")
-                            else:
-                                logger.info(f"ℹ️ Boundary record for {country} already exists")
-                        except Exception as db_err:
-                            logger.warning(f"Could not update boundary_data table: {db_err}")
-                            db.rollback()
-                        
-                        # Publish to GeoServer
-                        try:
-                            logger.info(f"🌐 Publishing to GeoServer: {layer_name}")
-                            await geoserver_manager.publish_vector(
-                                layer_name=layer_name,
-                                table_name=layer_name,
-                                workspace="escap_climate"
-                            )
-                            logger.info(f"✅ Published to GeoServer: {layer_name}")
-                        except Exception as geo_err:
-                            logger.warning(f"⚠️ Could not publish to GeoServer: {geo_err}")
-                    else:
-                        logger.error(f"❌ ogr2ogr import failed: {result.stderr}")
-                
-                except subprocess.TimeoutExpired:
-                    logger.error(f"❌ Import timed out for {layer_name}")
-                except Exception as import_err:
-                    logger.error(f"❌ Import error for {layer_name}: {import_err}")
-        
-        except Exception as file_err:
-            logger.error(f"❌ Error processing {zip_path.name}: {file_err}")
-
 @app.on_event("startup")
 async def startup_event():
     """Initialize services and connections on startup"""
@@ -246,17 +102,10 @@ async def startup_event():
             await geoserver_manager.initialize()
             logger.info("GeoServer initialized successfully")
         except Exception as e:
-            logger.error("Failed to initialize GeoServer", exc_info=True)
+            logger.error("Failed to initialize GeoServer", error=str(e))
     
     # Start GeoServer initialization in background
     asyncio.create_task(init_geoserver_later())
-    
-    # Initialize existing boundaries from /data/boundaries directory
-    db = SessionLocal()
-    try:
-        await initialize_existing_boundaries(db)
-    finally:
-        db.close()
     
     logger.info("API startup completed")
 
@@ -320,12 +169,15 @@ async def upload_climate_data(
         )
         
         # Store in database
+        # Normalize season: if empty/None, set to 'Annual' for annual climate data
+        normalized_season = season if season and season.strip() else 'Annual'
+        
         climate_data = ClimateData(
             country=country,
             variable=variable,
             scenario=scenario,
             year_range=year_range,
-            season=season,
+            season=normalized_season,
             file_path=result["cog_path"],
             min_value=result["statistics"]["min"],
             max_value=result["statistics"]["max"],

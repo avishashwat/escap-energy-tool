@@ -15,19 +15,14 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    host: "127.0.0.1",
+    host: "0.0.0.0",
     strictPort: false,
     allowedHosts: [
       "localhost",
       "127.0.0.1",
-      "escap-tools.thinkbluedata.org"
-    ],
-    proxy: {
-      '/api': {
-        target: process.env.BACKEND_URL || 'http://localhost:5000',
-        changeOrigin: true,
-        secure: false
-      }
-    }
+      "escap-tools.thinkbluedata.org",
+      "172.19.0.2"
+    ]
+    // Removed proxy - using direct API calls from frontend instead
   }
 });

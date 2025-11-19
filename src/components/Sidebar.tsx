@@ -203,7 +203,7 @@ export function Sidebar({ activeMapId, onLayerChange, mapLayout, selectedCountry
         scenario: scenario,
         yearRange: yearRange || undefined,
         seasonality: seasonalityType,
-        season: season
+        season: seasonalityType === 'Annual' ? 'Annual' : season
       }
     } else if (selectedCategory === 'giri' && giriVariable && giriScenario) {
       layerRequest = {

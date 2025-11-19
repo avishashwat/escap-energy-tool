@@ -2005,7 +2005,18 @@ export const MapComponent: React.FC<MapComponentProps> = ({
             // Be much more specific for climate data matching
             const subcategoryMatch = raster.subcategory?.toLowerCase() === overlayData.name?.toLowerCase()
             const scenarioMatch = !overlayData.scenario || raster.scenario?.toLowerCase() === overlayData.scenario?.toLowerCase()
-            const seasonMatch = !overlayData.season || raster.season?.toLowerCase() === overlayData.season?.toLowerCase()
+            
+            // Enhanced season matching to handle annual data
+            // For annual data: overlayData.season will be 'Annual', raster.season may be undefined
+            // Match annual data: if season is 'Annual' or seasonality is 'Annual', consider it a match for annual layers
+            const isAnnualOverlay = overlayData.season?.toLowerCase() === 'annual'
+            const isAnnualRaster = raster.seasonality?.toLowerCase() === 'annual' && !raster.season
+            const isSeasonalMatch = raster.season?.toLowerCase() === overlayData.season?.toLowerCase()
+            
+            const seasonMatch = isAnnualOverlay && isAnnualRaster ? true :
+                              !overlayData.season ||
+                              raster.season?.toLowerCase() === overlayData.season?.toLowerCase()
+            
             const yearRangeMatch = !overlayData.yearRange || raster.yearRange === overlayData.yearRange
             const seasonalityMatch = !overlayData.seasonality || raster.seasonality?.toLowerCase() === overlayData.seasonality?.toLowerCase()
             
@@ -2019,8 +2030,13 @@ export const MapComponent: React.FC<MapComponentProps> = ({
             console.log(`🔍 Checking raster ${raster.layerName}:`, {
               rasterSeason: raster.season,
               overlayDataSeason: overlayData.season,
+              isAnnualOverlay,
+              isAnnualRaster,
+              isSeasonalMatch,
               rasterScenario: raster.scenario,
               overlayDataScenario: overlayData.scenario,
+              rasterSeasonality: raster.seasonality,
+              overlayDataSeasonality: overlayData.seasonality,
               subcategoryMatch, scenarioMatch, seasonMatch, yearRangeMatch, seasonalityMatch, categoryMatch
             })
           } else if (overlayType === 'giri') {

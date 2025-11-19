@@ -15,6 +15,7 @@ RUN npm install
 
 # Copy all configuration files and source code
 COPY vite.config.ts tsconfig.json index.html ./
+COPY .env.local ./
 COPY src ./src
 COPY public ./public
 
