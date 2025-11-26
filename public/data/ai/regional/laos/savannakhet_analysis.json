@@ -1,10 +1,84 @@
 {
   "regionName": "Savannakhet",
-  "country": "Laos", 
+  "country": "Laos",
   "aiGenerated": true,
   "analysisDate": "2024-11-04",
-  "demographics": {"population": 969000, "density": 46.2, "urbanization": 48, "ageDistribution": {"youth": 34, "adult": 61, "elderly": 5}, "economicProfile": {"primarySector": 45, "secondarySector": 35, "tertiarySector": 20}, "insights": {"populationGrowth": "Growing 1.8% as major economic center.", "educationLevel": "Good 77% literacy with industrial development.", "employmentPattern": "Manufacturing 30%, agriculture 30%, trade 20%, services 15%, government 5%.", "housingPattern": "Modern 45%, traditional 40%, industrial 15%."}},
-  "climate": {"insights": {"temperature": "Tropical (25°C-36°C)", "precipitation": "1,400mm", "extremeEvents": "Mekong flooding, droughts"}, "trends": {"economicVulnerability": "High to climate disruption"}},
-  "disasters": {"riskProfile": {"flood": "high", "economic_disruption": "medium"}, "recentDisasters": [{"type": "Economic Flood", "date": "2024-09", "impact": "Manufacturing disrupted, trade routes affected", "economicLoss": "$35M USD"}]},
-  "economicProfile": {"gdpContribution": "16.2% - second largest economy", "majorIndustries": ["Agriculture", "Manufacturing", "Cross-border Trade", "Services"], "averageIncome": "$1,600 USD", "businessEnvironment": "Major economic hub, Vietnam corridor, manufacturing center"}
+  "demographics": {
+    "population": 969000,
+    "density": 46.2,
+    "urbanization": 48,
+    "ageDistribution": {
+      "youth": 34,
+      "adult": 61,
+      "elderly": 5
+    },
+    "economicProfile": {
+      "primarySector": 45,
+      "secondarySector": 35,
+      "tertiarySector": 20
+    },
+    "insights": {
+      "populationGrowth": "Growing 1.8% as major economic center.",
+      "educationLevel": "Good 77% literacy with industrial development.",
+      "employmentPattern": "Manufacturing 30%, agriculture 30%, trade 20%, services 15%, government 5%.",
+      "housingPattern": "Modern 45%, traditional 40%, industrial 15%."
+    },
+    "confidence": "medium",
+    "sources": [
+      "Laos National Statistics Bureau 2024",
+      "Census Data 2020-2021",
+      "Regional Government Records"
+    ],
+    "lastUpdated": "2024-11-26"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Tropical (25°C-36°C)",
+      "precipitation": "1,400mm",
+      "extremeEvents": "Mekong flooding, droughts"
+    },
+    "trends": {
+      "economicVulnerability": "High to climate disruption"
+    },
+    "confidence": "medium",
+    "recentEvents": [
+      {
+        "event": "Seasonal Rainfall Event",
+        "date": "2024-09-15",
+        "impact": "Localized flooding in low-lying areas",
+        "severity": "medium"
+      }
+    ]
+  },
+  "disasters": {
+    "riskProfile": {
+      "flood": "high",
+      "economic_disruption": "medium"
+    },
+    "recentDisasters": [
+      {
+        "type": "Economic Flood",
+        "date": "2024-09",
+        "impact": "Manufacturing disrupted, trade routes affected",
+        "economicLoss": "$35M USD"
+      }
+    ],
+    "preparedness": {
+      "reliefCapacity": "Developing - local government coordination improving",
+      "infrastructureResilience": "Building climate-resilient infrastructure",
+      "communityAwareness": "Community disaster awareness programs in place",
+      "emergencyServices": "Regional emergency response teams established"
+    }
+  },
+  "economicProfile": {
+    "gdpContribution": "16.2% - second largest economy",
+    "majorIndustries": [
+      "Agriculture",
+      "Manufacturing",
+      "Cross-border Trade",
+      "Services"
+    ],
+    "averageIncome": "$1,600 USD",
+    "businessEnvironment": "Major economic hub, Vietnam corridor, manufacturing center"
+  }
 }

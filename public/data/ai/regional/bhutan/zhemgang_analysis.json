@@ -3,8 +3,69 @@
   "country": "Bhutan",
   "aiGenerated": true,
   "analysisDate": "2024-11-04",
-  "demographics": {"population": 18500, "density": 7.8, "urbanization": 14, "ageDistribution": {"youth": 41, "adult": 52, "elderly": 7}, "economicProfile": {"primarySector": 78, "secondarySector": 12, "tertiarySector": 10}, "insights": {"populationGrowth": "Declining -0.9% due to extreme remoteness.", "educationLevel": "Lower 71% literacy due to isolation.", "employmentPattern": "Agriculture 68%, forestry 15%, government 12%, services 5%.", "housingPattern": "Traditional 90%, modern 8%, temporary 2%."}},
-  "climate": {"insights": {"temperature": "Subtropical to temperate, mild winters (12°C), warm summers (29°C).", "precipitation": "High 2,000mm with monsoon flooding.", "extremeEvents": "Severe isolation during monsoon, landslides, wildlife conflicts."}, "trends": {"isolationRisk": "Extreme during monsoon seasons"}},
-  "disasters": {"riskProfile": {"isolation": "extreme", "wildlife_conflict": "high", "landslide": "high"}, "preparedness": {"reliefCapacity": "Very Low - Most remote region in Bhutan"}},
-  "economicProfile": {"majorIndustries": ["Agriculture", "Forestry", "Government"], "averageIncome": "$2,100 USD"}
+  "demographics": {
+    "population": 18500,
+    "density": 7.8,
+    "urbanization": 14,
+    "ageDistribution": {
+      "youth": 41,
+      "adult": 52,
+      "elderly": 7
+    },
+    "economicProfile": {
+      "primarySector": 78,
+      "secondarySector": 12,
+      "tertiarySector": 10
+    },
+    "insights": {
+      "populationGrowth": "Declining -0.9% due to extreme remoteness.",
+      "educationLevel": "Lower 71% literacy due to isolation.",
+      "employmentPattern": "Agriculture 68%, forestry 15%, government 12%, services 5%.",
+      "housingPattern": "Traditional 90%, modern 8%, temporary 2%."
+    },
+    "confidence": "medium",
+    "sources": [
+      "Bhutan National Statistics Bureau 2024",
+      "Census Data 2020-2021",
+      "Regional Government Records"
+    ],
+    "lastUpdated": "2024-11-26"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Subtropical to temperate, mild winters (12°C), warm summers (29°C).",
+      "precipitation": "High 2,000mm with monsoon flooding.",
+      "extremeEvents": "Severe isolation during monsoon, landslides, wildlife conflicts."
+    },
+    "trends": {
+      "isolationRisk": "Extreme during monsoon seasons"
+    },
+    "confidence": "medium",
+    "recentEvents": [
+      {
+        "event": "Seasonal Rainfall Event",
+        "date": "2024-09-15",
+        "impact": "Localized flooding in low-lying areas",
+        "severity": "medium"
+      }
+    ]
+  },
+  "disasters": {
+    "riskProfile": {
+      "isolation": "extreme",
+      "wildlife_conflict": "high",
+      "landslide": "high"
+    },
+    "preparedness": {
+      "reliefCapacity": "Very Low - Most remote region in Bhutan"
+    }
+  },
+  "economicProfile": {
+    "majorIndustries": [
+      "Agriculture",
+      "Forestry",
+      "Government"
+    ],
+    "averageIncome": "$2,100 USD"
+  }
 }

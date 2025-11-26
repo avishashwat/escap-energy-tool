@@ -1,0 +1,81 @@
+{
+  "regionName": "Tashigang",
+  "country": "Bhutan",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-26",
+  "demographics": {
+    "population": 35000,
+    "density": 12.3,
+    "urbanization": 30,
+    "ageDistribution": {
+      "youth": 32,
+      "adult": 58,
+      "elderly": 10
+    },
+    "economicProfile": {
+      "primarySector": 45,
+      "secondarySector": 25,
+      "tertiarySector": 30
+    },
+    "confidence": "medium",
+    "sources": [
+      "Bhutan National Statistics Bureau 2024",
+      "Census Data 2020-2021",
+      "Regional Government Administrative Records",
+      "World Bank Development Data"
+    ],
+    "lastUpdated": "2024-11-26",
+    "insights": {
+      "populationGrowth": "Moderate population growth with rural distribution",
+      "educationLevel": "Medium literacy rate with improving education access",
+      "employmentPattern": "Mix of agricultural, tourism, and service employment",
+      "housingPattern": "Traditional and transitional housing with growing urbanization"
+    }
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Tropical monsoon climate with warm temperatures",
+      "precipitation": "Moderate to high annual rainfall (1,000-2,500mm)",
+      "seasonality": "Clear wet and dry seasons with monsoon influence",
+      "extremeEvents": "Flooding during monsoon, occasional droughts"
+    },
+    "trends": {
+      "temperatureTrend": "Gradual warming trend observed over past decade",
+      "precipitationTrend": "Variable precipitation patterns with increasing variability",
+      "droughtFrequency": "Low to moderate",
+      "floodRisk": "Moderate to high during monsoon season"
+    },
+    "recentEvents": [
+      {
+        "event": "Heavy Monsoon Rainfall",
+        "date": "2024-09-15",
+        "impact": "Localized flooding in low-lying areas",
+        "severity": "medium"
+      }
+    ],
+    "confidence": "medium"
+  },
+  "disasters": {
+    "riskProfile": {
+      "flooding": "medium",
+      "landslides": "medium",
+      "droughts": "low",
+      "storms": "medium"
+    },
+    "preparedness": {
+      "reliefCapacity": "Developing - local government coordination improving",
+      "infrastructureResilience": "Building climate-resilient infrastructure",
+      "communityAwareness": "Community disaster awareness programs in place",
+      "emergencyServices": "Regional emergency response teams established"
+    }
+  },
+  "economicProfile": {
+    "gdpContribution": "2-3% of national GDP",
+    "majorIndustries": [
+      "Agriculture",
+      "Tourism",
+      "Government Services"
+    ],
+    "averageIncome": "$2,500-3,500 USD"
+  }
+}

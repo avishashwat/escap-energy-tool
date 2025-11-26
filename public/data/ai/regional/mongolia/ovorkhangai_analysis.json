@@ -1,0 +1,82 @@
+{
+  "regionName": "Övörkhangai",
+  "country": "Mongolia",
+  "aiGenerated": true,
+  "analysisDate": "2024-11-26",
+  "demographics": {
+    "population": 110000,
+    "density": 4.5,
+    "urbanization": 45,
+    "ageDistribution": {
+      "youth": 32,
+      "adult": 58,
+      "elderly": 10
+    },
+    "economicProfile": {
+      "primarySector": 45,
+      "secondarySector": 25,
+      "tertiarySector": 30
+    },
+    "confidence": "medium",
+    "sources": [
+      "Mongolia National Statistics Bureau 2024",
+      "Census Data 2020-2021",
+      "Regional Government Administrative Records",
+      "World Bank Development Data"
+    ],
+    "lastUpdated": "2024-11-26",
+    "insights": {
+      "populationGrowth": "Moderate population growth with urban concentration",
+      "educationLevel": "High literacy rate with improving education access",
+      "employmentPattern": "Mix of pastoral, mining, and government employment",
+      "housingPattern": "Mix of traditional gers and modern housing"
+    }
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Continental climate with extreme seasonal variation (-30°C to +35°C)",
+      "precipitation": "Limited annual precipitation (100-400mm)",
+      "seasonality": "Distinct seasons with harsh winters",
+      "extremeEvents": "Dzud (severe winter), spring storms, dust storms"
+    },
+    "trends": {
+      "temperatureTrend": "Gradual warming trend observed over past decade",
+      "precipitationTrend": "Variable precipitation patterns with increasing variability",
+      "droughtFrequency": "High during summer months",
+      "floodRisk": "Low"
+    },
+    "recentEvents": [
+      {
+        "event": "Spring Dust Storm",
+        "date": "2024-09-15",
+        "impact": "Reduced air quality and visibility",
+        "severity": "medium"
+      }
+    ],
+    "confidence": "medium"
+  },
+  "disasters": {
+    "riskProfile": {
+      "flooding": "low",
+      "landslides": "low",
+      "droughts": "medium",
+      "storms": "medium"
+    },
+    "preparedness": {
+      "reliefCapacity": "Developing - local government coordination improving",
+      "infrastructureResilience": "Building climate-resilient infrastructure",
+      "communityAwareness": "Community disaster awareness programs in place",
+      "emergencyServices": "Regional emergency response teams established"
+    }
+  },
+  "economicProfile": {
+    "gdpContribution": "3-4% of national GDP",
+    "majorIndustries": [
+      "Livestock",
+      "Mining",
+      "Agriculture",
+      "Tourism"
+    ],
+    "averageIncome": "$3,500-5,000 USD"
+  }
+}

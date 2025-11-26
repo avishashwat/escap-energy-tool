@@ -3,8 +3,69 @@
   "country": "Laos",
   "aiGenerated": true,
   "analysisDate": "2024-11-04",
-  "demographics": {"population": 307000, "density": 20.1, "urbanization": 28, "ageDistribution": {"youth": 42, "adult": 53, "elderly": 5}, "economicProfile": {"primarySector": 68, "secondarySector": 20, "tertiarySector": 12}, "insights": {"populationGrowth": "Growing 1.7% with ethnic diversity and mountain agriculture.", "educationLevel": "Lower 66% literacy due to ethnic diversity and remote location.", "employmentPattern": "Agriculture 58%, forestry 18%, government 12%, trade 8%, services 4%.", "housingPattern": "Traditional ethnic houses 75%, concrete 20%, temporary 5%."}},
-  "climate": {"insights": {"temperature": "Mountain tropical (21°C-33°C), cooler than lowlands.", "precipitation": "High 1,900mm with severe mountain flooding.", "extremeEvents": "Mountain flash floods, landslides, ethnic village isolation."}, "trends": {"mountainFloodRisk": "Increasing severity"}},
-  "disasters": {"riskProfile": {"flash_flood": "very_high", "landslide": "high", "ethnic_vulnerability": "high"}, "preparedness": {"reliefCapacity": "Low - Remote mountain location, ethnic language barriers"}},
-  "economicProfile": {"majorIndustries": ["Subsistence Agriculture", "Forestry", "Small Trade"], "averageIncome": "$900 USD"}
+  "demographics": {
+    "population": 307000,
+    "density": 20.1,
+    "urbanization": 28,
+    "ageDistribution": {
+      "youth": 42,
+      "adult": 53,
+      "elderly": 5
+    },
+    "economicProfile": {
+      "primarySector": 68,
+      "secondarySector": 20,
+      "tertiarySector": 12
+    },
+    "insights": {
+      "populationGrowth": "Growing 1.7% with ethnic diversity and mountain agriculture.",
+      "educationLevel": "Lower 66% literacy due to ethnic diversity and remote location.",
+      "employmentPattern": "Agriculture 58%, forestry 18%, government 12%, trade 8%, services 4%.",
+      "housingPattern": "Traditional ethnic houses 75%, concrete 20%, temporary 5%."
+    },
+    "confidence": "medium",
+    "sources": [
+      "Laos National Statistics Bureau 2024",
+      "Census Data 2020-2021",
+      "Regional Government Records"
+    ],
+    "lastUpdated": "2024-11-26"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Mountain tropical (21°C-33°C), cooler than lowlands.",
+      "precipitation": "High 1,900mm with severe mountain flooding.",
+      "extremeEvents": "Mountain flash floods, landslides, ethnic village isolation."
+    },
+    "trends": {
+      "mountainFloodRisk": "Increasing severity"
+    },
+    "confidence": "medium",
+    "recentEvents": [
+      {
+        "event": "Seasonal Rainfall Event",
+        "date": "2024-09-15",
+        "impact": "Localized flooding in low-lying areas",
+        "severity": "medium"
+      }
+    ]
+  },
+  "disasters": {
+    "riskProfile": {
+      "flash_flood": "very_high",
+      "landslide": "high",
+      "ethnic_vulnerability": "high"
+    },
+    "preparedness": {
+      "reliefCapacity": "Low - Remote mountain location, ethnic language barriers"
+    }
+  },
+  "economicProfile": {
+    "majorIndustries": [
+      "Subsistence Agriculture",
+      "Forestry",
+      "Small Trade"
+    ],
+    "averageIncome": "$900 USD"
+  }
 }

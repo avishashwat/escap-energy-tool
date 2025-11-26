@@ -388,7 +388,7 @@ export function RegionalAIAnalysis({ selectedRegion, selectedCountry, isVisible,
                       </CardHeader>
                       <CardContent>
                         <div className="space-y-2">
-                          {regionalData.demographics.sources.map((source, index) => (
+                          {regionalData?.demographics?.sources?.map((source, index) => (
                             <div key={index} className="flex items-center gap-2">
                               <Shield className="h-4 w-4 text-green-500" />
                               <span className="text-sm">{source}</span>

@@ -3,8 +3,79 @@
   "country": "Laos",
   "aiGenerated": true,
   "analysisDate": "2024-11-04",
-  "demographics": {"population": 396000, "density": 23.8, "urbanization": 25, "ageDistribution": {"youth": 44, "adult": 51, "elderly": 5}, "economicProfile": {"primarySector": 75, "secondarySector": 15, "tertiarySector": 10}, "insights": {"populationGrowth": "Growing 1.3% with agricultural development.", "educationLevel": "Lower 65% literacy in rural agricultural area.", "employmentPattern": "Agriculture 65%, forestry 18%, government 12%, services 5%.", "housingPattern": "Traditional 80%, concrete 15%, temporary 5%."}},
-  "climate": {"insights": {"temperature": "Tropical (24°C-35°C)", "precipitation": "2,100mm with severe flooding", "extremeEvents": "Annual Mekong tributary floods, agricultural damage"}, "trends": {"floodRisk": "Very high annually"}},
-  "disasters": {"riskProfile": {"flood": "very_high", "agricultural_loss": "high"}, "recentDisasters": [{"type": "Agricultural Flood", "date": "2024-08", "impact": "Rice crops destroyed, rural livelihoods affected", "economicLoss": "$22M USD"}]},
-  "economicProfile": {"gdpContribution": "3.2%", "majorIndustries": ["Agriculture", "Forestry"], "averageIncome": "$1,000 USD"}
+  "demographics": {
+    "population": 396000,
+    "density": 23.8,
+    "urbanization": 25,
+    "ageDistribution": {
+      "youth": 44,
+      "adult": 51,
+      "elderly": 5
+    },
+    "economicProfile": {
+      "primarySector": 75,
+      "secondarySector": 15,
+      "tertiarySector": 10
+    },
+    "insights": {
+      "populationGrowth": "Growing 1.3% with agricultural development.",
+      "educationLevel": "Lower 65% literacy in rural agricultural area.",
+      "employmentPattern": "Agriculture 65%, forestry 18%, government 12%, services 5%.",
+      "housingPattern": "Traditional 80%, concrete 15%, temporary 5%."
+    },
+    "confidence": "medium",
+    "sources": [
+      "Laos National Statistics Bureau 2024",
+      "Census Data 2020-2021",
+      "Regional Government Records"
+    ],
+    "lastUpdated": "2024-11-26"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Tropical (24°C-35°C)",
+      "precipitation": "2,100mm with severe flooding",
+      "extremeEvents": "Annual Mekong tributary floods, agricultural damage"
+    },
+    "trends": {
+      "floodRisk": "Very high annually"
+    },
+    "confidence": "medium",
+    "recentEvents": [
+      {
+        "event": "Seasonal Rainfall Event",
+        "date": "2024-09-15",
+        "impact": "Localized flooding in low-lying areas",
+        "severity": "medium"
+      }
+    ]
+  },
+  "disasters": {
+    "riskProfile": {
+      "flood": "very_high",
+      "agricultural_loss": "high"
+    },
+    "recentDisasters": [
+      {
+        "type": "Agricultural Flood",
+        "date": "2024-08",
+        "impact": "Rice crops destroyed, rural livelihoods affected",
+        "economicLoss": "$22M USD"
+      }
+    ],
+    "preparedness": {
+      "reliefCapacity": "Developing - local government coordination improving",
+      "infrastructureResilience": "Building climate-resilient infrastructure",
+      "communityAwareness": "Community disaster awareness programs in place",
+      "emergencyServices": "Regional emergency response teams established"
+    }
+  },
+  "economicProfile": {
+    "gdpContribution": "3.2%",
+    "majorIndustries": [
+      "Agriculture",
+      "Forestry"
+    ],
+    "averageIncome": "$1,000 USD"
+  }
 }

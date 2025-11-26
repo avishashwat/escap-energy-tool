@@ -3,8 +3,70 @@
   "country": "Bhutan",
   "aiGenerated": true,
   "analysisDate": "2024-11-04",
-  "demographics": {"population": 16000, "density": 8.9, "urbanization": 20, "ageDistribution": {"youth": 31, "adult": 62, "elderly": 7}, "economicProfile": {"primarySector": 58, "secondarySector": 25, "tertiarySector": 17}, "insights": {"populationGrowth": "Stable 0.5% with historical significance supporting tourism.", "educationLevel": "High 88% literacy due to historical importance.", "employmentPattern": "Tourism 30%, agriculture 30%, government 25%, services 12%, crafts 3%.", "housingPattern": "Traditional 70%, modern 25%, tourism facilities 5%."}},
-  "climate": {"insights": {"temperature": "Temperate mountain, cool winters (6°C), mild summers (22°C).", "precipitation": "Good 1,100mm.", "extremeEvents": "Landslides, road blockages, tourism impacts."}, "trends": {"accessibilityRisk": "Medium"}},
-  "disasters": {"riskProfile": {"landslide": "medium", "isolation": "medium"}, "preparedness": {"reliefCapacity": "Medium - Historical importance ensures resources"}},
-  "economicProfile": {"gdpContribution": "2.8% of national GDP", "majorIndustries": ["Cultural Tourism", "Agriculture", "Government", "Handicrafts"], "averageIncome": "$3,600 USD"}
+  "demographics": {
+    "population": 16000,
+    "density": 8.9,
+    "urbanization": 20,
+    "ageDistribution": {
+      "youth": 31,
+      "adult": 62,
+      "elderly": 7
+    },
+    "economicProfile": {
+      "primarySector": 58,
+      "secondarySector": 25,
+      "tertiarySector": 17
+    },
+    "insights": {
+      "populationGrowth": "Stable 0.5% with historical significance supporting tourism.",
+      "educationLevel": "High 88% literacy due to historical importance.",
+      "employmentPattern": "Tourism 30%, agriculture 30%, government 25%, services 12%, crafts 3%.",
+      "housingPattern": "Traditional 70%, modern 25%, tourism facilities 5%."
+    },
+    "confidence": "medium",
+    "sources": [
+      "Bhutan National Statistics Bureau 2024",
+      "Census Data 2020-2021",
+      "Regional Government Records"
+    ],
+    "lastUpdated": "2024-11-26"
+  },
+  "climate": {
+    "insights": {
+      "temperature": "Temperate mountain, cool winters (6°C), mild summers (22°C).",
+      "precipitation": "Good 1,100mm.",
+      "extremeEvents": "Landslides, road blockages, tourism impacts."
+    },
+    "trends": {
+      "accessibilityRisk": "Medium"
+    },
+    "confidence": "medium",
+    "recentEvents": [
+      {
+        "event": "Seasonal Rainfall Event",
+        "date": "2024-09-15",
+        "impact": "Localized flooding in low-lying areas",
+        "severity": "medium"
+      }
+    ]
+  },
+  "disasters": {
+    "riskProfile": {
+      "landslide": "medium",
+      "isolation": "medium"
+    },
+    "preparedness": {
+      "reliefCapacity": "Medium - Historical importance ensures resources"
+    }
+  },
+  "economicProfile": {
+    "gdpContribution": "2.8% of national GDP",
+    "majorIndustries": [
+      "Cultural Tourism",
+      "Agriculture",
+      "Government",
+      "Handicrafts"
+    ],
+    "averageIncome": "$3,600 USD"
+  }
 }
