@@ -1958,10 +1958,19 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         
         // Get all uploaded rasters for the current country
         console.log('🌐 Fetching rasters from:', API_ENDPOINTS.rasters)
-        const response = await fetch(API_ENDPOINTS.rasters)
+        // Determine seasonality: if there's a season (like dec_feb), it's "Seasonal", otherwise "Annual"
+        const seasonality = overlayData.season ? 'Seasonal' : 'Annual'
+        const filterParams = new URLSearchParams({
+          country: country,
+          category: overlayType,
+          subcategory: overlayData.name || '',
+          scenario: overlayData.scenario || '',
+          season: overlayData.season || '',
+          seasonality: seasonality
+        })
+        const response = await fetch(`${API_ENDPOINTS.rasters}?${filterParams.toString()}`)
         
         console.log('📡 Response status:', response.status, response.statusText)
-        console.log('📡 Response headers:', Object.fromEntries(response.headers.entries()))
         
         if (!response.ok) {
           throw new Error(`HTTP ${response.status}: ${response.statusText}`)
@@ -2017,7 +2026,8 @@ export const MapComponent: React.FC<MapComponentProps> = ({
                               !overlayData.season ||
                               raster.season?.toLowerCase() === overlayData.season?.toLowerCase()
             
-            const yearRangeMatch = !overlayData.yearRange || raster.yearRange === overlayData.yearRange
+            const overlayYearRange = overlayData.yearRange ?? overlayData.year 
+            const yearRangeMatch = overlayYearRange ? raster.yearRange === overlayYearRange : !raster.yearRange
             const seasonalityMatch = !overlayData.seasonality || raster.seasonality?.toLowerCase() === overlayData.seasonality?.toLowerCase()
             
             categoryMatch = raster.category?.toLowerCase() === 'climate' && 
@@ -2027,18 +2037,14 @@ export const MapComponent: React.FC<MapComponentProps> = ({
                           yearRangeMatch && 
                           seasonalityMatch
             
-            console.log(`🔍 Checking raster ${raster.layerName}:`, {
-              rasterSeason: raster.season,
-              overlayDataSeason: overlayData.season,
-              isAnnualOverlay,
-              isAnnualRaster,
-              isSeasonalMatch,
-              rasterScenario: raster.scenario,
-              overlayDataScenario: overlayData.scenario,
-              rasterSeasonality: raster.seasonality,
-              overlayDataSeasonality: overlayData.seasonality,
-              subcategoryMatch, scenarioMatch, seasonMatch, yearRangeMatch, seasonalityMatch, categoryMatch
-            })
+            // Only log matches (not every single raster check)
+            if (categoryMatch) {
+              console.log(`✅ MATCH - ${raster.layerName}`, {
+                scenario: raster.scenario,
+                season: raster.season,
+                yearRange: raster.yearRange
+              })
+            }
           } else if (overlayType === 'giri') {
             // GIRI matching - check if the layer name contains both the hazard type and scenario
             const rasterLayerName = raster.layerName?.toLowerCase() || raster.name?.toLowerCase() || ''
@@ -2055,15 +2061,11 @@ export const MapComponent: React.FC<MapComponentProps> = ({
             categoryMatch = raster.category?.toLowerCase() === 'giri' && 
                           giriNameMatch && 
                           giriScenarioMatch
-                          
-            console.log(`🔍 Checking GIRI raster ${raster.layerName}:`, {
-              rasterLayerName,
-              overlayName: overlayData.name,
-              overlayScenario: overlayData.scenario,
-              giriNameMatch, 
-              giriScenarioMatch, 
-              categoryMatch
-            })
+            
+            // Only log matches (not every single raster check)
+            if (categoryMatch) {
+              console.log(`✅ MATCH - GIRI: ${raster.layerName}`)
+            }
           } else if (overlayType === 'energy') {
             categoryMatch = raster.category?.toLowerCase() === 'energy'
           }

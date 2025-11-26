@@ -318,7 +318,7 @@ function parseRasterName(layerName) {
     subcategory: 'unknown',
     scenario: undefined,
     yearRange: undefined,
-    season: undefined,
+    season: 'Annual',
     seasonality: 'Annual'
   }
   
@@ -361,7 +361,6 @@ function parseRasterName(layerName) {
       }
     }
   }
-  
   console.log(`✅ Parsed metadata:`, result)
   return result
 }
@@ -428,7 +427,9 @@ function extractEnergyTypeFromLayerName(layerName) {
  */
 router.get('/rasters', async (req, res) => {
   try {
-    console.log('🔍 Fetching rasters from GeoServer...')
+    // Extract query parameters for filtering
+    const { country, category, subcategory, scenario, seasonality, season } = req.query
+    console.log(`🔍 Fetching rasters with filters: country=${country || 'all'}, category=${category || 'all'}, subcategory=${subcategory || 'all'}, scenario=${scenario || 'all'}, seasonality=${seasonality || 'all'}, season=${season || 'all'}`)
     
     const processedDataDir = path.join(__dirname, '../data/processed')
     const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
@@ -471,7 +472,13 @@ router.get('/rasters', async (req, res) => {
             const layerName = coverage.name
             const rasterMetadata = parseRasterName(layerName)
             
-            console.log(`🔍 Processing coverage: ${layerName}`)
+            // Apply query parameter filters BEFORE processing
+            if (country && rasterMetadata.country?.toLowerCase() !== country.toLowerCase()) continue
+            if (category && rasterMetadata.category?.toLowerCase() !== category.toLowerCase()) continue
+            if (subcategory && rasterMetadata.subcategory?.toLowerCase() !== subcategory.toLowerCase()) continue
+            if (scenario && rasterMetadata.scenario?.toLowerCase() !== scenario.toLowerCase()) continue
+            if (seasonality && rasterMetadata.seasonality?.toLowerCase() !== seasonality.toLowerCase()) continue
+            if (season && rasterMetadata.season?.toLowerCase() !== season.toLowerCase()) continue
             
             // Try to load legend data if available
             let legendData = null
@@ -516,7 +523,7 @@ router.get('/rasters', async (req, res) => {
       }
     }
     
-    console.log(`🔍 Processed ${rasters.length} rasters from GeoServer`)
+    console.log(`✅ Filtered query returned ${rasters.length} matching rasters`)
     
     res.json({
       success: true,
