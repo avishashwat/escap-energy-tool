@@ -432,7 +432,7 @@ router.get('/rasters', async (req, res) => {
     console.log(`🔍 Fetching rasters with filters: country=${country || 'all'}, category=${category || 'all'}, subcategory=${subcategory || 'all'}, scenario=${scenario || 'all'}, seasonality=${seasonality || 'all'}, season=${season || 'all'}`)
     
     const processedDataDir = path.join(__dirname, '../data/processed')
-    const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+    const geoserverUrl = config.geoserver.url
     const auth = getGeoServerAuth()
     
     // Get all coverage stores (raster data stores) from the workspace
@@ -589,7 +589,7 @@ router.get('/energy-infrastructure', async (req, res) => {
   try {
     console.log('🔍 Fetching energy infrastructure from GeoServer...')
     
-    const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+    const geoserverUrl = config.geoserver.url
     const auth = getGeoServerAuth()
     
     // Get all data stores (vector data stores) from the workspace
@@ -912,7 +912,7 @@ router.post('/create-layer', async (req, res) => {
     console.log(`🔧 Manual layer creation: ${workspace}:${layerName}`)
     await createGeoServerLayer(workspace, layerName)
     
-    const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+    const geoserverUrl = config.geoserver.url
     res.json({ 
       success: true, 
       message: `Layer ${workspace}:${layerName} created successfully`,
@@ -1070,7 +1070,7 @@ router.post('/upload-shapefile', upload.single('shapefile'), async (req, res) =>
       console.log(`✅ GeoServer layer created: ${workspace}:${layerName}`)
       
       // Verify the layer was actually created in GeoServer
-      const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+      const geoserverUrl = config.geoserver.url
       const auth = getGeoServerAuth()
       const verifyUrl = `${geoserverUrl}/rest/workspaces/${workspace}/datastores/${config.geoserver.datastore}/featuretypes/${layerName}.json`
       
@@ -1091,7 +1091,7 @@ router.post('/upload-shapefile', upload.single('shapefile'), async (req, res) =>
     // Step 3: Export to GeoJSON for vector tile serving (no tippecanoe needed)
     const geojsonDir = path.join(__dirname, '../../data/processed')
     const geojsonPath = path.join(geojsonDir, `${layerName}.geojson`)
-    const mbtilesPath = `/opt/geoserver/data/vector_tiles/${layerName}`
+    const mbtilesPath = `../data/vector_tiles/${layerName}`
 
     // Ensure output directory exists
     await fs.mkdir(geojsonDir, { recursive: true })
@@ -1128,7 +1128,7 @@ router.post('/upload-shapefile', upload.single('shapefile'), async (req, res) =>
     }
 
     // Generate proper tile URL for GeoServer - using WMS format for better compatibility
-    const baseUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+    const baseUrl = config.geoserver.url
     // Use WMS format with vector tiles - this works reliably with GeoServer
     const vectorTileUrl = `${baseUrl}/${workspace}/ows?service=WMS&request=GetMap&version=1.1.0&layers=${workspace}:${layerName}&format=application/vnd.mapbox-vector-tile&width=256&height=256&bbox={bbox-epsg-4326}&srs=EPSG:4326`
     
@@ -1549,7 +1549,7 @@ router.delete('/layers/:layerName', async (req, res) => {
 // Helper function to detect if a layer is a raster (exists in escap_climate workspace)
 async function checkIfRasterLayer(layerName) {
   try {
-    const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+    const geoserverUrl = config.geoserver.url
     const auth = getGeoServerAuth()
     
     // GeoServer keeps spaces in store names, so DON'T normalize them
@@ -1649,7 +1649,7 @@ async function processSingleShapefile(shapefileData, layerName, workspace, count
     await configureVectorTileService(workspace, layerName)
 
     // Generate vector tile URL
-    const baseUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+    const baseUrl = config.geoserver.url
     const vectorTileUrl = `${baseUrl}/${workspace}/ows?service=WMS&request=GetMap&version=1.1.0&layers=${workspace}:${layerName}&format=application/vnd.mapbox-vector-tile&width=256&height=256&bbox={bbox-epsg-4326}&srs=EPSG:4326`
     
     // Get layer info
@@ -1822,7 +1822,7 @@ async function execCommand(command, timeoutMs = 30000) {
 async function createGeoServerLayer(workspace, layerName) {
   console.log(`🏗️ Creating GeoServer layer: ${workspace}:${layerName}`)
   
-  const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+  const geoserverUrl = config.geoserver.url
   const auth = getGeoServerAuth()
 
   try {
@@ -1929,7 +1929,7 @@ async function createGeoServerLayer(workspace, layerName) {
 async function createGeoServerEnergyLayer(workspace, layerName, metadata = {}) {
   console.log(`⚡ Creating GeoServer energy layer: ${workspace}:${layerName}`)
   
-  const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+  const geoserverUrl = config.geoserver.url
   const auth = getGeoServerAuth()
 
   try {
@@ -2046,7 +2046,7 @@ async function createGeoServerEnergyLayer(workspace, layerName, metadata = {}) {
 async function configureVectorTileService(workspace, layerName) {
   console.log(`🔧 Configuring vector tiles for ${workspace}:${layerName}`)
   
-  const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+  const geoserverUrl = config.geoserver.url
   const auth = getGeoServerAuth()
 
   try {
@@ -2098,7 +2098,7 @@ async function configureVectorTileService(workspace, layerName) {
  */
 async function getLayerBoundsFromGeoServer(workspace, layerName) {
   try {
-    const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+    const geoserverUrl = config.geoserver.url
     const datastoreName = config.geoserver.datastore
     const url = `${geoserverUrl}/rest/workspaces/${workspace}/datastores/${datastoreName}/featuretypes/${layerName}.json`
     
@@ -2425,7 +2425,7 @@ function extractFeatureCountFromOgrInfo(ogrOutput) {
 }
 
 async function deleteGeoServerLayer(layerName) {
-  const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+  const geoserverUrl = config.geoserver.url
   const auth = getGeoServerAuth()
 
   // Delete feature type
@@ -2436,7 +2436,7 @@ async function deleteGeoServerLayer(layerName) {
 }
 
 async function deleteGeoServerVectorLayer(layerName) {
-  const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+  const geoserverUrl = config.geoserver.url
   const auth = getGeoServerAuth()
   const workspace = config.geoserver.workspace
   const datastore = config.geoserver.datastore
@@ -2489,7 +2489,7 @@ async function deleteGeoServerVectorLayer(layerName) {
 }
 
 async function deleteGeoServerRasterLayer(layerName) {
-  const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+  const geoserverUrl = config.geoserver.url
   const auth = getGeoServerAuth()
   const workspace = config.geoserver.workspace
   
@@ -3606,7 +3606,7 @@ router.post('/upload-classified-raster', upload.single('raster'), async (req, re
  */
 async function getCountryLayers(countryName) {
   try {
-    const geoserverUrl = process.env.GEOSERVER_URL || 'http://localhost:8081/geoserver'
+    const geoserverUrl = config.geoserver.url
     const auth = getGeoServerAuth()
     
     // Get all layers from the workspace
