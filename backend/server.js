@@ -31,8 +31,14 @@ app.use(cors({
   credentials: true
 }));
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// ⚡ CRITICAL: Increase request timeout for large file uploads (default is 120s)
+app.use((req, res, next) => {
+  req.setTimeout(600000); // 10 minutes for upload processing
+  next();
+});
+
+app.use(express.json({ limit: '1gb' })); // Support 1GB JSON bodies
+app.use(express.urlencoded({ extended: true, limit: '1gb' })); // Support 1GB form data
 
 // Create upload directories if they don't exist
 const uploadDir = path.join(__dirname, '../data/uploads');
@@ -58,7 +64,7 @@ const storage = multer.diskStorage({
 const upload = multer({ 
   storage: storage,
   limits: {
-    fileSize: 100 * 1024 * 1024 // 100MB limit
+    fileSize: 1024 * 1024 * 1024 // 1GB limit (increased from 100MB)
   },
   fileFilter: (req, file, cb) => {
     // Allow shapefile components and zip files
@@ -125,6 +131,9 @@ app.get('/api', (req, res) => {
 // File upload endpoint
 app.post('/api/upload', upload.array('files'), (req, res) => {
   try {
+    // Set individual request timeout for this endpoint
+    req.setTimeout(600000); // 10 minutes
+    
     if (!req.files || req.files.length === 0) {
       return res.status(400).json({ error: 'No files uploaded' });
     }
@@ -180,13 +189,17 @@ app.use((req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`🚀 Backend server running on http://localhost:${PORT}`);
   console.log(`📊 Health check: http://localhost:${PORT}/health`);
   console.log(`📁 Upload directory: ${uploadDir}`);
   console.log(`🗃️  Processed directory: ${processedDir}`);
   console.log(`🔗 API info: http://localhost:${PORT}/api`);
+  console.log(`⏱️  Request timeout: 10 minutes (for large file uploads)`);
 });
+
+// ⚡ Set socket timeout for long-running requests
+server.setTimeout(600000); // 10 minutes
 
 // Graceful shutdown handlers - only shutdown on explicit signals, not crashes
 process.on('SIGTERM', () => {

@@ -66,7 +66,12 @@ const execPostgreSQLCommand = async (query, timeout = 10000) => {
 }
 
 const router = express.Router()
-const upload = multer({ dest: path.join(__dirname, '../../data/uploads/temp') })
+const upload = multer({ 
+  dest: path.join(__dirname, '../../data/uploads/temp'),
+  limits: {
+    fileSize: 1024 * 1024 * 1024  // 1GB limit for large GIRI rasters
+  }
+})
 
 /**
  * GET endpoint for WFS proxy to avoid CORS issues
@@ -3520,6 +3525,9 @@ router.post('/upload-raster', upload.single('raster'), async (req, res) => {
  */
 router.post('/upload-classified-raster', upload.single('raster'), async (req, res) => {
   try {
+    // ⚡ Set extended timeout for large file processing
+    req.setTimeout(600000); // 10 minutes for raster upload/processing
+    
     console.log('🔍 Backend: Received upload request')
     console.log('🔍 Backend: File:', req.file ? `${req.file.originalname} (${req.file.size} bytes)` : 'No file')
     console.log('🔍 Backend: Request body:', req.body)
