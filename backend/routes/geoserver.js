@@ -66,7 +66,7 @@ const execPostgreSQLCommand = async (query, timeout = 10000) => {
 }
 
 // ⚡ Fetch wrapper with abort timeout for long-running requests
-const fetchWithTimeout = async (url, options = {}, timeoutMs = 600000) => {
+const fetchWithTimeout = async (url, options = {}, timeoutMs = 3600000) => {
   const controller = new AbortController()
   const timeoutId = setTimeout(() => controller.abort(), timeoutMs)
   
@@ -3387,7 +3387,7 @@ async function setupClassifiedCOGRasterTiles(rasterPath, layerName, classificati
     const cogFileBuffer = await fs.readFile(outputCogPath)
     console.log(`📦 COG file size: ${(cogFileBuffer.length / 1024 / 1024).toFixed(2)} MB`)
     
-    // Upload file to GeoServer using the proper file upload endpoint with 30-minute timeout
+    // Upload file to GeoServer using the proper file upload endpoint with 60-minute timeout
     const uploadResponse = await fetchWithTimeout(
       `${config.geoserver.url}/rest/workspaces/${workspace}/coveragestores/${layerName}_classified/file.geotiff?configure=first&coverageName=${layerName}_classified`,
       {
@@ -3398,7 +3398,7 @@ async function setupClassifiedCOGRasterTiles(rasterPath, layerName, classificati
         },
         body: cogFileBuffer
       },
-      1800000 // 30 minutes for GeoServer processing
+      3600000 // 60 minutes for GeoServer processing of large files
     )
     
     if (!uploadResponse.ok) {
@@ -3445,7 +3445,7 @@ async function setupClassifiedCOGRasterTiles(rasterPath, layerName, classificati
         },
         body: tileCacheXML
       },
-      600000 // 10 minutes for tile cache configuration
+      1800000 // 30 minutes for tile cache configuration
     )
     
     // Generate tile URLs
@@ -3556,8 +3556,8 @@ router.post('/upload-raster', upload.single('raster'), async (req, res) => {
 router.post('/upload-classified-raster', upload.single('raster'), async (req, res) => {
   try {
     // ⚡ Set extended timeout for large file processing IMMEDIATELY
-    req.socket.setTimeout(600000); // 10 minutes - set on socket, not just request
-    req.setTimeout(600000); // 10 minutes for raster upload/processing
+    req.socket.setTimeout(3600000); // 60 minutes - set on socket for very large files (1GB+)
+    req.setTimeout(3600000); // 60 minutes for raster upload/processing
     
     // Send 100 Continue to keep connection alive
     if (req.headers.expect === '100-continue') {

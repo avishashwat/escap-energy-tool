@@ -35,18 +35,18 @@ app.use(cors({
 // IMPORTANT: Set on socket BEFORE any middleware processes requests
 app.use((req, res, next) => {
   // Override socket timeout BEFORE processing to prevent premature disconnect
-  req.socket.setTimeout(600000); // 10 minutes
-  req.setTimeout(600000); // 10 minutes for upload processing
+  req.socket.setTimeout(3600000); // 60 minutes for very large files (1GB+)
+  req.setTimeout(3600000); // 60 minutes for upload processing
   
   // Keep connection alive during long-running operations
   res.setHeader('Connection', 'keep-alive');
-  res.setHeader('Keep-Alive', 'timeout=300, max=100');
+  res.setHeader('Keep-Alive', 'timeout=600, max=100');
   
   next();
 });
 
-app.use(express.json({ limit: '1gb' })); // Support 1GB JSON bodies
-app.use(express.urlencoded({ extended: true, limit: '1gb' })); // Support 1GB form data
+app.use(express.json({ limit: '2gb' })); // Support 2GB JSON bodies
+app.use(express.urlencoded({ extended: true, limit: '2gb' })); // Support 2GB form data
 
 // Create upload directories if they don't exist
 const uploadDir = path.join(__dirname, '../data/uploads');
@@ -72,8 +72,8 @@ const storage = multer.diskStorage({
 const upload = multer({ 
   storage: storage,
   limits: {
-    fileSize: 1024 * 1024 * 1024, // 1GB limit (increased from 100MB)
-    timeout: 600000 // 10 minutes for multer processing
+    fileSize: 2 * 1024 * 1024 * 1024, // 2GB limit (supports 1.82GB+ files)
+    timeout: 3600000 // 60 minutes for multer processing
   },
   fileFilter: (req, file, cb) => {
     // Allow shapefile components and zip files
@@ -141,7 +141,7 @@ app.get('/api', (req, res) => {
 app.post('/api/upload', upload.array('files'), (req, res) => {
   try {
     // Extend timeout for this upload endpoint
-    req.socket.setTimeout(600000); // 10 minutes
+    req.socket.setTimeout(3600000); // 60 minutes for very large files
     
     if (!req.files || req.files.length === 0) {
       return res.status(400).json({ error: 'No files uploaded' });
@@ -204,7 +204,8 @@ const server = app.listen(PORT, () => {
   console.log(`📁 Upload directory: ${uploadDir}`);
   console.log(`🗃️  Processed directory: ${processedDir}`);
   console.log(`🔗 API info: http://localhost:${PORT}/api`);
-  console.log(`⏱️  Request timeout: 10 minutes (for large file uploads)`);
+  console.log(`⏱️  Request timeout: 60 minutes (supports files up to 2GB)`);
+  console.log(`📦 Max file size: 2GB`);
 });
 
 // ⚡ Set socket timeout for long-running requests
