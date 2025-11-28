@@ -65,6 +65,27 @@ const execPostgreSQLCommand = async (query, timeout = 10000) => {
   return result.stdout.trim()
 }
 
+// ⚡ Fetch wrapper with abort timeout for long-running requests
+const fetchWithTimeout = async (url, options = {}, timeoutMs = 600000) => {
+  const controller = new AbortController()
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs)
+  
+  try {
+    const response = await fetch(url, {
+      ...options,
+      signal: controller.signal
+    })
+    clearTimeout(timeoutId)
+    return response
+  } catch (error) {
+    clearTimeout(timeoutId)
+    if (error.name === 'AbortError') {
+      throw new Error(`Request timeout after ${timeoutMs/1000}s: ${url}`)
+    }
+    throw error
+  }
+}
+
 const router = express.Router()
 const upload = multer({ 
   dest: path.join(__dirname, '../../data/uploads/temp'),
@@ -3364,16 +3385,21 @@ async function setupClassifiedCOGRasterTiles(rasterPath, layerName, classificati
     
     // Read the COG file
     const cogFileBuffer = await fs.readFile(outputCogPath)
+    console.log(`📦 COG file size: ${(cogFileBuffer.length / 1024 / 1024).toFixed(2)} MB`)
     
-    // Upload file to GeoServer using the proper file upload endpoint
-    const uploadResponse = await fetch(`${config.geoserver.url}/rest/workspaces/${workspace}/coveragestores/${layerName}_classified/file.geotiff?configure=first&coverageName=${layerName}_classified`, {
-      method: 'PUT',
-      headers: {
-        'Authorization': 'Basic ' + getGeoServerAuth(),
-        'Content-Type': 'image/tiff'
+    // Upload file to GeoServer using the proper file upload endpoint with 30-minute timeout
+    const uploadResponse = await fetchWithTimeout(
+      `${config.geoserver.url}/rest/workspaces/${workspace}/coveragestores/${layerName}_classified/file.geotiff?configure=first&coverageName=${layerName}_classified`,
+      {
+        method: 'PUT',
+        headers: {
+          'Authorization': 'Basic ' + getGeoServerAuth(),
+          'Content-Type': 'image/tiff'
+        },
+        body: cogFileBuffer
       },
-      body: cogFileBuffer
-    })
+      1800000 // 30 minutes for GeoServer processing
+    )
     
     if (!uploadResponse.ok) {
       const errorText = await uploadResponse.text()
@@ -3409,14 +3435,18 @@ async function setupClassifiedCOGRasterTiles(rasterPath, layerName, classificati
         </mimeFormats>
       </GeoServerLayer>`
     
-    const cacheResponse = await fetch(`${config.geoserver.url}/gwc/rest/layers/${workspace}:${layerName}_classified.xml`, {
-      method: 'PUT',
-      headers: {
-        'Authorization': 'Basic ' + getGeoServerAuth(),
-        'Content-Type': 'application/xml'
+    const cacheResponse = await fetchWithTimeout(
+      `${config.geoserver.url}/gwc/rest/layers/${workspace}:${layerName}_classified.xml`,
+      {
+        method: 'PUT',
+        headers: {
+          'Authorization': 'Basic ' + getGeoServerAuth(),
+          'Content-Type': 'application/xml'
+        },
+        body: tileCacheXML
       },
-      body: tileCacheXML
-    })
+      600000 // 10 minutes for tile cache configuration
+    )
     
     // Generate tile URLs
     const rasterTileUrl = `${config.geoserver.url}/gwc/service/tms/1.0.0/${workspace}%3A${layerName}_classified@EPSG%3A4326@png/{z}/{x}/{-y}.png`
@@ -3525,8 +3555,14 @@ router.post('/upload-raster', upload.single('raster'), async (req, res) => {
  */
 router.post('/upload-classified-raster', upload.single('raster'), async (req, res) => {
   try {
-    // ⚡ Set extended timeout for large file processing
+    // ⚡ Set extended timeout for large file processing IMMEDIATELY
+    req.socket.setTimeout(600000); // 10 minutes - set on socket, not just request
     req.setTimeout(600000); // 10 minutes for raster upload/processing
+    
+    // Send 100 Continue to keep connection alive
+    if (req.headers.expect === '100-continue') {
+      res.writeContinue();
+    }
     
     console.log('🔍 Backend: Received upload request')
     console.log('🔍 Backend: File:', req.file ? `${req.file.originalname} (${req.file.size} bytes)` : 'No file')

@@ -32,8 +32,16 @@ app.use(cors({
 }));
 
 // ⚡ CRITICAL: Increase request timeout for large file uploads (default is 120s)
+// IMPORTANT: Set on socket BEFORE any middleware processes requests
 app.use((req, res, next) => {
+  // Override socket timeout BEFORE processing to prevent premature disconnect
+  req.socket.setTimeout(600000); // 10 minutes
   req.setTimeout(600000); // 10 minutes for upload processing
+  
+  // Keep connection alive during long-running operations
+  res.setHeader('Connection', 'keep-alive');
+  res.setHeader('Keep-Alive', 'timeout=300, max=100');
+  
   next();
 });
 
@@ -64,7 +72,8 @@ const storage = multer.diskStorage({
 const upload = multer({ 
   storage: storage,
   limits: {
-    fileSize: 1024 * 1024 * 1024 // 1GB limit (increased from 100MB)
+    fileSize: 1024 * 1024 * 1024, // 1GB limit (increased from 100MB)
+    timeout: 600000 // 10 minutes for multer processing
   },
   fileFilter: (req, file, cb) => {
     // Allow shapefile components and zip files
@@ -131,8 +140,8 @@ app.get('/api', (req, res) => {
 // File upload endpoint
 app.post('/api/upload', upload.array('files'), (req, res) => {
   try {
-    // Set individual request timeout for this endpoint
-    req.setTimeout(600000); // 10 minutes
+    // Extend timeout for this upload endpoint
+    req.socket.setTimeout(600000); // 10 minutes
     
     if (!req.files || req.files.length === 0) {
       return res.status(400).json({ error: 'No files uploaded' });
